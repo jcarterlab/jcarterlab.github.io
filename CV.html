@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<title>CV</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet", href="styles.css">
+
+	<script>
+	function myFunction(c) {
+		var x = document.getElementById(c);
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+		}
+	}
+	</script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="name">
+			<a href="file:///C:/Users/HUAWEI/Desktop/Projects/jcarterlab.github.io/index.html"><h1>Jack Carter</h1></a>
+		 </div>
+
+		 <div class="topnav">
+			<a class="nav_link" href="file:///C:/Users/HUAWEI/Desktop/Projects/jcarterlab.github.io/index.html">About</a>
+			<a class="nav_link" href="file:///C:/Users/HUAWEI/Desktop/Projects/jcarterlab.github.io/cv.html">CV</a>
+			<a class="nav_link" href="file:///C:/Users/HUAWEI/Desktop/Projects/jcarterlab.github.io/data.html">Data</a>
+			<a class="nav_link" href="file:///C:/Users/HUAWEI/Desktop/Projects/jcarterlab.github.io/editing.html">Editing</a>
+			<a class="nav_link" href="file:///C:/Users/HUAWEI/Desktop/Projects/jcarterlab.github.io/articles.html">Articles</a>
+		  </div>
+	</div>
+
+		<div class="main">
+			<div class="page_heading">
+				<h3>CV</h3>
+			</div>
+
+				<div class="cv_first_section">
+					<h5><b>• Full Name:</b> Jack Paul Carter</h5>
+					<h5><b>• Nationality:</b> UK citizen</h5>
+					<h5><b>• Date of Birth:</b> 23/01/1994</h5>
+				</div>
+				<img src="me_smart.jpg" class=cv_image>
+
+			<br>
+
+			<h4>Soft Skills</h4>
+			<div class="cv_section">
+				<button onclick="myFunction('Communication')", class="dropdown"><h5><b>• Communication</b> 🞃</h5></button>
+				<div id="Communication", style = "display: none"><p class="cv_entry">Working in China and Turkey, volunteering in Cambodia and Turkey, studying in France and travelling to 34 countries has vastly improved my communication skills by allowing me to interact with a variety of different people.</p></div>
+				
+				<button onclick="myFunction('Adaptability')", class="dropdown"><h5><b>• Adaptability</b> 🞃</h5></button>
+				<div id="Adaptability", style = "display: none"><p class="cv_entry">Teaching English in China and Turkey and volunteering in NGOs in Cambodia and Turkey has enhanced my abiity to adapt to unfamiliar situations by exposing me to teams in different industries with different ways of doing things.</p></div>
+
+				<button onclick="myFunction('Aptitude')", class="dropdown"><h5><h5><b>• Aptitude to learn</b> 🞃</h5></button>
+				<div id="Aptitude", style = "display: none"><p class="cv_entry">Since finishing my 'Political Economy of Emerging Markets' Masters degree at <u><a class="intext_link", href="https://www.kcl.ac.uk/">King's College London</a></u> in 2018, I have taken the initiative to learn more about different cultures, languages, programming languages, and data science and statistical techniques.</p></div>
+				
+				<button onclick="myFunction('Problem')", class="dropdown"><h5><h5><b>• Problem Solving</b> 🞃</h5></button>
+				<div id="Problem", style = "display: none"><p class="cv_entry">I have demonstrated strong problem solving capabilities by building an <u><a class="intext_link", href="https://docs.google.com/document/d/1r7kZ0bJmEV_LBXpTcQ77Jc98HZFo51Vw3ilTk2IXDmY/edit">algorithm</a></u> to help fairly and efficiently distribute 250 monthly food packages and 150 monthly hygiene packages at an <u><a class="intext_link", href="https://tiafi.org/">NGO</a></u> in Izmir, Turkey.</p></div>
+			</div>
+
+			<br>
+
+			<h4>Hard Skills</h4>
+			<div class="cv_section">
+				<button onclick="myFunction('Data')", class="dropdown"><h5><b>• Data Skills 🞃</b></h5></button>
+				<div id="Data", style = "display: none"><p class="cv_entry">I have knowledge of the R, Python, SQL and Javascript programming languages, as well as various data science and statitsical techniques.</p></div>
+				
+				<button onclick="myFunction('Writing')", class="dropdown"><h5><b>• Writing Skills 🞃</b></h5></button>
+				<div id="Writing", style = "display: none"><p class="cv_entry">I have demonstrated strong written communication skills through my report writing at NGOs in <u><a class="intext_link", href="file:///C:/Users/HUAWEI/Desktop/Projects/jcarterlab.github.io/articles.html">Turkey</a></u> and <u><a class="intext_link", href="https://cicp.org.kh/">Cambodia</a></u>, my <u><a class="intext_link", href="https://cicp.org.kh/">articles</a></u> and my<u><a class="intext_link", href="file:///C:/Users/HUAWEI/Desktop/Projects/jcarterlab.github.io/editing.html"> freelance editing portfolio</a></u>.</p></div>
+				
+				<button onclick="myFunction('Language')", class="dropdown"><h5><b>• Language Skills 🞃</b></h5></button>
+				<div id="Language", style = "display: none"><p class="cv_entry">I speak English fluently, French and Spanish at intermediate level, and Chinese, Turkish and Arabic at beginner level.</p></div>
+			</div>
+
+			<br>
+
+			<h4>Experience</h4>
+			<div class="cv_section">
+				<button onclick="myFunction('Freelance Editor')", class="dropdown"><h5><b>• Freelance Editor</b> / Online / Sep 2021 - present 🞃</h5></button>
+				<div id="Freelance Editor", style = "display: none"><p class="cv_entry">My<u><a class="intext_link", href="file:///C:/Users/HUAWEI/Desktop/Projects/jcarterlab.github.io/editing.html"> freelance editing portfolio</a></u> includes publications, PhD theses, apps and websites for foreign affairs NGOs, academics and business professionals.</p></div>
+				
+				<button onclick="myFunction('Data Analyst Volunteer')", class="dropdown"><h5><b>• Data Analyst Volunteer</b> / Turkey / Sep 2022 - Jan 2022 🞃</h5></button>
+				<div id="Data Analyst Volunteer", style = "display: none"><p class="cv_entry">At <u><a class="intext_link", href="https://tiafi.org/">Team International Assistance for Integration</a></u> I helped Syrian refugees in Izmir (Turkey) by building two databases and an <u><a class="intext_link", href="https://docs.google.com/document/d/1r7kZ0bJmEV_LBXpTcQ77Jc98HZFo51Vw3ilTk2IXDmY/edit">algorithm</a></u> that decides which of the thousands of registered vulnerable people in the area need suppport the most at any time.</p></div>
+
+				<button onclick="myFunction('English Teacher')", class="dropdown"><h5><b>• English Teacher</b> / Turkey / Feb 2022 - July 2022 🞃</h5></button>
+				<div id="English Teacher", style = "display: none"><p class="cv_entry">At <u><a class="intext_link", href="https://www.brightkidspreschool.com/">BrightKids International Preschool</a></u> I taught English to children between the age of 3 and 6 in Istanbul, a role involving time management, flexibility and intercultural communication with a multicultural team.</p></div>
+
+				<button onclick="myFunction('Research Fellow')", class="dropdown"><h5><b>• Research Fellow</b> / Cambodia / July 2020 - Sep 2021 🞃</h5></button>
+				<div id="Research Fellow", style = "display: none"><p class="cv_entry">At the <u><a class="intext_link", href="https://cicp.org.kh/">Cambodian Institute for Cooperation and Peace</a></u> I attended webinars in Phnom Penh, critiqued <u><a class="intext_link", href="https://cicp.org.kh/library/cicp-op-ed-series/">articles</a></u> and proofread 2 books on <u><a class="intext_link", href="https://cicp.org.kh/publications/the-impact-of-covid-19-national-and-regional-implications/">Covid-19</a></u> and <u><a class="intext_link", href="https://cicp.org.kh/publications/cambodias-chairmanship-of-asean-challenging-perceptions-concretizing-consolidations/">ASEAN</a></u> written by Southeast Asian scholars and diplomats.</p></div>
+								
+				<button onclick="myFunction('Project Assistant Volunteer')", class="dropdown"><h5><b>• Project Assistant Volunteer</b> / Cambodia / May 2020 - June 2020 🞃</h5></button>
+				<div id="Project Assistant Volunteer", style = "display: none"><p class="cv_entry">At the <u><a class="intext_link", href="https://cocd-cambodia.org/en/">Cambodian Organization for Children and Development</a></u> I updated website content and worked with the Executive Director and Program Manager to secure $60,000 in funding for a water related project.</p></div>
+				
+				<button onclick="myFunction('Digital Mapping Volunteer')", class="dropdown"><h5><b>• Digital Mapping Volunteer</b> / Online / Sep 2019 - Dec 2020 🞃</h5></button>
+				<div id="Digital Mapping Volunteer", style = "display: none"><p class="cv_entry">At <u><a class="intext_link", href="https://www.hotosm.org/">Humanitarian OpenStreetMap Team</a></u> I used satelite imagery to update <u><a class="intext_link", href="https://www.openstreetmap.org/">OpenStreetMap</a></u> in a variety of humanitarian and distaster zones across the world.</p></div>
+		
+				<button onclick="myFunction('English Teacher2')", class="dropdown"><h5><b>• English Teacher</b> / China / Feb 2019 - Jan 2020 🞃</h5></button>
+				<div id="English Teacher2", style = "display: none"><p class="cv_entry">At <u><a class="intext_link", href="https://en.aihua-english.com/">Aihua Education</a></u> I taught English to children between the age of 3 and 11 in Beijing, a role involving lesson planning, liaising with parents and intercultural communication with Chinese staff.</p></div>
+			</div>
+
+			<br>
+
+			<h4>Education</h4>
+			<div class="cv_section">
+				<button onclick="myFunction('MSc Political Economy of Emerging Markets')", class="dropdown"><h5><b>• MSc Political Economy of Emerging Markets</b> / King's College London / Sep 2017 - Sep 2018 🞃</h5></button>
+				<div id="MSc Political Economy of Emerging Markets", style = "display: none"><h5>Grade: Distinction</h5>
+				<p class="cv_entry">At <u><a class="intext_link", href="https://www.kcl.ac.uk/">King's College London</a></u> I studied macroeconomics, political economy, development policy, and trade policy, with a specialization in the spatial dynamics of Chinese innovation.</p></div>
+			
+				<button onclick="myFunction('BA International Business Management')", class="dropdown"><h5><b>• BA International Business Management</b> / Cardiff Metropolitan / Sep 2013 - July 2017 🞃</h5></button>
+				<div id="BA International Business Management", style = "display: none"><h5>Grade: First Class Honours</h5>
+				<p class="cv_entry">At <u><a class="intext_link", href="https://www.cardiffmet.ac.uk/Pages/default.aspx">Cardiff Metropolitan University</a></u> I studied finance, HR, marketing, ethics and interncultural communication, winning the award for Student of the Year 2017 by achieving the highest overall grade on my course.</p></div>
+			
+				<button onclick="myFunction('Gestion dEntreprise et Administration')", class="dropdown"><h5><b>• Gestion d'Entreprise et Administration</b> / Université Grenoble Alpes / Sep 2015 - July 2016 🞃</h5></button>
+				<div id="Gestion dEntreprise et Administration", style = "display: none"><h5>Grade: Pass</h5>
+				<p class="cv_entry">At <u><a class="intext_link", href="https://www.univ-grenoble-alpes.fr/">Université Grenoble Alpes</a></u> I took an International Business pathway on my English taught study abroad year and requested to be put into extra classes with French students studying in their native language.</p></div>
+			</div>
+
+	  </div>
+
+	  <br>
+	  <br>
+
+	  <div class="footer">
+	      <div class="footer_text_container">
+			  <p class="footer_text"><span style="color: #A9122A">Email:</span> jack@mosaique.co.uk</p>
+			  <p class="footer_text"><span style="color: #A9122A">WhatsApp:</span> +44 7597 734980</p>
+			  <a class="footer_text", href="https://www.linkedin.com/in/jack-carter-74b608148/"><span style="color: #A9122A">LinkedIn</span></a>
+			  <a class="footer_text", href="https://github.com/jcarterlab"><span style="color: #A9122A">GitHub</span></a>
+		  </div>
+	</div>
+</body>
+</html>

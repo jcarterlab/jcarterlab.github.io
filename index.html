@@ -1,21 +1,115 @@
---- 
-layout: template1 
----
 <!DOCTYPE html>
 <html lang="en">
   
 <head>
-<title>Jack Carter</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet", href="styles.css">
+	<title>About</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet", href="styles.css">
 </head>
+
 <body>
+	<div class="header">
+		<div class="name">
+			<a href="file:///C:/Users/HUAWEI/Desktop/Projects/jcarterlab.github.io/index.html"><h1>Jack Carter</h1></a>
+		 </div>
 
-<h1>Jack Carter<h1>
-<h3>I am a friendly, enthusiastic individual who is curious about the world and loves learning new things. 
-  My interests include geopolitics, data science, different cultures, travelling, hiking, swimming, mountain biking and skiing.
-  Take a look at some of my previous experience and projects.<h3>
+		 <div class="topnav">
+			<a class="nav_link" href="file:///C:/Users/HUAWEI/Desktop/Projects/jcarterlab.github.io/index.html">About</a>
+			<a class="nav_link" href="file:///C:/Users/HUAWEI/Desktop/Projects/jcarterlab.github.io/cv.html">CV</a>
+			<a class="nav_link" href="file:///C:/Users/HUAWEI/Desktop/Projects/jcarterlab.github.io/data.html">Data</a>
+			<a class="nav_link" href="file:///C:/Users/HUAWEI/Desktop/Projects/jcarterlab.github.io/editing.html">Editing</a>
+			<a class="nav_link" href="file:///C:/Users/HUAWEI/Desktop/Projects/jcarterlab.github.io/articles.html">Articles</a>
+		  </div>
+	</div>
 
+	<div class="main">
+
+		<div class="page_heading">
+			<h3>About</h3>
+		</div>
+
+		<div class="intro_text">
+			<p>I am a friendly, enthusiastic individual with knowledge in programming, data science, statistics, geopolitics and economics, as well as experience in foreign affairs research, editing and international development.</p>
+		</div>
+
+		  <div class="image_container">
+			<img src="pic_tiafi.jpg" alt="">
+			<figcaption>Me working with Syrian refugees in Izmir, Turkey.</figcaption>
+		  </div>
+
+		  <br>
+
+		  <div class="intro_text">
+			<p>Since achieving a distinction in my 'Political Economy of Emerging Markets' Masters degree at <u><a class="intext_link", href="https://www.kcl.ac.uk/">King's College London</a></u> in 2018, I have worked in, volunteered in and travelled to over 30 countries.</p>
+		  </div>
+
+		  <div class="image_container">
+			<img class="teams" src="me_beijing.jpg" style="display:none">
+			<img class="teams" src="me_chinese_teachers.jpg" style="display:none">
+			<img class="teams" src="beijing_party.jpg" style="display:none">
+			<img class="teams" src="me_istanbul.jpg" style="display:none">
+			<img class="teams" src="tiafi_team.jpg" style="display:none">
+			<script>
+				function carousel_teams() {
+				  var i;
+				  var x = document.getElementsByClassName("teams");
+				  for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+				  }
+				  teams_index++;
+				  if (teams_index > x.length) {teams_index = 1}    
+				  x[teams_index-1].style.display = "block";  
+				  setTimeout(carousel_teams, 2000); // Change image every 2 seconds
+				}
+				var teams_index = 0;
+				carousel_teams();
+			</script>
+			<figcaption>Me having fun with new colleagues.</figcaption>
+		  </div>
+
+		  <br>
+
+		  <div class="intro_text">
+			<p>My passions include learning new things, meeting new people, experiencing different cultures, live music, photography, thriller novels, history, the outdoors, hiking, swimming, mountain biking and skiing.</p>
+		  </div>
+
+		  <div class="image_container">
+			<img class="outdoors" src="me_med.jpg" style="display:none">
+			<img class="outdoors" src="me_skiing.jpg" style="display:none">
+			<img class="outdoors" src="me_swim.jpg" style="display:none">
+			<img class="outdoors" src="me_cambodia.jpg" style="display:none">
+			<img class="outdoors" src="me_cambodia2.jpg" style="display:none">
+			<script>
+				function carousel_outdoors() {
+				  var i;
+				  var x = document.getElementsByClassName("outdoors");
+				  for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+				  }
+				  outdoors_index++;
+				  if (outdoors_index > x.length) {outdoors_index = 1}    
+				  x[outdoors_index-1].style.display = "block";  
+				  setTimeout(carousel_outdoors, 2000); // Change image every 2 seconds
+				}
+				var outdoors_index = 0;
+				carousel_outdoors();
+			</script>
+			<figcaption>Me exploring the outdoors.</figcaption>
+		  </div>
+
+	  </div>
+
+	  <br>
+	  <br>
+
+	  <div class="footer">
+	      <div class="footer_text_container">
+			  <p class="footer_text"><span style="color: #A9122A">Email:</span> jack@mosaique.co.uk</p>
+			  <p class="footer_text"><span style="color: #A9122A">WhatsApp:</span> +44 7597 734980</p>
+			  <a class="footer_text", href="https://www.linkedin.com/in/jack-carter-74b608148/"><span style="color: #A9122A">LinkedIn</span></a>
+			  <a class="footer_text", href="https://github.com/jcarterlab"><span style="color: #A9122A">GitHub</span></a>
+		  </div>
+	</div>
 </body>
 </html>
