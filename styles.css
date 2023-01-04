@@ -166,6 +166,7 @@ button {
 }
 
 .cv_entry {
+    margin-top: 25px;
     margin-bottom: 20px;
     line-height: 26pt;
 }

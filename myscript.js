@@ -12,15 +12,24 @@ function carousel_teams() {
 	setTimeout(carousel_teams, 2000); // Change image every 2 seconds
 	}
 	
-	var outdoors_index = 0;
-	function carousel_outdoors() {
-		var i;
-		var x = document.getElementsByClassName("outdoors"); 
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";  
-		}
-		outdoors_index++;
-		if (outdoors_index > x.length) {outdoors_index = 1}    
-		x[outdoors_index-1].style.display = "block";  
-		setTimeout(carousel_outdoors, 2000); // Change image every 2 seconds
-		}
+var outdoors_index = 0;
+function carousel_outdoors() {
+	var i;
+	var x = document.getElementsByClassName("outdoors"); 
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+	}
+	outdoors_index++;
+	if (outdoors_index > x.length) {outdoors_index = 1}    
+	x[outdoors_index-1].style.display = "block";  
+	setTimeout(carousel_outdoors, 2000); // Change image every 2 seconds
+	}
+
+function hide_text(c) {
+	var x = document.getElementById(c);
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}
