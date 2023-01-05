@@ -93,10 +93,11 @@ button {
 
 .name {
     display: inline-block;
-    margin-right:390px;
 }
 
 .topnav {
+    position:relative;
+    left:35%;
     display: inline-block;
     margin: auto;
     text-align: center;
@@ -133,6 +134,7 @@ button {
 }
 
 .image_container {
+  position: relative;
   height:310px;
   width:350px;
   margin: auto;
@@ -146,18 +148,7 @@ button {
     border-radius: 10px
 }
 
-.cv_bio {
-    color: #3B3838;
-    font-family: Century Gothic;
-    position:relative;
-    font-size: 17px;
-    font-weight:normal;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 45px;
-}
-
-.cv_section {
+.section {
     color: #3B3838;
     font-family: Century Gothic;
     margin-left: 20%;
@@ -165,18 +156,18 @@ button {
     margin-bottom: 50px;
 }
 
-.cv_entry {
+.entry {
     margin-top: 25px;
     margin-bottom: 20px;
     line-height: 26pt;
 }
 
-.cv_first_section {
+.first_section {
     display: inline-block;
     vertical-align: top;
     color: #3B3838;
     font-family: Century Gothic;
-    margin-top:24px;
+    margin-top:26px;
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 50px;
@@ -185,7 +176,7 @@ button {
 .cv_image {
   display: inline-block;
   margin-top:42px;
-  margin-left: auto;
+  margin-left: 20px;
   margin-right: auto;
   width:12.5%;
   height:auto;
@@ -200,6 +191,73 @@ button {
   display: block;
   margin-top:0px;
   margin-bottom:0px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  background-color:lightgrey;
+  opacity: 0.3;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -70px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;f
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: lightgrey;
+    opacity: 1;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.migration_dots, .algorithm_dots {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 20 2px;
+  margin-top: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.migration_dots:hover, .algorithm_dots:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 .footer {

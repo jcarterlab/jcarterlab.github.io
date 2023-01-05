@@ -6,6 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet", href="styles.css">
+	<script <script type="text/javascript" src="myscript.js"></script>
 </head>
 
 <body>
@@ -23,7 +24,68 @@
 		  </div>
 	</div>
 
+	<div class="main">
+		<div class="page_heading">
+			<h3>Data</h3>
+		</div>
 
+		<br>
+
+		<h4>Projects</h4>
+			<div class="section">
+				<button onclick="hide_text('Distribution Algorithm')", class="dropdown"><h5><b>Distribution Algorithm</b> / Dec 2022 🞃</h5></button>
+				<div id="Distribution Algorithm", style = "display: none"><p class="entry">At <u><a class="intext_link", href="https://tiafi.org/">Team International Assistance for Integration</a></u> I built an algorithm that dynamically calculates which Syrian refugees and other vulnerable individuals in a deprived area of Izmir, Turkey are the most in need of assistance on any day. The documentation (written for staff comprehensibility) can be <u><a class="intext_link", href="https://docs.google.com/document/d/1r7kZ0bJmEV_LBXpTcQ77Jc98HZFo51Vw3ilTk2IXDmY/edit">found here</a></u>.</div>
+			</div>
+			<div class="image_container">
+				<div class="algorithm_slides fade", style="display: none">
+					<img src="assets/tiafi_algorithm.JPG">
+				</div>
+				<div class="algorithm_slides fade", style="display: none">
+					<img src="assets/tiafi_algorithm2.JPG">
+				</div>
+				<div class="algorithm_slides fade", style="display: none">
+					<img src="assets/tiafi_algorithm3.JPG">
+				</div>
+				<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+				<div class = dots, style="text-align:center">
+					<span class="algorithm_dots"></span>
+					<span class="algorithm_dots"></span>
+					<span class="algorithm_dots"></span>
+				</div>
+			</div>
+				<script>
+					showSlides(1, 0)
+				</script>
+			</div>
+
+			<div class="section">
+				<button onclick="hide_text('Database Migration')", class="dropdown"><h5><b>Database Migration</b> / Nov-Dec 2022 🞃</h5></button>
+				<div id="Database Migration", style = "display: none"><p class="entry">At <u><a class="intext_link", href="https://tiafi.org/">Team International Assistance for Integration</a></u> I migrated roughly 50,000 rows of data from an existing SQL database with a non-user friendly UI to a a new app with Retool for the frontend and Google sheets for the backend.</div>
+			</div>
+			<div class="image_container">
+				<div class="migration_slides fade", style="display: none">
+					<img src="assets/tiafi_info_app.JPG">
+				</div>
+				<div class="migration_slides fade", style="display: none">
+					<img src="assets/tiafi_info_app2.JPG">
+				</div>
+				<div class="migration_slides fade", style="display: none">
+					<img src="assets/tiafi_info_app3.JPG">
+				</div>
+					<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+				<div class = "dots", style="text-align:center">
+					<span class="migration_dots"></span>
+					<span class="migration_dots"></span>
+					<span class="migration_dots"></span>
+				</div>
+			</div>
+				<script>
+					showSlides(1, 1)
+				</script>
+			</div>
+	</div>
 
 
 
