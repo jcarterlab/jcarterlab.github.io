@@ -37,9 +37,9 @@ function hide_text(c) {
 
 
 
-let slideIndex = [1,1];
-let slideId = ["algorithm_slides", "migration_slides"];
-let dotId = ["algorithm_dots", "migration_dots"];
+let slideIndex = [1,1,1];
+let slideId = ["algorithm_slides", "migration_slides", "extraction_slides"];
+let dotId = ["algorithm_dots", "migration_dots", "extraction_dots"];
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
