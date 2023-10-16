@@ -236,7 +236,7 @@
         .photography-showcase img {
             display: block;
             margin: auto;
-            width: 40vw;
+            width: 45vw;
         }
         .previous, .next {
             position: absolute;
@@ -255,10 +255,10 @@
             user-select: none;
         }
         .previous {
-            left: 5vw;
+            left: 10vw;
         }
         .next {
-            right: 5vw;
+            right: 10vw;
         }
         .previous:hover, .next:hover {
             background-color: grey;
