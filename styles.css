@@ -45,6 +45,7 @@
         }
         a {
             color: #454545;
+            text-decoration: none;
         }
         ul {
             list-style-type: disc;
