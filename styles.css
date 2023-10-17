@@ -83,14 +83,14 @@
             display: inline;
             color: #454545;
             text-decoration: none;
-            margin-left: 5vw;
+            margin-left: 7.5vw;
         }
         nav li a {
             font-size: 19px;
             text-decoration: none;
         }
         .nav_final {
-            margin-right: 5vw;
+            margin-right: 7.5vw;
         }
 
 
@@ -100,6 +100,40 @@
             margin: 0 auto;
             width: 80%;
             max-width: 1200px;
+        }
+
+
+        /* footer section */ 
+        footer {
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: centre;
+            align-items: center;
+            padding-top: 22.5px;
+            padding-bottom: 22.5px;
+            padding-left: 6vw;
+        }
+        footer h3 {
+            color: #A9122A;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        footer p {
+            font-size: 16px;
+            width: 100%;
+        }
+        .footer-columns {
+            display: flex;
+            justify-content: center;
+        }
+        .footer-column {
+            flex: 1;
+            padding: 0 10px;
+            text-align: left;
+            min-width: 280px;
+            padding-right: 0vw;
         }
 
 
