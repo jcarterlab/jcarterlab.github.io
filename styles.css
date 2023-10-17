@@ -113,7 +113,7 @@
             align-items: center;
             padding-top: 22.5px;
             padding-bottom: 22.5px;
-            padding-left: 6vw;
+            padding-left: 10vw;
         }
         footer h3 {
             color: #A9122A;
@@ -132,7 +132,6 @@
             flex: 1;
             padding: 0 10px;
             text-align: left;
-            min-width: 280px;
             padding-right: 0vw;
         }
 
