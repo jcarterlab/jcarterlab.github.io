@@ -11,14 +11,14 @@
 <body>
 
     <header>
-        <a href="https://jcarterlab.github.io/index.html" style="text-decoration: none;"><h1>Jack Carter</h1></a>
+        <a href="file:///C:/Users/HUAWEI/Desktop/website/index.html" style="text-decoration: none;"><h1>Jack Carter</h1></a>
         <nav>
             <ul>
                 <li><a href="https://jcarterlab.github.io/about.html">About</a></li>
                 <li><a href="https://jcarterlab.github.io/data.html">Data</a></li>
                 <li><a href="https://jcarterlab.github.io/editing.html">Editing</a></li>
-                <li><a href="https://jcarterlab.github.io/photography.html">Photography</a></li>
-                <li class="nav_final"><a href="#">Blog</a></li>
+                <li><a href="https://jcarterlab.github.io/blog.html">Writing</a></li>
+                <li class="nav_final"><a href="https://jcarterlab.github.io/photography.html">Photography</a></li>
             </ul>
         </nav>
     </header>
@@ -29,16 +29,318 @@
 
     <div class="container" id="photography">
 
-        <h2>Turkey</h2>
+        <div class="page-title">
+            <h1>Photography</h1>
+        </div>
 
-        <div class="photography-showcase">
-            <button class="previous" onclick="previousImage()">&#8249;</button>
-                <img id="image" src="Images/Photography/Mardin.JPG">
-            <button class="next" onclick="nextImage()">&#8250;</button>
+        </br>
+        </br>
+
+        <h2>The Middle East</h2>
+
+        <div class="project">
+            <div class="project-1">
+                <h3>April 2023</h3>
+                <h3><b>Morocco</b></h3>
+                <div class="photography-container">
+                    <button class="previous" onclick="previousImage('morocco-img-id')">&#8249;</button>
+
+                        <img class="photography-image" id="morocco-img-id" style="height: 250px;" src="images/Photography/Morocco/Morocco_1.JPG">
+
+                    <button class="next" onclick="nextImage('morocco-img-id')">&#8250;</button>
+                </div>
+            </div>
+            <div class="project-2">
+                <h3>Feb 2023</h3>
+                <h3><b>Egypt</b></h3>
+                <div class="photography-container">
+                    <button class="previous" onclick="previousImage('egypt-img-id')">&#8249;</button>
+
+                        <img class="photography-image" id="egypt-img-id" style="height: 250px;" src="images/Photography/Egypt/Egypt_1.JPG">
+
+                    <button class="next" onclick="nextImage('egypt-img-id')">&#8250;</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="VisibleMiddleEast" class="content-section">
+            <span class="toggleButton" onclick="toggleVisibility('VisibleMiddleEast', 'HiddenMiddleEast')"><u>More Middle East ⮟</u></span>
+        </div>
+
+        <div id="HiddenMiddleEast" class="hidden-section">
+
+            <div class="project">
+                <div class="project-1">
+                    <h3>Jan 2023</h3>
+                    <h3><b>UAE</b></h3>
+                    <div class="photography-container">
+                        <button class="previous" onclick="previousImage('uae-img-id')">&#8249;</button>
+
+                            <img class="photography-image" id="uae-img-id" style="height: 250px;" src="images/Photography/UAE/UAE_1.JPG">
+
+                        <button class="next" onclick="nextImage('uae-img-id')">&#8250;</button>
+                    </div>
+                </div>
+                <div class="project-2">
+                    <h3>Jan 2023</h3>
+                    <h3><b>Israel</b></h3>
+                    <div class="photography-container">
+                        <button class="previous" onclick="previousImage('israel-img-id')">&#8249;</button>
+
+                            <img class="photography-image" id="israel-img-id" style="height: 250px;" src="images/Photography/Israel/Israel_1.JPG">
+
+                        <button class="next" onclick="nextImage('israel-img-id')">&#8250;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-1">
+                    <h3>Jan 2023</h3>
+                    <h3><b>Palestine</b></h3>
+                    <div class="photography-container">
+                        <button class="previous" onclick="previousImage('palestine-img-id')">&#8249;</button>
+
+                            <img class="photography-image" id="palestine-img-id" style="height: 250px;" src="images/Photography/Palestine/Palestine_1.JPG">
+
+                        <button class="next" onclick="nextImage('palestine-img-id')">&#8250;</button>
+                    </div>
+                </div>
+                <div class="project-2">
+                    <h3>Jan 2023</h3>
+                    <h3><b>Jordan</b></h3>
+                    <div class="photography-container">
+                        <button class="previous" onclick="previousImage('jordan-img-id')">&#8249;</button>
+
+                            <img class="photography-image" id="jordan-img-id" style="height: 250px;" src="images/Photography/Jordan/Jordan_1.JPG">
+
+                        <button class="next" onclick="nextImage('jordan-img-id')">&#8250;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-1">
+                <h3>Dec 2022</h3>
+                <h3><b>Turkey</b></h3>
+                    <div class="photography-container">
+                        <button class="previous" onclick="previousImage('turkey-img-id')">&#8249;</button>
+
+                            <img class="photography-image" id="turkey-img-id" style="height: 250px;" src="images/Photography/Turkey/Turkey_1.JPG">
+
+                        <button class="next" onclick="nextImage('turkey-img-id')">&#8250;</button>
+                    </div>
+                </div>
+                <div class="project-2">
+
+                </div>
+
+            </div>
+            <span class="toggleButton" onclick="toggleVisibility('VisibleMiddleEast', 'HiddenMiddleEast')"><u>Less Middle East ⮝</u></span>
+        </div>
+
+        </br>
+        </br>
+        </br>
+        </br>
+
+
+
+
+        <h2>Europe</h2>
+
+        <div class="project">
+            <div class="project-1">
+                <h3>Aug 2022</h3>
+                <h3><b>Slovenia</b></h3>
+                <div class="photography-container">
+                    <button class="previous" onclick="previousImage('slovenia-img-id')">&#8249;</button>
+
+                        <img class="photography-image" id="slovenia-img-id" style="height: 250px;" src="images/Photography/Slovenia/Slovenia_1.JPG">
+
+                    <button class="next" onclick="nextImage('slovenia-img-id')">&#8250;</button>
+                </div>
+            </div>
+            <div class="project-2">
+                <h3>July 2022</h3>
+                <h3><b>Austria</b></h3>
+                <div class="photography-container">
+                    <button class="previous" onclick="previousImage('austria-img-id')">&#8249;</button>
+
+                        <img class="photography-image" id="austria-img-id" style="height: 250px;" src="images/Photography/Austria/Austria_1.JPG">
+
+                    <button class="next" onclick="nextImage('austria-img-id')">&#8250;</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="VisibleEurope" class="content-section">
+            <span class="toggleButton" onclick="toggleVisibility('VisibleEurope', 'HiddenEurope')"><u>More Europe ⮟</u></span>
+        </div>
+
+        <div id="HiddenEurope" class="hidden-section">
+
+            <div class="project">
+                <div class="project-1">
+                    <h3>July 2022</h3>
+                    <h3><b>Czechia</b></h3>
+                    <div class="photography-container">
+                        <button class="previous" onclick="previousImage('czechia-img-id')">&#8249;</button>
+
+                            <img class="photography-image" id="czechia-img-id" style="height: 250px;" src="images/Photography/Czechia/Czechia_1.JPG">
+
+                        <button class="next" onclick="nextImage('czechia-img-id')">&#8250;</button>
+                    </div>
+                </div>
+                <div class="project-2">
+                    <h3>July 2022</h3>
+                    <h3><b>Poland</b></h3>
+                    <div class="photography-container">
+                        <button class="previous" onclick="previousImage('poland-img-id')">&#8249;</button>
+
+                            <img class="photography-image" id="poland-img-id" style="height: 250px;" src="images/Photography/Poland/Poland_1.JPG">
+
+                        <button class="next" onclick="nextImage('poland-img-id')">&#8250;</button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="project">
+                <div class="project-1">
+                <h3>June 2022</h3>
+                <h3><b>Hungary</b></h3>
+                    <div class="photography-container">
+                        <button class="previous" onclick="previousImage('hungary-img-id')">&#8249;</button>
+
+                            <img class="photography-image" id="hungary-img-id" style="height: 250px;" src="images/Photography/Hungary/Hungary_1.JPG">
+
+                        <button class="next" onclick="nextImage('hungary-img-id')">&#8250;</button>
+                    </div>
+                </div>
+                <div class="project-2">
+
+                </div>
+            </div>
+
+            <span class="toggleButton" onclick="toggleVisibility('VisibleEurope', 'HiddenEurope')"><u>Less Europe ⮝</u></span>
+        </div>
+
+        </br>
+        </br>
+        </br>
+        </br>
+
+
+
+        <h2>Asia</h2>
+
+        <div class="project">
+            <div class="project-1">
+                <h3>Aug 2020</h3>
+                <h3><b>Cambodia</b></h3>
+                <div class="photography-container">
+                    <button class="previous" onclick="previousImage('cambodia-img-id')">&#8249;</button>
+
+                        <img class="photography-image" id="cambodia-img-id" style="height: 250px;" src="images/Photography/Cambodia/Cambodia_1.JPG">
+
+                    <button class="next" onclick="nextImage('cambodia-img-id')">&#8250;</button>
+                </div>
+            </div>
+            <div class="project-2">
+                <h3>March 2020</h3>
+                <h3><b>Vietnam</b></h3>
+                <div class="photography-container">
+                    <button class="previous" onclick="previousImage('vietnam-img-id')">&#8249;</button>
+
+                        <img class="photography-image" id="vietnam-img-id" style="height: 250px;" src="images/Photography/Vietnam/Vietnam_1.JPG">
+
+                    <button class="next" onclick="nextImage('vietnam-img-id')">&#8250;</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="VisibleAsia" class="content-section">
+            <span class="toggleButton" onclick="toggleVisibility('VisibleAsia', 'HiddenAsia')"><u>More Asia ⮟</u></span>
+        </div>
+
+        <div id="HiddenAsia" class="hidden-section">
+
+            <div class="project">
+                <div class="project-1">
+                    <h3>Feb 2020</h3>
+                    <h3><b>Philippines</b></h3>
+                    <div class="photography-container">
+                        <button class="previous" onclick="previousImage('philippines-img-id')">&#8249;</button>
+
+                            <img class="photography-image" id="philippines-img-id" style="height: 250px;" src="images/Photography/Philippines/Philippines_1.JPG">
+
+                        <button class="next" onclick="nextImage('philippines-img-id')">&#8250;</button>
+                    </div>
+                </div>
+                <div class="project-2">
+                    <h3>Feb 2020</h3>
+                    <h3><b>Singapore</b></h3>
+                    <div class="photography-container">
+                        <button class="previous" onclick="previousImage('singapore-img-id')">&#8249;</button>
+
+                            <img class="photography-image" id="singapore-img-id" style="height: 250px;" src="images/Photography/Singapore/Singapore_1.JPG">
+
+                        <button class="next" onclick="nextImage('singapore-img-id')">&#8250;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-1">
+                    <h3>Jan 2020</h3>
+                    <h3><b>Malaysia</b></h3>
+                    <div class="photography-container">
+                        <button class="previous" onclick="previousImage('malaysia-img-id')">&#8249;</button>
+
+                            <img class="photography-image" id="malaysia-img-id" style="height: 250px;" src="images/Photography/Malaysia/Malaysia_1.JPG">
+
+                        <button class="next" onclick="nextImage('malaysia-img-id')">&#8250;</button>
+                    </div>
+                </div>
+                <div class="project-2">
+                    <h3>Jan 2020</h3>
+                    <h3><b>Thailand</b></h3>
+                    <div class="photography-container">
+                        <button class="previous" onclick="previousImage('thailand-img-id')">&#8249;</button>
+
+                            <img class="photography-image" id="thailand-img-id" style="height: 250px;" src="images/Photography/Thailand/Thailand_1.JPG">
+
+                        <button class="next" onclick="nextImage('thailand-img-id')">&#8250;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-1">
+                    <h3>Jan 2020</h3>
+                    <h3><b>China</b></h3>
+                    <div class="photography-container">
+                        <button class="previous" onclick="previousImage('china-img-id')">&#8249;</button>
+
+                            <img class="photography-image" id="china-img-id" style="height: 250px;" src="images/Photography/China/China_1.JPG">
+
+                        <button class="next" onclick="nextImage('china-img-id')">&#8250;</button>
+                    </div>
+                </div>
+                <div class="project-2">
+
+                </div>
+            </div>
+
+            <span class="toggleButton" onclick="toggleVisibility('VisibleAsia', 'HiddenAsia')"><u>Less Asia ⮝</u></span>
         </div>
 
     </div>
-    
+
+    </br>
+    </br>
+    </br>
+    </br>
     <hr>
 
     <footer>
@@ -50,17 +352,8 @@
             </div>
             <div class="footer-column">
                 <h3>Address</h3>
-                <p>21 Longridge Rd</p>
-                <p>London, SW5 9SB</p>
-            </div>
-            <div class="footer-column">
-                <h3>Code</h3>
-                <a href="https://github.com/jcarterlab">
-                    <p>Github</p>
-                </a>
-                <a href="https://www.kaggle.com/jackpaulcarter/competitions">
-                    <p>Kaggle</p>
-                </a>
+                <p>21 Longridge Rd, London</p>
+                <p>SW5 9SB</p>
             </div>
             <div class="footer-column">
                 <h3>Social Media</h3>
@@ -69,6 +362,15 @@
                 </a>
                 <a href="https://www.instagram.com/jackthenomad94/">
                     <p>Instagram</p>
+                </a>
+            </div>
+            <div class="footer-column">
+                <h3>Code</h3>
+                <a href="https://github.com/jcarterlab">
+                    <p>Github</p>
+                </a>
+                <a href="https://www.kaggle.com/jackpaulcarter/competitions">
+                    <p>Kaggle</p>
                 </a>
             </div>
         </div>
