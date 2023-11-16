@@ -19,10 +19,10 @@
     /* next/previous buttons for photography */
     /* middle east vars */
     var Morocco = [  
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Morocco/Morocco_1.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Morocco/Morocco_2.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Morocco/Morocco_3.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Morocco/Morocco_4.JPG"
+    "Images/Photography/Morocco/Morocco_1.JPG",
+    "Images/Photography/Morocco/Morocco_2.JPG",
+    "Images/Photography/Morocco/Morocco_3.JPG",
+    "Images/Photography/Morocco/Morocco_4.JPG"
     ];
     var MoroccoImageIndex = 0;
 
@@ -30,8 +30,7 @@
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Egypt/Egypt_1.JPG",
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Egypt/Egypt_2.JPG",
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Egypt/Egypt_3.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Egypt/Egypt_4.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Egypt/Egypt_5.JPG"
+    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Egypt/Egypt_4.JPG"
     ];
     var EgyptImageIndex = 0;
 
@@ -46,8 +45,7 @@
     var Israel = [  
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Israel/Israel_1.JPG",
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Israel/Israel_2.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Israel/Israel_3.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Israel/Israel_4.JPG"
+    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Israel/Israel_3.JPG"
 
     ];
     var IsraelImageIndex = 0;
@@ -64,19 +62,16 @@
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Jordan/Jordan_1.JPG",
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Jordan/Jordan_2.JPG",
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Jordan/Jordan_3.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Jordan/Jordan_4.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Jordan/Jordan_5.JPG"
+    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Jordan/Jordan_4.JPG"
 
     ];
     var JordanImageIndex = 0;
 
 
     var Turkey = [ 
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Turkey/Turkey_1.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Turkey/Turkey_2.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Turkey/Turkey_3.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Turkey/Turkey_4.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Turkey/Turkey_5.JPG"
+    "Images/Photography/Turkey/Turkey_1.JPG",
+    "Images/Photography/Turkey/Turkey_2.JPG",
+    "Images/Photography/Turkey/Turkey_3.JPG"
     ];
     var TurkeyImageIndex = 0;
 
@@ -94,9 +89,7 @@
     var Austria = [ 
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Austria/Austria_1.JPG",
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Austria/Austria_2.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Austria/Austria_3.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Austria/Austria_4.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Austria/Austria_5.JPG"
+    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Austria/Austria_3.JPG"
     ];
     var AustriaImageIndex = 0;
 
@@ -112,9 +105,7 @@
     var Poland = [ 
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Poland/Poland_1.JPG",
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Poland/Poland_2.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Poland/Poland_3.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Poland/Poland_4.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Poland/Poland_5.JPG"
+    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Poland/Poland_3.JPG"
     ];
     var PolandImageIndex = 0;
 
@@ -122,9 +113,7 @@
     var Hungary = [ 
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Hungary/Hungary_1.JPG",
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Hungary/Hungary_2.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Hungary/Hungary_3.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Hungary/Hungary_4.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Hungary/Hungary_5.JPG"
+    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Hungary/Hungary_3.JPG"
     ];
     var HungaryImageIndex = 0;
 
@@ -136,9 +125,7 @@
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Cambodia/Cambodia_2.JPG",
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Cambodia/Cambodia_3.JPG",
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Cambodia/Cambodia_4.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Cambodia/Cambodia_5.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Cambodia/Cambodia_6.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Cambodia/Cambodia_7.JPG"
+    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Cambodia/Cambodia_5.JPG"
     ];
     var CambodiaImageIndex = 0;
 
@@ -155,8 +142,7 @@
 
     var Philippines = [ 
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Philippines/Philippines_1.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Philippines/Philippines_2.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Philippines/Philippines_3.JPG"
+    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Philippines/Philippines_2.JPG"
     ];
     var PhilippinesImageIndex = 0;
 
@@ -165,8 +151,7 @@
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Singapore/Singapore_1.JPG",
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Singapore/Singapore_2.JPG",
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Singapore/Singapore_3.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Singapore/Singapore_4.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Singapore/Singapore_5.JPG"
+    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Singapore/Singapore_4.JPG"
     ];
     var SingaporeImageIndex = 0;
 
@@ -182,8 +167,7 @@
     var Thailand = [ 
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Thailand/Thailand_1.JPG",
     "C:/Users/HUAWEI/Desktop/website/Images/Photography/Thailand/Thailand_2.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Thailand/Thailand_3.JPG",
-    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Thailand/Thailand_4.JPG"
+    "C:/Users/HUAWEI/Desktop/website/Images/Photography/Thailand/Thailand_3.JPG"
     ];
     var ThailandImageIndex = 0;
 
