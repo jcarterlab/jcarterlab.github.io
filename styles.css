@@ -1,7 +1,9 @@
-﻿       /* body */ 
+﻿
+       /* body */ 
        body {
             font-family: century gothic;
             color: #454545;
+            max-width: 100%;
         }
 
 
@@ -67,12 +69,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-top: 15px;
-            padding-bottom: 15px;
+            padding-top: 2vw;
+            padding-bottom: 2vw;
         }
         nav {
             background-color: white;
-            padding;right:30px;
+            padding-right:5vw;
         }
         nav ul {
             display: inline;
@@ -99,10 +101,10 @@
 
         /* container for everything in the webpage past the navigation bar */
         .container {
-            padding: 15px;
+            padding: 1.15vw;
             margin: 0 auto;
             width: 80%;
-            max-width: 1200px;
+            max-width: 100%;
         }
 
 
@@ -124,15 +126,15 @@
         }
         .project-1 {
             flex-shrink: 0;
-            margin-top: 20px;
-            margin-bottom: 60px;
+            margin-top: 2.5vw;
+            margin-bottom: 2.5vw;
             margin-right: 5%;
             width: 47.5%;
         }
         .project-2 {
             flex-shrink: 0;
-            margin-top: 20px;
-            margin-bottom: 60px;
+            margin-top: 2.5wv;
+            margin-bottom: 2.5wv;
             margin-left: 0%;
             width: 47.5%;
         }
@@ -143,9 +145,9 @@
             font-size: 14.5px;
         } 
         .project img {
-            margin-top: 15px;
+            margin-top: 5vw;
             margin-bottom: 0px;
-            height: 200px;
+            height: 17.5vw;
             width: auto;
             display: block;
             margin: 0 auto;
@@ -161,11 +163,11 @@
         }
         .text-inline {
             flex: 1;
-            margin-right: 35px;
+            margin-right: 5vw;
         }
         .image-inline {
             border: none;
-            width: 425px;
+            width: 32.5vw;
             max-height: 100%;
             flex-shrink: 0;
             max-width: 100%;
@@ -189,13 +191,14 @@
 
         /* about project sections */ 
         .about-project {
-            margin-top: 30px;
-            margin-bottom: 60px;
+            margin-top: 2.5vw;
+            margin-bottom: 2.5vw;
+            margin-right: 5%;
         }
         .about-project img {
-            margin-top: 10px;
-            margin-bottom: 0px;
-            width: 375px;
+            margin-top: 2.5vw;
+            margin-bottom: 2.5vw;
+            width: 32.5vw;
             height: auto;
             display: block;
             margin: 0 auto;
@@ -210,8 +213,8 @@
 
         /* quote sections from clients */
         .quote {
-            margin-top: 25px;
-            margin-bottom: 50px;
+            margin-top: 2.5vw;
+            margin-bottom: 4vw;
         }
         .quote-type {
             margin-bottom: 0px;
@@ -222,10 +225,8 @@
         .quote h4 {
             text-align: left;
             color: #454545;
-            margin-top: 2.5px;
-            padding-top: 2.5px;
-            margin-bottom: 5px;
-            padding-bottom: 5px;
+            margin-top: 1.5vw;
+            margin-bottom: 1.5vw;
             font-size: 18px;
             font-weight: normal;
         }
@@ -234,10 +235,10 @@
         }
         .quote-text {
             font-size: 18px;
-            margin-top: 25px;
-            margin-bottom: 10px;
+            margin-top: 1.5vw;
+            margin-bottom: 1.5vw;
             font-style: italic;
-            margin-left:40px;
+            margin-left: 3vw;
             line-height: 1.8;
         }
 
@@ -245,8 +246,9 @@
         /* photography section */ 
         .photography-container {
             position: relative;
-            width: 300px;
             height: auto;
+            margin-top: 1.5vw;
+            margin-bottom: 1.5vw;
         }
         .photography-image {
             width: 100%;
@@ -258,16 +260,16 @@
             transform: translateY(-50%);
             background-color: grey;
             color: white;
-            padding: 10px 10px;
+            padding: 1.5vw; 1.5vw;
             border: none;
             cursor: pointer;
             opacity: 0.4;
           }
           .previous {
-            right: 100%;
+            right: 82%;
           }
           .next {
-            left: 125%;
+            left: 82%;
           }
         .previous:hover, .next:hover {
             background-color: grey;
@@ -283,8 +285,8 @@
             display: flex;
             justify-content: centre;
             align-items: center;
-            padding-top: 22.5px;
-            padding-bottom: 22.5px;
+            padding-top: 2vw;
+            padding-bottom: 2vw;
             padding-left: 8vw;
         }
         footer h3 {
@@ -299,7 +301,6 @@
         .footer-columns {
             display: flex;
             justify-content: center;
-            flex-wrap: nowrap;
         }
         .footer-column {
             flex: 1;
@@ -307,4 +308,5 @@
             text-align: left;
             min-width: 280px;
             padding-right: 0vw;
+            flex-wrap: nowrap;
         }
