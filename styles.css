@@ -289,24 +289,22 @@
             padding-bottom: 2vw;
             padding-left: 8vw;
         }
-        footer h3 {
+       footer h3 {
             color: #A9122A;
             font-size: 18px;
             font-weight: bold;
         }
         footer p {
-            font-size: 6px;
+            font-size: 16px;
             width: 100%;
         }
         .footer-columns {
             display: flex;
-            justify-content: center;
-        }
-        .footer-column {
-            flex: 0;
             justify-content: space-between;
             align-items: center;
-            padding: 0 1.25vw;
+        }
+        .footer-column {
+            margin: 0 1.25vw;
             text-align: left;
             min-width: 280px;
             padding-right: 0vw;
