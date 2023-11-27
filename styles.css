@@ -13,6 +13,7 @@
             margin: 0px;
             padding: 0px;
             margin-left: 5vw;
+            white-space: nowrap;
         }
         h2 {
             color: #A9122A;
@@ -78,6 +79,8 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-wrap: nowrap;
         }
         nav li {
             display: inline;
@@ -113,44 +116,11 @@
         }
 
 
-        /* footer section */ 
-        footer {
-            text-align: center;
-            bottom: 0;
-            width: 100%;
-            display: flex;
-            justify-content: centre;
-            align-items: center;
-            padding-top: 22.5px;
-            padding-bottom: 22.5px;
-            padding-left: 8vw;
-        }
-        footer h3 {
-            color: #A9122A;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        footer p {
-            font-size: 16px;
-            width: 100%;
-        }
-        .footer-columns {
-            display: flex;
-            justify-content: center;
-        }
-        .footer-column {
-            flex: 1;
-            padding: 0 10px;
-            text-align: left;
-            min-width: 280px;
-            padding-right: 0vw;
-        }
-
 
         /* portfolio projects */
         .project {
-            display: flex;
             align-items: center;
+            display: flex;
         }
         .project-1 {
             flex-shrink: 0;
@@ -302,4 +272,39 @@
         .previous:hover, .next:hover {
             background-color: grey;
             opacity: 1;
+        }
+
+
+        /* footer section */ 
+        footer {
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: centre;
+            align-items: center;
+            padding-top: 22.5px;
+            padding-bottom: 22.5px;
+            padding-left: 8vw;
+        }
+        footer h3 {
+            color: #A9122A;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        footer p {
+            font-size: 16px;
+            width: 100%;
+        }
+        .footer-columns {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+        .footer-column {
+            flex: 1;
+            padding: 0 1.25vw;
+            text-align: left;
+            min-width: 280px;
+            padding-right: 0vw;
         }
