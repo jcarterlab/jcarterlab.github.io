@@ -78,11 +78,11 @@
         }
         nav ul {
             display: inline;
-            display: flex;
-            flex-wrap: nowrap;
             list-style-type: none;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-wrap: nowrap;
         }
         nav li {
             display: inline;
@@ -279,11 +279,15 @@
 
         /* footer section */ 
         footer {
+            text-align: center;
+            bottom: 0;
+            width: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content: centre;
             align-items: center;
             padding-top: 2vw;
             padding-bottom: 2vw;
+            padding-left: 8vw;
         }
         footer h3 {
             color: #A9122A;
@@ -291,18 +295,20 @@
             font-weight: bold;
         }
         footer p {
-            font-size: 16px;
+            font-size: 6px;
             width: 100%;
         }
         .footer-columns {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: center;
         }
         .footer-column {
+            flex: 0;
+            justify-content: space-between;
+            align-items: center;
             padding: 0 1.25vw;
             text-align: left;
+            min-width: 280px;
             padding-right: 0vw;
-            display: flex;
             flex-wrap: nowrap;
         }
