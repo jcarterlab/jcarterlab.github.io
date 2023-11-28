@@ -29,7 +29,7 @@
         h1 {
             display: inline-block;
             color: #A9122A;
-            font-size: 3vw;
+            font-size: 2.5vw;
             margin: 0.25vw;
             margin-left: 5vw;
             white-space: nowrap;
@@ -40,7 +40,7 @@
             padding-top: 2.5px;
             margin-bottom: 2.5px;
             padding-bottom: 2.5px;
-            font-size: 2.25vw;
+            font-size: 2vw;
         }
         h3 {
             color: #454545;
@@ -74,7 +74,6 @@
             list-style-type: disc;
             font-size: 1.5vw;
             line-height: 1.35;
-            margin-left: 20px;
         }
         li {
             margin-bottom: 1.45vw;
@@ -133,7 +132,7 @@
             text-align: center;
         }
         .page-title h1 {
-            font-size: 3vw;
+            font-size: 2.5vw;
             margin-left: 0vw;
         }
 
@@ -160,10 +159,11 @@
             width: 47.5%;
         }
         .project h3 {
-            font-size: 16px;
+            font-size: 1.35vw;
         } 
         .project p {
-            font-size: 14.5px;
+            font-size: 1.25vw;
+            white-space: normal;
         } 
         .project img {
             margin-top: 5vw;
@@ -188,13 +188,14 @@
         .text-inline {
             margin-right: 5vw;
         }
-        .image-inline-container {
-            border: none;
-            width: 32.5vw;
-            height: auto;
-        }
         .image-inline-container img {
-            min-width: 32.5vw;
+            border: none;
+            margin-top: 5vw;
+            margin-bottom: 0px;
+            height: 17.5vw;
+            width: auto;
+            display: block;
+            margin: 0 auto;
         }
 
 
@@ -227,7 +228,6 @@
         .quote-type {
             margin-bottom: 0px;
             padding-bottom: 0px;
-            font-size: 17px;
             font-style: normal;
         }
         .quote h4 {
@@ -235,14 +235,14 @@
             color: #454545;
             margin-top: 1.5vw;
             margin-bottom: 1.5vw;
-            font-size: 18px;
+            font-size: 1.35vw;
             font-weight: normal;
         }
         .quote h4 span {
             font-weight: bold;
         }
         .quote-text {
-            font-size: 18px;
+            font-size: 1.25vw;
             margin-top: 1.5vw;
             margin-bottom: 1.5vw;
             font-style: italic;
@@ -301,11 +301,11 @@
             text-decoration: none;
             margin: 0.25vw;
             margin-left: 6vw;
-            font-size: 1.7vw;
+            font-size: 1.35vw;
         }
         footer li a {
             text-decoration: none;
-            font-size: 1.6vw;
+            font-size: 1.35vw;
             margin: 0.25vw;
         }
         .nav_final {
