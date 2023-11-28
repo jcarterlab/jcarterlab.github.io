@@ -14,7 +14,7 @@
         time, mark, audio, video {
             font-size: 100%;
             vertical-align: baseline;
-}
+        }
 
        /* body */ 
        body {
@@ -29,7 +29,7 @@
         h1 {
             display: inline-block;
             color: #A9122A;
-            font-size: 35px;
+            font-size: 3vw;
             margin: 0.25vw;
             margin-left: 5vw;
             white-space: nowrap;
@@ -40,7 +40,7 @@
             padding-top: 2.5px;
             margin-bottom: 2.5px;
             padding-bottom: 2.5px;
-            font-size: 28px;
+            font-size: 2.25vw;
         }
         h3 {
             color: #454545;
@@ -48,7 +48,7 @@
             padding-top: 2.5px;
             margin-bottom: 5px;
             padding-bottom: 5px;
-            font-size: 19px;
+            font-size: 1.65vw;
             font-weight: normal;
         }
         img {
@@ -60,21 +60,24 @@
         }
         p {
             margin-top: 10px;
-            font-size: 17px;
+            font-size: 1.45vw;
             line-height: 1.8;
         }
         a {
             color: #454545;
             text-decoration: none;
         }
+        u {
+            font-size: 1.5vw;
+        }
         ul {
             list-style-type: disc;
-            font-size: 17px;
+            font-size: 1.5vw;
             line-height: 1.35;
             margin-left: 20px;
         }
         li {
-            margin-bottom: 10px;
+            margin-bottom: 1.45vw;
         }
         hr {
             color: black;
@@ -88,6 +91,7 @@
             align-items: center;
             padding-top: 2vw;
             padding-bottom: 2vw;
+            overflow: hidden;
         }
         nav {
             background-color: white;
@@ -104,10 +108,10 @@
             color: #454545;
             text-decoration: none;
             margin: 0.25vw;
-            margin-left: 7.5vw;
+            margin-left: 7vw;
         }
         nav li a {
-            font-size: 19px;
+            font-size: 1.75vw;
             text-decoration: none;
         }
         .nav_final {
@@ -129,7 +133,7 @@
             text-align: center;
         }
         .page-title h1 {
-            font-size: 30px;
+            font-size: 3vw;
             margin-left: 0vw;
         }
 
@@ -169,6 +173,10 @@
             display: block;
             margin: 0 auto;
         }
+        .about-project {
+            margin-top: 2.5vw;
+            margin-bottom: 2.5vw;
+        }
 
 
         /* containers for about section text/image combinations that appear side by side */
@@ -184,6 +192,9 @@
             border: none;
             width: 32.5vw;
             height: auto;
+        }
+        .image-inline-container img {
+            min-width: 32.5vw;
         }
 
 
@@ -274,6 +285,7 @@
             padding-top: 2vw;
             padding-bottom: 2vw;
             white-space: nowrap;
+            overflow: hidden;
         }
         footer ul {
             justify-content: space-between;
@@ -288,12 +300,12 @@
             color: #454545;
             text-decoration: none;
             margin: 0.25vw;
-            margin-left: 7.5vw;
-            font-size: 16px;
+            margin-left: 6vw;
+            font-size: 1.7vw;
         }
         footer li a {
             text-decoration: none;
-            font-size: 18px;
+            font-size: 1.6vw;
             margin: 0.25vw;
         }
         .nav_final {
