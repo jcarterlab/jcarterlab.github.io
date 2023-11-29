@@ -40,7 +40,7 @@
             padding-top: 2.5px;
             margin-bottom: 2.5px;
             padding-bottom: 2.5px;
-            font-size: 1.75vw;
+            font-size: 1.6vw;
         }
         h3 {
             color: #454545;
@@ -88,8 +88,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-top: 1.5vw;
-            padding-bottom: 1.5vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
             overflow: hidden;
         }
         nav {
@@ -110,7 +110,7 @@
             margin-left: 7vw;
         }
         nav li a {
-            font-size: 1.625vw;
+            font-size: 1.4vw;
             text-decoration: none;
         }
         .nav_final {
@@ -119,11 +119,40 @@
 
 
         /* container for everything in the webpage past the navigation bar */
-        .container {
-            padding: 1.15vw;
-            margin: 0 auto;
-            width: 80%;
-            max-width: 100%;
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 1.15vw;
+                margin: 0 auto;
+                width: 95%;
+                max-width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 1366px) {
+            .container {
+                padding: 1.15vw;
+                margin: 0 auto;
+                width: 75%;
+                max-width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 1366px) and (max-width: 1920px) {
+            .container {
+                padding: 1.15vw;
+                margin: 0 auto;
+                width: 70%;
+                max-width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 1920px) {
+            .container {
+                padding: 1.15vw;
+                margin: 0 auto;
+                width: 60%;
+                max-width: 100%;
+            }
         }
 
 
@@ -132,7 +161,7 @@
             text-align: center;
         }
         .page-title h1 {
-            font-size: 2vw;
+            font-size: 1.75vw;
             margin-left: 0vw;
         }
 
@@ -159,10 +188,10 @@
             width: 47.5%;
         }
         .project h3 {
-            font-size: 1.3vw;
+            font-size: 1.2vw;
         } 
         .project p {
-            font-size: 1.25vw;
+            font-size: 1.15vw;
             white-space: normal;
         } 
         .project img {
@@ -178,19 +207,19 @@
             margin-bottom: 2.5vw;
         }
         .about-project h3 {
-            font-size: 1.3vw;
+            font-size: 1.2vw;
         }
         .about-project ul {
             margin-left: 3vw; 
         }
         .about-project li {
-            font-size: 1.3vw;
+            font-size: 1.2vw;
         }
         .about-project u {
-            font-size: 1.3vw;
+            font-size: 1.2vw;
         }
         .about-project p {
-            font-size: 1.25vw;
+            font-size: 1.15vw;
         }
 
 
@@ -204,7 +233,7 @@
             margin-right: 6.5vw;
         }
         .text-inline p {
-            font-size: 1.35vw;
+            font-size: 1.3vw;
         }
         .image-inline-container img {
             border: none;
@@ -244,7 +273,7 @@
             margin-bottom: 4vw;
         }
         .quote p {
-            font-size: 1.3vw;
+            font-size: 1.2vw;
         }
         .quote-type {
             margin-bottom: 0px;
@@ -256,7 +285,7 @@
             color: #454545;
             margin-top: 1.5vw;
             margin-bottom: 1.5vw;
-            font-size: 1.3vw;
+            font-size: 1.2vw;
             font-weight: normal;
         }
         .quote h4 span {
@@ -271,7 +300,7 @@
             line-height: 1.8;
         }
         .quote-text p {
-            font-size: 1.25vw;
+            font-size: 1.15vw;
         }
 
 
@@ -292,10 +321,10 @@
             opacity: 0.4;
           }
           .previous {
-            right: 28.25vw;
+            right: 26.5vw;
           }
           .next {
-            left: 28.25vw;
+            left: 26.5vw;
           }
         .previous:hover, .next:hover {
             background-color: grey;
@@ -306,8 +335,8 @@
         footer {
             width: 80%;
             margin: 0 auto;
-            padding-top: 2vw;
-            padding-bottom: 2vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
             white-space: nowrap;
             overflow: hidden;
         }
