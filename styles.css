@@ -16,6 +16,284 @@
             vertical-align: baseline;
         }
 
+
+        /* different size options for different screen sizes */
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+            h1 {
+                font-size: 3vw;
+            }
+            h2 {
+                font-size: 2vw;
+            }
+            h3 {
+                font-size: 1.75vw;
+            }
+            p {
+                font-size: 1.6vw;
+            }
+            u {
+                font-size: 1.6vw;
+            }
+            ul {
+                font-size: 1.6vw;
+            }
+            nav li a {
+                font-size: 1.6vw;
+            }
+            .page-title h1 {
+                font-size: 3vw;
+            }
+            .project h3 {
+                font-size: 1.5vw;
+            }
+            .project p {
+                font-size: 1.35vw;
+            }
+            .about-project h3 {
+            font-size: 1.5vw;
+            }
+            .about-project li {
+                font-size: 1.4vw;
+            }
+            .about-project u {
+                font-size: 1.4vw;
+            }
+            .about-project p {
+                font-size: 1.35vw;
+            }
+            .text-inline p {
+                font-size: 1.6vw;
+            }
+            .quote p {
+                font-size: 1.5vw;
+            }
+            .quote h4 {
+                font-size: 1.5vw;
+            }
+            .quote-text {
+                font-size: 1.4vw;
+            }
+            .quote-text p {
+                font-size: 1.4vw;
+            }
+            footer li {
+                font-size: 1.4vw;
+            }
+            footer li a {
+                font-size: 1.4vw;
+            }
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 1366px) {
+            .container {
+                width: 75%;
+            }
+            h1 {
+                font-size: 2.5vw;
+            }
+            h2 {
+                font-size: 1.6vw;
+            }
+            h3 {
+                font-size: 1.25vw;
+            }
+            p {
+                font-size: 1.45vw;
+            }
+            u {
+                font-size: 1.25vw;
+            }
+            ul {
+                font-size: 1.5vw;
+            }
+            nav li a {
+                font-size: 1.4vw;
+            }
+            .page-title h1 {
+                font-size: 2vw;
+            }
+            .project h3 {
+                font-size: 1.2vw;
+            }
+            .project p {
+                font-size: 1.15vw;
+            }
+            .about-project h3 {
+            font-size: 1.2vw;
+            }
+            .about-project li {
+                font-size: 1.2vw;
+            }
+            .about-project u {
+                font-size: 1.2vw;
+            }
+            .about-project p {
+                font-size: 1.15vw;
+            }
+            .text-inline p {
+                font-size: 1.3vw;
+            }
+            .quote p {
+                font-size: 1.2vw;
+            }
+            .quote h4 {
+                font-size: 1.2vw;
+            }
+            .quote-text {
+                font-size: 1.25vw;
+            }
+            .quote-text p {
+                font-size: 1.15vw;
+            }
+            footer li {
+                font-size: 1.25vw;
+            }
+            footer li a {
+                font-size: 1.25vw;
+            }
+        }
+
+        @media screen and (min-width: 1366px) and (max-width: 1920px) {
+            .container {
+                width: 75%;
+            }
+            h1 {
+                font-size: 2vw;
+            }
+            h2 {
+                font-size: 1.5vw;
+            }
+            h3 {
+                font-size: 1.25vw;
+            }
+            p {
+                font-size: 1.45vw;
+            }
+            u {
+                font-size: 1.25vw;
+            }
+            ul {
+                font-size: 1.5vw;
+            }
+            nav li a {
+                font-size: 1.4vw;
+            }
+            .page-title h1 {
+                font-size: 1.75vw;
+            }
+            .project h3 {
+                font-size: 1.2vw;
+            }
+            .project p {
+                font-size: 1.15vw;
+            }
+            .about-project h3 {
+            font-size: 1.2vw;
+            }
+            .about-project li {
+                font-size: 1.2vw;
+            }
+            .about-project u {
+                font-size: 1.2vw;
+            }
+            .about-project p {
+                font-size: 1.15vw;
+            }
+            .text-inline p {
+                font-size: 1.3vw;
+            }
+            .quote p {
+                font-size: 1.2vw;
+            }
+            .quote h4 {
+                font-size: 1.2vw;
+            }
+            .quote-text {
+                font-size: 1.25vw;
+            }
+            .quote-text p {
+                font-size: 1.15vw;
+            }
+            footer li {
+                font-size: 1.25vw;
+            }
+            footer li a {
+                font-size: 1.25vw;
+            }
+        }
+        @media screen and (min-width: 1920px) {
+            .container {
+                width: 75%;
+            }
+            h1 {
+                font-size: 1.5vw;
+            }
+            h2 {
+                font-size: 1.4vw;
+            }
+            h3 {
+                font-size: 1.25vw;
+            }
+            p {
+                font-size: 1.45vw;
+            }
+            u {
+                font-size: 1.25vw;
+            }
+            ul {
+                font-size: 1.4vw;
+            }
+            nav li a {
+                font-size: 1.4vw;
+            }
+            .page-title h1 {
+                font-size: 1.4vw;
+            }
+            .project h3 {
+                font-size: 1.2vw;
+            }
+            .project p {
+                font-size: 1.15vw;
+            }
+            .about-project h3 {
+            font-size: 1.2vw;
+            }
+            .about-project li {
+                font-size: 1.2vw;
+            }
+            .about-project u {
+                font-size: 1.2vw;
+            }
+            .about-project p {
+                font-size: 1.15vw;
+            }
+            .text-inline p {
+                font-size: 1.3vw;
+            }
+            .quote p {
+                font-size: 1.2vw;
+            }
+            .quote h4 {
+                font-size: 1.2vw;
+            }
+            .quote-text {
+                font-size: 1.25vw;
+            }
+            .quote-text p {
+                font-size: 1.15vw;
+            }
+            footer li {
+                font-size: 1.25vw;
+            }
+            footer li a {
+                font-size: 1.25vw;
+            }
+        }
+
+
        /* body */ 
        body {
            font-family: Gotham;
@@ -29,7 +307,6 @@
         h1 {
             display: inline-block;
             color: #A9122A;
-            font-size: 2vw;
             margin: 0.25vw;
             margin-left: 5vw;
             white-space: nowrap;
@@ -40,7 +317,6 @@
             padding-top: 2.5px;
             margin-bottom: 2.5px;
             padding-bottom: 2.5px;
-            font-size: 1.6vw;
         }
         h3 {
             color: #454545;
@@ -48,7 +324,6 @@
             padding-top: 2.5px;
             margin-bottom: 5px;
             padding-bottom: 5px;
-            font-size: 1.25vw;
             font-weight: normal;
         }
         img {
@@ -60,19 +335,14 @@
         }
         p {
             margin-top: 10px;
-            font-size: 1.45vw;
             line-height: 1.8;
         }
         a {
             color: #454545;
             text-decoration: none;
         }
-        u {
-            font-size: 1.25vw;
-        }
         ul {
             list-style-type: disc;
-            font-size: 1.5vw;
             line-height: 1.35;
         }
         li {
@@ -110,7 +380,6 @@
             margin-left: 7vw;
         }
         nav li a {
-            font-size: 1.4vw;
             text-decoration: none;
         }
         .nav_final {
@@ -118,41 +387,11 @@
         }
 
 
-        /* container for everything in the webpage past the navigation bar */
-        @media screen and (max-width: 600px) {
-            .container {
-                padding: 1.15vw;
-                margin: 0 auto;
-                width: 95%;
-                max-width: 100%;
-            }
-        }
-
-        @media screen and (min-width: 601px) and (max-width: 1366px) {
-            .container {
-                padding: 1.15vw;
-                margin: 0 auto;
-                width: 75%;
-                max-width: 100%;
-            }
-        }
-
-        @media screen and (min-width: 1366px) and (max-width: 1920px) {
-            .container {
-                padding: 1.15vw;
-                margin: 0 auto;
-                width: 70%;
-                max-width: 100%;
-            }
-        }
-
-        @media screen and (min-width: 1920px) {
-            .container {
-                padding: 1.15vw;
-                margin: 0 auto;
-                width: 60%;
-                max-width: 100%;
-            }
+        /* a container for the main content of each webpage */
+        .container {
+            padding: 1.15vw;
+            margin: 0 auto;
+            max-width: 100%;
         }
 
 
@@ -161,7 +400,6 @@
             text-align: center;
         }
         .page-title h1 {
-            font-size: 1.75vw;
             margin-left: 0vw;
         }
 
@@ -187,11 +425,7 @@
             margin-left: 0%;
             width: 47.5%;
         }
-        .project h3 {
-            font-size: 1.2vw;
-        } 
         .project p {
-            font-size: 1.15vw;
             white-space: normal;
         } 
         .project img {
@@ -206,20 +440,8 @@
             margin-top: 2.5vw;
             margin-bottom: 2.5vw;
         }
-        .about-project h3 {
-            font-size: 1.2vw;
-        }
         .about-project ul {
             margin-left: 3vw; 
-        }
-        .about-project li {
-            font-size: 1.2vw;
-        }
-        .about-project u {
-            font-size: 1.2vw;
-        }
-        .about-project p {
-            font-size: 1.15vw;
         }
 
 
@@ -231,9 +453,6 @@
         }
         .text-inline {
             margin-right: 6.5vw;
-        }
-        .text-inline p {
-            font-size: 1.3vw;
         }
         .image-inline-container img {
             border: none;
@@ -272,9 +491,6 @@
             margin-top: 2.5vw;
             margin-bottom: 4vw;
         }
-        .quote p {
-            font-size: 1.2vw;
-        }
         .quote-type {
             margin-bottom: 0px;
             padding-bottom: 0px;
@@ -285,22 +501,17 @@
             color: #454545;
             margin-top: 1.5vw;
             margin-bottom: 1.5vw;
-            font-size: 1.2vw;
             font-weight: normal;
         }
         .quote h4 span {
             font-weight: bold;
         }
         .quote-text {
-            font-size: 1.25vw;
             margin-top: 1.5vw;
             margin-bottom: 1.5vw;
             font-style: italic;
             margin-left: 3vw;
             line-height: 1.8;
-        }
-        .quote-text p {
-            font-size: 1.15vw;
         }
 
 
@@ -354,11 +565,9 @@
             text-decoration: none;
             margin: 0.25vw;
             margin-left: 6vw;
-            font-size: 1.25vw;
         }
         footer li a {
             text-decoration: none;
-            font-size: 1.25vw;
             margin: 0.25vw;
         }
         .nav_final {
