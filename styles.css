@@ -29,7 +29,7 @@
         h1 {
             display: inline-block;
             color: #A9122A;
-            font-size: 2.5vw;
+            font-size: 2vw;
             margin: 0.25vw;
             margin-left: 5vw;
             white-space: nowrap;
@@ -40,7 +40,7 @@
             padding-top: 2.5px;
             margin-bottom: 2.5px;
             padding-bottom: 2.5px;
-            font-size: 2vw;
+            font-size: 1.75vw;
         }
         h3 {
             color: #454545;
@@ -48,7 +48,7 @@
             padding-top: 2.5px;
             margin-bottom: 5px;
             padding-bottom: 5px;
-            font-size: 1.65vw;
+            font-size: 1.25vw;
             font-weight: normal;
         }
         img {
@@ -68,7 +68,7 @@
             text-decoration: none;
         }
         u {
-            font-size: 1.5vw;
+            font-size: 1.25vw;
         }
         ul {
             list-style-type: disc;
@@ -88,8 +88,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-top: 2vw;
-            padding-bottom: 2vw;
+            padding-top: 1.5vw;
+            padding-bottom: 1.5vw;
             overflow: hidden;
         }
         nav {
@@ -110,7 +110,7 @@
             margin-left: 7vw;
         }
         nav li a {
-            font-size: 1.75vw;
+            font-size: 1.625vw;
             text-decoration: none;
         }
         .nav_final {
@@ -132,7 +132,7 @@
             text-align: center;
         }
         .page-title h1 {
-            font-size: 2.5vw;
+            font-size: 2vw;
             margin-left: 0vw;
         }
 
@@ -159,7 +159,7 @@
             width: 47.5%;
         }
         .project h3 {
-            font-size: 1.35vw;
+            font-size: 1.3vw;
         } 
         .project p {
             font-size: 1.25vw;
@@ -177,22 +177,40 @@
             margin-top: 2.5vw;
             margin-bottom: 2.5vw;
         }
+        .about-project h3 {
+            font-size: 1.3vw;
+        }
+        .about-project ul {
+            margin-left: 3vw; 
+        }
+        .about-project li {
+            font-size: 1.3vw;
+        }
+        .about-project u {
+            font-size: 1.3vw;
+        }
+        .about-project p {
+            font-size: 1.25vw;
+        }
 
 
         /* containers for about section text/image combinations that appear side by side */
         .text-image-wrap {
             margin-top: 0px;
             padding-top: 0px;
-            display: flex;
+            display: flex; 
         }
         .text-inline {
-            margin-right: 5vw;
+            margin-right: 6.5vw;
+        }
+        .text-inline p {
+            font-size: 1.35vw;
         }
         .image-inline-container img {
             border: none;
             margin-top: 5vw;
             margin-bottom: 0px;
-            height: 17.5vw;
+            height: 22.5vw;
             width: auto;
             display: block;
             margin: 0 auto;
@@ -225,6 +243,9 @@
             margin-top: 2.5vw;
             margin-bottom: 4vw;
         }
+        .quote p {
+            font-size: 1.3vw;
+        }
         .quote-type {
             margin-bottom: 0px;
             padding-bottom: 0px;
@@ -235,7 +256,7 @@
             color: #454545;
             margin-top: 1.5vw;
             margin-bottom: 1.5vw;
-            font-size: 1.35vw;
+            font-size: 1.3vw;
             font-weight: normal;
         }
         .quote h4 span {
@@ -248,6 +269,9 @@
             font-style: italic;
             margin-left: 3vw;
             line-height: 1.8;
+        }
+        .quote-text p {
+            font-size: 1.25vw;
         }
 
 
@@ -301,11 +325,11 @@
             text-decoration: none;
             margin: 0.25vw;
             margin-left: 6vw;
-            font-size: 1.35vw;
+            font-size: 1.25vw;
         }
         footer li a {
             text-decoration: none;
-            font-size: 1.35vw;
+            font-size: 1.25vw;
             margin: 0.25vw;
         }
         .nav_final {
