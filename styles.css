@@ -47,58 +47,63 @@
             }
             h2 {
                 font-size: 2.75vw;
+                margin-top: 0vw;
             }
             h3 {
-                font-size: 2.5vw;
+                font-size: 2.4vw;
             }
             p {
-                font-size: 2.5vw;
+                font-size: 2.4vw;
             }
             u {
-                font-size: 2.5vw;
+                font-size: 2.4vw;
             }
             ul {
-                font-size: 2.5vw;
+                font-size: 2.4vw;
             }
             nav li a {
-                font-size: 2.5vw;
+                font-size: 2.4vw;
                 margin-left: 4.25vw;
             }
             .page-title h1 {
                 font-size: 3.25vw;
             }
             .project h3 {
-                font-size: 2.5vw;
+                font-size: 2.4vw;
             }
             .project p {
-                font-size: 2.5vw;
+                font-size: 2.4vw;
             }
             .about-project h3 {
-            font-size: 2.5vw;
+                font-size: 2.4vw;
             }
             .about-project li {
-                font-size: 2.5vw;
+                font-size: 2.4vw;
             }
             .about-project u {
-                font-size: 2.5vw;
+                font-size: 2.4vw;
             }
             .about-project p {
-                font-size: 2.5vw;
+                font-size: 2.4vw;
             }
             .text-inline p {
-                font-size: 2.5vw;
+                font-size: 2.4vw;
+            }
+            .image-inline-container img {
+                height: 20vw;
+                padding-left: 5vw;
             }
             .quote p {
-                font-size: 2.5vw;
+                font-size: 2.4vw;
             }
             .quote h4 {
-                font-size: 2.5vw;
+                font-size: 2.4vw;
             }
             .quote-text {
-                font-size: 2.5vw;
+                font-size: 2.4vw;
             }
             .quote-text p {
-                font-size: 2.5vw;
+                font-size: 2.4vw;
             }
             footer li {
                 font-size: 1.65vw;
@@ -127,16 +132,17 @@
                 height: 17.5vw;
             }
             .previous {
-                right: 27.15vw;
+                right: 27.5vw;
             }
             .next {
-                left: 27.15vw;
+                left: 27.5vw;
             }
             h1 {
                 font-size: 2.75vw;
             }
             h2 {
                 font-size: 1.6vw;
+                margin-top: 1vw;
             }
             h3 {
                 font-size: 1.25vw;
@@ -164,8 +170,8 @@
                 font-size: 1.15vw;
             }
             .about-project h3 {
-            font-size: 1.3vw;
-            }
+                font-size: 1.3vw;
+                }
             .about-project li {
                 font-size: 1.2vw;
             }
@@ -177,6 +183,10 @@
             }
             .text-inline p {
                 font-size: 1.3vw;
+            }
+            .image-inline-container img {
+                height: 18.5vw;
+                padding-left: 5vw;
             }
             .quote p {
                 font-size: 1.2vw;
@@ -227,6 +237,7 @@
             }
             h2 {
                 font-size: 1.6vw;
+                margin-top: 2.25vw;
             }
             h3 {
                 font-size: 1.25vw;
@@ -255,8 +266,8 @@
                 font-size: 1.15vw;
             }
             .about-project h3 {
-            font-size: 1.3vw;
-            }
+                font-size: 1.3vw;
+                }
             .about-project li {
                 font-size: 1.2vw;
             }
@@ -268,6 +279,10 @@
             }
             .text-inline p {
                 font-size: 1.3vw;
+            }
+            .image-inline-container img {
+                height: 18.5vw;
+                padding-left: 5vw;
             }
             .quote p {
                 font-size: 1.2vw;
@@ -288,6 +303,7 @@
                 font-size: 0.8vw;
             }
         }
+
         @media screen and (min-width: 1920px) {
             .container {
                 width: 70%;
@@ -297,10 +313,12 @@
             }
             .project-1 {
                 width: 47.5%;
+                margin-top: 5vw;
                 margin-bottom: 2.5vw;
             }
             .project-2 {
                 width: 47.5%;
+                margin-top: 2.5vw;
                 margin-bottom: 2.5vw;
             }
             .project img {
@@ -313,10 +331,11 @@
                 left: 26.43vw;
             }
             h1 {
-                font-size: 2vw;
+                font-size: 1.75vw;
             }
             h2 {
                 font-size: 1.25vw;
+                margin-top: 3vw;
             }
             h3 {
                 font-size: 1vw;
@@ -325,14 +344,14 @@
                 font-size: 1vw;
             }
             u {
-                font-size: 0.75vw;
+                font-size: 0.85vw;
             }
             ul {
                 font-size: 1vw;
             }
             nav li a {
                 font-size: 1vw;
-                margin-left: 8vw;
+                margin-left: 7.75vw;
             }
             .page-title h1 {
                 font-size: 1.5vw;
@@ -356,7 +375,11 @@
                 font-size: 1vw;
             }
             .text-inline p {
-                font-size: 1.3vw;
+                font-size: 1.2vw;
+            }
+            .image-inline-container img {
+                height: 18.5vw;
+                padding-left: 5vw;
             }
             .quote p {
                 font-size: 1vw;
@@ -371,10 +394,10 @@
                 font-size: 1vw;
             }
             footer li {
-                font-size: 0.5vw;
+                font-size: 0.75vw;
             }
             footer li a {
-                font-size: 0.5vw;
+                font-size: 0.75vw;
             }
         }
 
@@ -398,17 +421,12 @@
         }
         h2 {
             color: #A9122A;
-            margin-top: 2.5px;
-            padding-top: 2.5px;
             margin-bottom: 2.5px;
-            padding-bottom: 2.5px;
         }
         h3 {
             color: #454545;
             margin-top: 2.5px;
-            padding-top: 2.5px;
             margin-bottom: 5px;
-            padding-bottom: 5px;
             font-weight: normal;
         }
         img {
@@ -527,19 +545,19 @@
         .text-image-wrap {
             margin-top: 0px;
             padding-top: 0px;
-            display: flex; 
+            display: inline-block;
         }
         .text-inline {
-            margin-right: 6.5vw;
+            margin-top: 2.5vw;
+            margin-right: 2.5vw;
         }
         .image-inline-container img {
             border: none;
-            margin-top: 5vw;
+            margin-top: 2.5vw;
             margin-bottom: 0px;
-            height: 22.5vw;
             width: auto;
             display: block;
-            margin: 0 auto;
+            float: right;
         }
 
 
