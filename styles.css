@@ -43,7 +43,7 @@
                 left: 60vw;
             }
             h1 {
-                font-size: 3.5vw;
+                font-size: 3.65vw;
             }
             h2 {
                 font-size: 3vw;
@@ -63,7 +63,7 @@
             }
             nav li a {
                 font-size: 2.4vw;
-                margin-left: 4.2vw;
+                margin-left: 5vw;
             }
             .page-title h1 {
                 font-size: 3.5vw;
@@ -76,6 +76,9 @@
             }
             .about-project h3 {
                 font-size: 3vw;
+            }
+            .about-project ul {
+                margin-bottom: 5vw;
             }
             .about-project li {
                 font-size: 3vw;
@@ -171,7 +174,10 @@
             }
             .about-project h3 {
                 font-size: 1.3vw;
-                }
+            }
+            .about-project ul {
+                margin-bottom: 2vw;
+            }
             .about-project li {
                 font-size: 1.2vw;
             }
@@ -267,7 +273,10 @@
             }
             .about-project h3 {
                 font-size: 1.3vw;
-                }
+            }
+            .about-project ul {
+                margin-bottom: 2vw;
+            }
             .about-project li {
                 font-size: 1.2vw;
             }
@@ -364,6 +373,9 @@
             }
             .about-project h3 {
             font-size: 1vw;
+            }
+            .about-project ul {
+                margin-bottom: 2vw;
             }
             .about-project li {
                 font-size: 1vw;
@@ -527,7 +539,7 @@
         } 
         .project img {
             margin-top: 5vw;
-            margin-bottom: 0px;
+            margin-bottom: 5px;
             width: auto;
             display: block;
             margin: 0 auto;
