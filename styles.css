@@ -63,7 +63,7 @@
             }
             nav li a {
                 font-size: 2.4vw;
-                margin-left: 4.4vw;
+                margin-left: 4.2vw;
             }
             .page-title h1 {
                 font-size: 3.5vw;
@@ -201,10 +201,10 @@
                 font-size: 1.2vw;
             }
             footer li {
-                font-size: 1.25vw;
+                font-size: 1.4vw;
             }
             footer li a {
-                font-size: 1.25vw;
+                font-size: 1.4vw;
             }
         }
 
@@ -297,10 +297,10 @@
                 font-size: 1.2vw;
             }
             footer li {
-                font-size: 0.8vw;
+                font-size: 1.4vw;
             }
             footer li a {
-                font-size: 0.8vw;
+                font-size: 1.4vw;
             }
         }
 
@@ -394,10 +394,10 @@
                 font-size: 1vw;
             }
             footer li {
-                font-size: 0.75vw;
+                font-size: 1vw;
             }
             footer li a {
-                font-size: 0.75vw;
+                font-size: 1vw;
             }
         }
 
@@ -654,7 +654,7 @@
             color: #454545;
             text-decoration: none;
             margin: 0.25vw;
-            margin-left: 6vw;
+            margin-left: 4vw;
         }
         footer li a {
             text-decoration: none;
