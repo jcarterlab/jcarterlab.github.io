@@ -50,66 +50,66 @@
                 margin-top: 0vw;
             }
             h3 {
-                font-size: 2.75vw;
+                font-size: 3vw;
             }
             p {
-                font-size: 2.6vw;
+                font-size: 3vw;
             }
             u {
-                font-size: 2.6vw;
+                font-size: 3vw;
             }
             ul {
-                font-size: 2.6vw;
+                font-size: 3vw;
             }
             nav li a {
-                font-size: 2.6vw;
+                font-size: 2.4vw;
                 margin-left: 4.4vw;
             }
             .page-title h1 {
                 font-size: 3.5vw;
             }
             .project h3 {
-                font-size: 2.6vw;
+                font-size: 3vw;
             }
             .project p {
-                font-size: 2.6vw;
+                font-size: 3vw;
             }
             .about-project h3 {
-                font-size: 2.6vw;
+                font-size: 3vw;
             }
             .about-project li {
-                font-size: 2.6vw;
+                font-size: 3vw;
             }
             .about-project u {
-                font-size: 2.6vw;
+                font-size: 3vw;
             }
             .about-project p {
-                font-size: 2.6vw;
+                font-size: 3vw;
             }
             .text-inline p {
-                font-size: 2.6vw;
+                font-size: 3vw;
             }
             .image-inline-container img {
                 height: 30vw;
                 padding-left: 5vw;
             }
             .quote p {
-                font-size: 2.6vw;
+                font-size: 3vw;
             }
             .quote h4 {
-                font-size: 2.6vw;
+                font-size: 3vw;
             }
             .quote-text {
-                font-size: 2.6vw;
+                font-size: 3vw;
             }
             .quote-text p {
-                font-size: 2.6vw;
+                font-size: 3vw;
             }
             footer li {
-                font-size: 1.75vw;
+                font-size: 2vw;
             }
             footer li a {
-                font-size: 1.75vw;
+                font-size: 2vw;
             }
         }
 
