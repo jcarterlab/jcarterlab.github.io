@@ -37,10 +37,10 @@
                 height: 30vw;
             }
             .previous {
-                right: 60.5vw;
+                right: 60vw;
             }
             .next {
-                left: 60.5vw;
+                left: 60vw;
             }
             h1 {
                 font-size: 3.25vw;
@@ -49,61 +49,62 @@
                 font-size: 2.75vw;
             }
             h3 {
-                font-size: 2vw;
+                font-size: 2.5vw;
             }
             p {
-                font-size: 2vw;
+                font-size: 2.5vw;
             }
             u {
-                font-size: 2vw;
+                font-size: 2.5vw;
             }
             ul {
-                font-size: 2vw;
+                font-size: 2.5vw;
             }
             nav li a {
-                font-size: 1.75vw;
+                font-size: 2.5vw;
+                margin-left: 4.25vw;
             }
             .page-title h1 {
                 font-size: 3.25vw;
             }
             .project h3 {
-                font-size: 2vw;
+                font-size: 2.5vw;
             }
             .project p {
-                font-size: 2vw;
+                font-size: 2.5vw;
             }
             .about-project h3 {
-            font-size: 2vw;
+            font-size: 2.5vw;
             }
             .about-project li {
-                font-size: 2vw;
+                font-size: 2.5vw;
             }
             .about-project u {
-                font-size: 2.25vw;
+                font-size: 2.5vw;
             }
             .about-project p {
-                font-size: 2.25vw;
+                font-size: 2.5vw;
             }
             .text-inline p {
-                font-size: 2.25vw;
+                font-size: 2.5vw;
             }
             .quote p {
-                font-size: 2vw;
+                font-size: 2.5vw;
             }
             .quote h4 {
-                font-size: 2vw;
+                font-size: 2.5vw;
             }
             .quote-text {
-                font-size: 2vw;
+                font-size: 2.5vw;
             }
             .quote-text p {
-                font-size: 2vw;
+                font-size: 2.5vw;
             }
             footer li {
-                font-size: 1.75vw;
+                font-size: 1.65vw;
             }
             footer li a {
-                font-size: 1.75vw;
+                font-size: 1.65vw;
             }
         }
 
@@ -151,6 +152,7 @@
             }
             nav li a {
                 font-size: 1.4vw;
+                margin-left: 8vw;
             }
             .page-title h1 {
                 font-size: 2.25vw;
@@ -233,16 +235,18 @@
                 font-size: 1.45vw;
             }
             u {
-                font-size: 1.25vw;
+                font-size: 1vw;
             }
             ul {
                 font-size: 1.5vw;
             }
             nav li a {
                 font-size: 1.4vw;
+                margin-left: 8vw;
             }
             .page-title h1 {
                 font-size: 2vw;
+                margin-left: 5vw;
             }
             .project h3 {
                 font-size: 1.2vw;
@@ -278,10 +282,10 @@
                 font-size: 1.2vw;
             }
             footer li {
-                font-size: 1.25vw;
+                font-size: 0.8vw;
             }
             footer li a {
-                font-size: 1.25vw;
+                font-size: 0.8vw;
             }
         }
         @media screen and (min-width: 1920px) {
@@ -303,13 +307,13 @@
                 height: 17.5vw;
             }
             .previous {
-                right: 27.15vw;
+                right: 26.43vw;
             }
             .next {
-                left: 27.15vw;
+                left: 26.43vw;
             }
             h1 {
-                font-size: 1.75vw;
+                font-size: 2vw;
             }
             h2 {
                 font-size: 1.25vw;
@@ -318,16 +322,17 @@
                 font-size: 1vw;
             }
             p {
-                font-size: 0.75vw;
+                font-size: 1vw;
             }
             u {
                 font-size: 0.75vw;
             }
             ul {
-                font-size: 0.75vw;
+                font-size: 1vw;
             }
             nav li a {
-                font-size: 0.5vw;
+                font-size: 1vw;
+                margin-left: 8vw;
             }
             .page-title h1 {
                 font-size: 1.5vw;
@@ -336,7 +341,7 @@
                 font-size: 1vw;
             }
             .project p {
-                font-size: 0.75vw;
+                font-size: 1vw;
             }
             .about-project h3 {
             font-size: 1vw;
@@ -388,8 +393,8 @@
             display: inline-block;
             color: #A9122A;
             margin: 0.25vw;
-            margin-left: 5vw;
             white-space: nowrap;
+            margin-left: 3.5vw;
         }
         h2 {
             color: #A9122A;
@@ -457,7 +462,6 @@
             color: #454545;
             text-decoration: none;
             margin: 0.25vw;
-            margin-left: 7vw;
         }
         nav li a {
             text-decoration: none;
