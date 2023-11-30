@@ -43,73 +43,73 @@
                 left: 60vw;
             }
             h1 {
-                font-size: 3.25vw;
+                font-size: 3.5vw;
             }
             h2 {
-                font-size: 2.75vw;
+                font-size: 3vw;
                 margin-top: 0vw;
             }
             h3 {
-                font-size: 2.4vw;
+                font-size: 2.75vw;
             }
             p {
-                font-size: 2.4vw;
+                font-size: 2.6vw;
             }
             u {
-                font-size: 2.4vw;
+                font-size: 2.6vw;
             }
             ul {
-                font-size: 2.4vw;
+                font-size: 2.6vw;
             }
             nav li a {
-                font-size: 2.4vw;
-                margin-left: 4.25vw;
+                font-size: 2.6vw;
+                margin-left: 4.4vw;
             }
             .page-title h1 {
-                font-size: 3.25vw;
+                font-size: 3.5vw;
             }
             .project h3 {
-                font-size: 2.4vw;
+                font-size: 2.6vw;
             }
             .project p {
-                font-size: 2.4vw;
+                font-size: 2.6vw;
             }
             .about-project h3 {
-                font-size: 2.4vw;
+                font-size: 2.6vw;
             }
             .about-project li {
-                font-size: 2.4vw;
+                font-size: 2.6vw;
             }
             .about-project u {
-                font-size: 2.4vw;
+                font-size: 2.6vw;
             }
             .about-project p {
-                font-size: 2.4vw;
+                font-size: 2.6vw;
             }
             .text-inline p {
-                font-size: 2.4vw;
+                font-size: 2.6vw;
             }
             .image-inline-container img {
-                height: 20vw;
+                height: 30vw;
                 padding-left: 5vw;
             }
             .quote p {
-                font-size: 2.4vw;
+                font-size: 2.6vw;
             }
             .quote h4 {
-                font-size: 2.4vw;
+                font-size: 2.6vw;
             }
             .quote-text {
-                font-size: 2.4vw;
+                font-size: 2.6vw;
             }
             .quote-text p {
-                font-size: 2.4vw;
+                font-size: 2.6vw;
             }
             footer li {
-                font-size: 1.65vw;
+                font-size: 1.75vw;
             }
             footer li a {
-                font-size: 1.65vw;
+                font-size: 1.75vw;
             }
         }
 
