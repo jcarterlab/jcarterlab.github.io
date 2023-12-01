@@ -70,12 +70,14 @@
             }
             .project h3 {
                 font-size: 3vw;
+                padding-bottom: 0.75vw;
             }
             .project p {
                 font-size: 3vw;
             }
             .about-project h3 {
                 font-size: 3vw;
+                padding-bottom: 0.75vw;
             }
             .about-project ul {
                 margin-bottom: 5vw;
@@ -94,6 +96,8 @@
             }
             .image-inline-container img {
                 height: 30vw;
+                padding-top: 2vw;
+                padding-bottom: 2vw;
                 padding-left: 5vw;
             }
             .quote p {
@@ -109,10 +113,10 @@
                 font-size: 3vw;
             }
             footer li {
-                font-size: 2vw;
+                font-size: 2.25vw;
             }
             footer li a {
-                font-size: 2vw;
+                font-size: 2.25vw;
             }
         }
 
@@ -168,12 +172,14 @@
             }
             .project h3 {
                 font-size: 1.2vw;
+                padding-bottom: 0.75vw;
             }
             .project p {
                 font-size: 1.15vw;
             }
             .about-project h3 {
                 font-size: 1.3vw;
+                padding-bottom: 0.75vw;
             }
             .about-project ul {
                 margin-bottom: 2vw;
@@ -191,7 +197,7 @@
                 font-size: 1.3vw;
             }
             .image-inline-container img {
-                height: 18.5vw;
+                height: 17vw;
                 padding-left: 5vw;
             }
             .quote p {
@@ -230,13 +236,13 @@
                 margin-bottom: 2.5vw;
             }
             .project img {
-                height: 17.5vw;
+                height: 15vw;
             }
             .previous {
-                right: 27.2vw;
+                right: 27vw;
             }
             .next {
-                left: 27.2vw;
+                left: 27vw;
             }
             h1 {
                 font-size: 2.75vw;
@@ -267,12 +273,14 @@
             }
             .project h3 {
                 font-size: 1.2vw;
+                padding-bottom: 1vw;
             }
             .project p {
                 font-size: 1.15vw;
             }
             .about-project h3 {
                 font-size: 1.3vw;
+                padding-bottom: 1vw;
             }
             .about-project ul {
                 margin-bottom: 2vw;
@@ -290,7 +298,7 @@
                 font-size: 1.3vw;
             }
             .image-inline-container img {
-                height: 18.5vw;
+                height: 16vw;
                 padding-left: 5vw;
             }
             .quote p {
@@ -331,26 +339,26 @@
                 margin-bottom: 2.5vw;
             }
             .project img {
-                height: 17.5vw;
+                height: 12vw;
             }
             .previous {
-                right: 26.43vw;
+                right: 22.5vw;
             }
             .next {
-                left: 26.43vw;
+                left: 22.5vw;
             }
             h1 {
                 font-size: 1.75vw;
             }
             h2 {
-                font-size: 1.25vw;
+                font-size: 1vw;
                 margin-top: 3vw;
             }
             h3 {
-                font-size: 1vw;
+                font-size: 0.85vw;
             }
             p {
-                font-size: 1vw;
+                font-size: 0.85vw;
             }
             u {
                 font-size: 0.85vw;
@@ -367,12 +375,14 @@
             }
             .project h3 {
                 font-size: 1vw;
+                padding-bottom: 1vw;
             }
             .project p {
                 font-size: 1vw;
             }
             .about-project h3 {
-            font-size: 1vw;
+                font-size: 1vw;
+                padding-bottom: 1vw;
             }
             .about-project ul {
                 margin-bottom: 2vw;
@@ -390,7 +400,7 @@
                 font-size: 1.2vw;
             }
             .image-inline-container img {
-                height: 18.5vw;
+                height: 15vw;
                 padding-left: 5vw;
             }
             .quote p {
@@ -416,10 +426,10 @@
 
        /* body */ 
        body {
-           font-family: Gotham;
-            font-family: Century Gothic;
-            color: #454545;
-            max-width: 100%;
+           font-family: Proximity Sans;
+           font-family: Century Gothic;
+           color: #454545;
+           max-width: 100%;
         }
 
 
