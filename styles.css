@@ -46,6 +46,7 @@
             }
             h1 {
                 font-size: 4.5vw;    
+                padding-left: 2vw;
                 padding-right: 2vw;
             }
             h2 {
@@ -159,6 +160,7 @@
             }
             h1 {
                 font-size: 2.75vw;
+                padding-left: 3.5vw;
             }
             h2 {
                 font-size: 1.8vw;
@@ -269,6 +271,7 @@
             }
             h1 {
                 font-size: 2.75vw;
+                padding-left: 3.5vw;
             }
             h2 {
                 font-size: 1.6vw;
@@ -380,6 +383,7 @@
             }
             h1 {
                 font-size: 1.5vw;
+                padding-left: 3.5vw;
             }
             h2 {
                 font-size: 1.25vw;
@@ -478,7 +482,6 @@
             color: #A9122A;
             margin: 0.25vw;
             white-space: nowrap;
-            margin-left: 2vw;
         }
         h2 {
             color: #A9122A;
