@@ -27,26 +27,28 @@
             }
             .project-1 {
                 width: 100%;
-                margin-bottom: 5vw;
+                margin-top: 3vw;
+                margin-bottom: 6vw;
             }
             .project-2 {
                 width: 100%;
-                margin-bottom: 5vw;
+                margin-top: 3vw;
+                margin-bottom: 6vw;
             }
             .project img {
                 height: 30vw;
             }
             .previous {
-                right: 60vw;
+                right: 59vw;
             }
             .next {
-                left: 60vw;
+                left: 59vw;
             }
             h1 {
-                font-size: 3.65vw;
+                font-size: 4.25vw;
             }
             h2 {
-                font-size: 3vw;
+                font-size: 3.5vw;
                 margin-top: 0vw;
             }
             h3 {
@@ -62,11 +64,11 @@
                 font-size: 3vw;
             }
             nav li a {
-                font-size: 2.4vw;
+                font-size: 2.2vw;
                 margin-left: 5vw;
             }
             .page-title h1 {
-                font-size: 3.5vw;
+                font-size: 4vw;
             }
             .project h3 {
                 font-size: 3vw;
@@ -75,8 +77,12 @@
             .project p {
                 font-size: 3vw;
             }
+            .about-project {
+                margin-top: 3vw;
+                margin-bottom: 6vw;
+            }
             .about-project h3 {
-                font-size: 3vw;
+                font-size: 3.25vw;
                 padding-bottom: 0.75vw;
             }
             .about-project ul {
@@ -113,10 +119,10 @@
                 font-size: 3vw;
             }
             footer li {
-                font-size: 2.25vw;
+                font-size: 2.15vw;
             }
             footer li a {
-                font-size: 2.25vw;
+                font-size: 2.15vw;
             }
         }
 
@@ -129,26 +135,28 @@
             }
             .project-1 {
                 width: 47.5%;
-                margin-bottom: 2.5vw;
+                margin-top: 3vw;
+                margin-bottom: 6vw;
             }
             .project-2 {
                 width: 47.5%;
-                margin-bottom: 2.5vw;
+                margin-top: 3vw;
+                margin-bottom: 6vw;
             }
             .project img {
                 height: 17.5vw;
             }
             .previous {
-                right: 27.5vw;
+                right: 27vw;
             }
             .next {
-                left: 27.5vw;
+                left: 27vw;
             }
             h1 {
                 font-size: 2.75vw;
             }
             h2 {
-                font-size: 1.6vw;
+                font-size: 1.8vw;
                 margin-top: 1vw;
             }
             h3 {
@@ -165,7 +173,7 @@
             }
             nav li a {
                 font-size: 1.4vw;
-                margin-left: 8vw;
+                margin-left: 8.5vw;
             }
             .page-title h1 {
                 font-size: 2.25vw;
@@ -176,6 +184,10 @@
             }
             .project p {
                 font-size: 1.15vw;
+            }
+            .about-project {
+                margin-top: 3vw;
+                margin-bottom: 6vw;
             }
             .about-project h3 {
                 font-size: 1.3vw;
@@ -229,11 +241,13 @@
             }
             .project-1 {
                 width: 47.5%;
-                margin-bottom: 2.5vw;
+                margin-top: 3vw;
+                margin-bottom: 6vw;
             }
             .project-2 {
                 width: 47.5%;
-                margin-bottom: 2.5vw;
+                margin-top: 3vw;
+                margin-bottom: 6vw;
             }
             .project img {
                 height: 15vw;
@@ -265,7 +279,7 @@
             }
             nav li a {
                 font-size: 1.4vw;
-                margin-left: 8vw;
+                margin-left: 8.75vw;
             }
             .page-title h1 {
                 font-size: 2vw;
@@ -277,6 +291,10 @@
             }
             .project p {
                 font-size: 1.15vw;
+            }
+            .about-project {
+                margin-top: 3vw;
+                margin-bottom: 6vw;
             }
             .about-project h3 {
                 font-size: 1.3vw;
@@ -330,22 +348,22 @@
             }
             .project-1 {
                 width: 47.5%;
-                margin-top: 5vw;
-                margin-bottom: 2.5vw;
+                margin-top: 2vw;
+                margin-bottom: 2vw;
             }
             .project-2 {
                 width: 47.5%;
-                margin-top: 2.5vw;
-                margin-bottom: 2.5vw;
+                margin-top: 2vw;
+                margin-bottom: 2vw;
             }
             .project img {
                 height: 12vw;
             }
             .previous {
-                right: 22.5vw;
+                right: 22.3vw;
             }
             .next {
-                left: 22.5vw;
+                left: 22.3vw;
             }
             h1 {
                 font-size: 1.5vw;
@@ -368,7 +386,7 @@
             }
             nav li a {
                 font-size: 1vw;
-                margin-left: 7.75vw;
+                margin-left: 8.5vw;
             }
             .page-title h1 {
                 font-size: 1.5vw;
@@ -380,12 +398,16 @@
             .project p {
                 font-size: 1vw;
             }
+            .about-project {
+                margin-top: 2vw;
+                margin-bottom: 2vw;
+            }
             .about-project h3 {
                 font-size: 1vw;
                 padding-bottom: 1vw;
             }
             .about-project ul {
-                margin-bottom: 2vw;
+                margin-bottom: 3vw;
             }
             .about-project li {
                 font-size: 1vw;
@@ -439,7 +461,7 @@
             color: #A9122A;
             margin: 0.25vw;
             white-space: nowrap;
-            margin-left: 3.5vw;
+            margin-left: 2vw;
         }
         h2 {
             color: #A9122A;
@@ -536,12 +558,10 @@
         }
         .project-1 {
             flex-shrink: 0;
-            margin-top: 2.5vw;
             margin-right: 5%;
         }
         .project-2 {
             flex-shrink: 0;
-            margin-top: 2.5vw;
             margin-left: 0%;
         }
         .project p {
@@ -553,10 +573,6 @@
             width: auto;
             display: block;
             margin: 0 auto;
-        }
-        .about-project {
-            margin-top: 2.5vw;
-            margin-bottom: 2.5vw;
         }
         .about-project ul {
             margin-left: 3vw; 
@@ -676,7 +692,7 @@
             color: #454545;
             text-decoration: none;
             margin: 0.25vw;
-            margin-left: 4vw;
+            margin-left: 3.25vw;
         }
         footer li a {
             text-decoration: none;
