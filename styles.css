@@ -28,12 +28,12 @@
             .project-1 {
                 width: 100%;
                 margin-top: 3vw;
-                margin-bottom: 6vw;
+                margin-bottom: 12vw;
             }
             .project-2 {
                 width: 100%;
                 margin-top: 3vw;
-                margin-bottom: 6vw;
+                margin-bottom: 12vw;
             }
             .project img {
                 height: 30vw;
@@ -50,7 +50,7 @@
             }
             h2 {
                 font-size: 3.75vw;
-                padding-bottom: 1vw;
+                padding-bottom: 3vw;
             }
             h3 {
                 font-size: 3vw;
@@ -65,8 +65,8 @@
                 font-size: 3vw;
             }
             nav li a {
-                font-size: 2.15vw;
-                margin-left: 4.75vw;
+                font-size: 2.4vw;
+                margin-left: 4vw;
             }
             .page-title h1 {
                 font-size: 4.5vw;
@@ -80,7 +80,7 @@
             }
             .about-project {
                 margin-top: 3vw;
-                margin-bottom: 6vw;
+                margin-bottom: 12vw;
             }
             .about-project h3 {
                 font-size: 3.25vw;
@@ -109,7 +109,7 @@
             }
             .quote {
                 margin-top: 3vw;
-                margin-bottom: 6vw;
+                margin-bottom: 12vw;
             }
             .quote p {
                 font-size: 3vw;
@@ -482,7 +482,6 @@
         }
         h2 {
             color: #A9122A;
-            margin-bottom: 2.5px;
         }
         h3 {
             color: #454545;
