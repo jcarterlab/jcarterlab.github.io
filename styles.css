@@ -45,7 +45,7 @@
                 left: 59vw;
             }
             h1 {
-                font-size: 4.25vw;    
+                font-size: 4vw;    
                 padding-left: 1.5vw;
                 padding-right: 1.5vw;
             }
@@ -66,11 +66,11 @@
                 font-size: 3vw;
             }
             nav li a {
-                font-size: 2.5vw;
+                font-size: 2.6vw;
                 margin-left: 4vw;
             }
             .page-title h1 {
-                font-size: 4.5vw;
+                font-size: 4vw;
             }
             .project h3 {
                 font-size: 3vw;
@@ -103,10 +103,12 @@
                 font-size: 3vw;
             }
             .image-inline-container img {
-                height: 35vw;
-                padding-top: 1vw;
-                padding-bottom: 2vw;
-                padding-left: 5vw;
+                height: 47.5vw;
+                max-width: 100%;
+                max-height: 100%;
+                display: block;
+                margin: auto;
+                padding-bottom: 4vw;
             }
             .quote {
                 margin-top: 3vw;
@@ -126,8 +128,8 @@
             }
             footer li {
                 font-size: 2.3vw;
-                padding-left:0vw;
-                padding-right: 3.25vw;
+                padding-left: 1.5vw;
+                padding-right: 1.5vw;
             }
             footer li a {
                 font-size: 2.5vw;
@@ -220,6 +222,8 @@
             .image-inline-container img {
                 height: 17vw;
                 padding-left: 5vw;
+                display: block;
+                float: right;
             }
             .quote {
                 margin-top: 2.5vw;
@@ -335,6 +339,8 @@
             .image-inline-container img {
                 height: 16vw;
                 padding-left: 5vw;
+                display: block;
+                float: right;
             }
             .quote {
                 margin-top: 2.5vw;
@@ -450,6 +456,8 @@
             .image-inline-container img {
                 height: 15vw;
                 padding-left: 5vw;
+                display: block;
+                float: right;
             }
             .quote {
                 margin-top: 2.5vw;
@@ -625,8 +633,6 @@
             margin-top: 2.5vw;
             margin-bottom: 0px;
             width: auto;
-            display: block;
-            float: right;
         }
 
 

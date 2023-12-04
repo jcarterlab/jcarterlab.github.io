@@ -36,8 +36,7 @@
     var UAE = [  
     "Images/Photography/UAE/UAE_1.JPG",
     "Images/Photography/UAE/UAE_2.JPG",
-    "Images/Photography/UAE/UAE_3.JPG",
-    "Images/Photography/UAE/UAE_4.JPG"
+    "Images/Photography/UAE/UAE_3.JPG"
     ];
     var UAEImageIndex = 0;
 
@@ -52,16 +51,14 @@
     var Palestine = [
     "Images/Photography/Palestine/Palestine_1.JPG",
     "Images/Photography/Palestine/Palestine_2.JPG",
-    "Images/Photography/Palestine/Palestine_3.JPG",
-    "Images/Photography/Palestine/Palestine_4.JPG"
+    "Images/Photography/Palestine/Palestine_3.JPG"
     ];
     var PalestineImageIndex = 0;
 
     var Jordan = [  
     "Images/Photography/Jordan/Jordan_1.JPG",
     "Images/Photography/Jordan/Jordan_2.JPG",
-    "Images/Photography/Jordan/Jordan_3.JPG",
-    "Images/Photography/Jordan/Jordan_4.JPG"
+    "Images/Photography/Jordan/Jordan_3.JPG"
 
     ];
     var JordanImageIndex = 0;
@@ -70,7 +67,8 @@
     var Turkey = [ 
     "Images/Photography/Turkey/Turkey_1.JPG",
     "Images/Photography/Turkey/Turkey_2.JPG",
-    "Images/Photography/Turkey/Turkey_3.JPG"
+    "Images/Photography/Turkey/Turkey_3.JPG",
+    "Images/Photography/Turkey/Turkey_4.JPG"
     ];
     var TurkeyImageIndex = 0;
 
