@@ -77,16 +77,14 @@
     /* europe vars */
     var Slovenia = [ 
     "Images/Photography/Slovenia/Slovenia_1.JPG",
-    "Images/Photography/Slovenia/Slovenia_2.JPG",
-    "Images/Photography/Slovenia/Slovenia_3.JPG"
+    "Images/Photography/Slovenia/Slovenia_2.JPG"
     ];
     var SloveniaImageIndex = 0;
 
 
     var Austria = [ 
     "Images/Photography/Austria/Austria_1.JPG",
-    "Images/Photography/Austria/Austria_2.JPG",
-    "Images/Photography/Austria/Austria_3.JPG"
+    "Images/Photography/Austria/Austria_2.JPG"
     ];
     var AustriaImageIndex = 0;
 
@@ -120,9 +118,7 @@
     var Cambodia = [ 
     "Images/Photography/Cambodia/Cambodia_1.JPG",
     "Images/Photography/Cambodia/Cambodia_2.JPG",
-    "Images/Photography/Cambodia/Cambodia_3.JPG",
-    "Images/Photography/Cambodia/Cambodia_4.JPG",
-    "Images/Photography/Cambodia/Cambodia_5.JPG"
+    "Images/Photography/Cambodia/Cambodia_3.JPG"
     ];
     var CambodiaImageIndex = 0;
 
@@ -139,7 +135,8 @@
 
     var Philippines = [ 
     "Images/Photography/Philippines/Philippines_1.JPG",
-    "Images/Photography/Philippines/Philippines_2.JPG"
+    "Images/Photography/Philippines/Philippines_2.JPG",
+    "Images/Photography/Philippines/Philippines_3.JPG"
     ];
     var PhilippinesImageIndex = 0;
 
@@ -155,8 +152,7 @@
 
     var Malaysia = [ 
     "Images/Photography/Malaysia/Malaysia_1.JPG",
-    "Images/Photography/Malaysia/Malaysia_2.JPG",
-    "Images/Photography/Malaysia/Malaysia_3.JPG"
+    "Images/Photography/Malaysia/Malaysia_2.JPG"
     ];
     var MalaysiaImageIndex = 0;
 

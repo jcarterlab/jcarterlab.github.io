@@ -108,7 +108,7 @@
                 max-height: 100%;
                 display: block;
                 margin: auto;
-                padding-bottom: 5vw;
+                padding-bottom: 6.5vw;
             }
             .quote {
                 margin-top: 3vw;
@@ -614,7 +614,7 @@
             margin: 0 auto;
         }
         .about-project ul {
-            margin-left: 3vw; 
+            margin-left: 2vw; 
         }
 
 
