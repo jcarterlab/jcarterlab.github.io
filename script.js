@@ -78,8 +78,7 @@
         "Images/Photography/Villa-Kemi/villa_kemi_2.JPG",
         "Images/Photography/Villa-Kemi/villa_kemi_3.JPG",
         "Images/Photography/Villa-Kemi/villa_kemi_4.JPG",
-        "Images/Photography/Villa-Kemi/villa_kemi_5.JPG",
-        "Images/Photography/Villa-Kemi/villa_kemi_6.JPG"
+        "Images/Photography/Villa-Kemi/villa_kemi_5.JPG"
         ];
     var VillaKemiImageIndex = 0;
 
