@@ -166,12 +166,12 @@
             .project-1 {
                 width: 47.5%;
                 margin-top: 2vw;
-                margin-bottom: 2vw;
+                margin-bottom: 4vw;
             }
             .project-2 {
                 width: 47.5%;
                 margin-top: 2vw;
-                margin-bottom: 2vw;
+                margin-bottom: 3vw;
             }
             .project img {
                 height: 14vw;
@@ -220,7 +220,7 @@
             }
             .about-project {
                 margin-top: 2vw;
-                margin-bottom: 2vw;
+                margin-bottom: 3vw;
             }
             .about-project h3 {
                 font-size: var(--laptop_about_text);
@@ -254,7 +254,7 @@
             }
             .quote {
                 margin-top: 2vw;
-                margin-bottom: 4vw;
+                margin-bottom: 3vw;
             }
             .quote p {
                 font-size: var(--laptop_standard_text);
@@ -294,12 +294,12 @@
             .project-1 {
                 width: 47.5%;
                 margin-top: 1vw;
-                margin-bottom: 2vw;
+                margin-bottom: 3vw;
             }
             .project-2 {
                 width: 47.5%;
                 margin-top: 1vw;
-                margin-bottom: 2vw;
+                margin-bottom: 3vw;
             }
             .project img {
                 height: 14vw;
@@ -348,7 +348,7 @@
             }
             .about-project {
                 margin-top: 2vw;
-                margin-bottom: 2vw;
+                margin-bottom: 3vw;
             }
             .about-project h3 {
                 font-size: var(--laptop_about_text);
@@ -382,7 +382,7 @@
             }
             .quote {
                 margin-top: 2vw;
-                margin-bottom: 4vw;
+                margin-bottom: 3vw;
             }
             .quote p {
                 font-size: var(--laptop_standard_text);
@@ -422,12 +422,12 @@
             .project-1 {
                 width: 47.5%;
                 margin-top: 1vw;
-                margin-bottom: 2vw;
+                margin-bottom: 3vw;
             }
             .project-2 {
                 width: 47.5%;
                 margin-top: 1vw;
-                margin-bottom: 2vw;
+                margin-bottom: 3vw;
             }
             .project img {
                 height: 12vw;
@@ -474,7 +474,7 @@
             }
             .about-project {
                 margin-top: 2vw;
-                margin-bottom: 2vw;
+                margin-bottom: 3vw;
             }
             .about-project h3 {
                 font-size: 1vw;
@@ -511,7 +511,7 @@
             }
             .quote {
                 margin-top: 2vw;
-                margin-bottom: 4vw;
+                margin-bottom: 3vw;
             }
             .quote p {
                 font-size: 1vw;
