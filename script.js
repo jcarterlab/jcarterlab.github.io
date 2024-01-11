@@ -74,12 +74,12 @@
     var SaintJamesImageIndex = 0;
 
     var Villa_Kemi = [  
-        "Images/Photography/Villa-Kemi/Villa_Kemi_1.JPG",
-        "Images/Photography/Villa-Kemi/Villa_Kemi_2.JPG",
-        "Images/Photography/Villa-Kemi/Villa_Kemi_3.JPG",
-        "Images/Photography/Villa-Kemi/Villa_Kemi_4.JPG",
-        "Images/Photography/Villa-Kemi/Villa_Kemi_5.JPG",
-        "Images/Photography/Villa-Kemi/Villa_Kemi_6.JPG"
+        "Images/Photography/Villa-Kemi/villa_kemi_1.JPG",
+        "Images/Photography/Villa-Kemi/villa_kemi_2.JPG",
+        "Images/Photography/Villa-Kemi/villa_kemi_3.JPG",
+        "Images/Photography/Villa-Kemi/villa_kemi_4.JPG",
+        "Images/Photography/Villa-Kemi/villa_kemi_5.JPG",
+        "Images/Photography/Villa-Kemi/villa_kemi_6.JPG"
         ];
     var VillaKemiImageIndex = 0;
 
