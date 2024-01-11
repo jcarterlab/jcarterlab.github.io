@@ -166,12 +166,12 @@
             .project-1 {
                 width: 47.5%;
                 margin-top: 2vw;
-                margin-bottom: 4vw;
+                margin-bottom: 2vw;
             }
             .project-2 {
                 width: 47.5%;
                 margin-top: 2vw;
-                margin-bottom: 4vw;
+                margin-bottom: 2vw;
             }
             .project img {
                 height: 14vw;
@@ -220,7 +220,7 @@
             }
             .about-project {
                 margin-top: 2vw;
-                margin-bottom: 4vw;
+                margin-bottom: 2vw;
             }
             .about-project h3 {
                 font-size: var(--laptop_about_text);
@@ -246,6 +246,11 @@
                 display: block;
                 float: right;
                 margin-bottom: 5vw;
+            }
+            .inline-image-label {
+                font-size: 0.975vw;
+                padding-top: 0.25vw;
+                margin-left: 55%;
             }
             .quote {
                 margin-top: 2vw;
@@ -289,12 +294,12 @@
             .project-1 {
                 width: 47.5%;
                 margin-top: 1vw;
-                margin-bottom: 4vw;
+                margin-bottom: 2vw;
             }
             .project-2 {
                 width: 47.5%;
                 margin-top: 1vw;
-                margin-bottom: 4vw;
+                margin-bottom: 2vw;
             }
             .project img {
                 height: 14vw;
@@ -343,7 +348,7 @@
             }
             .about-project {
                 margin-top: 2vw;
-                margin-bottom: 4vw;
+                margin-bottom: 2vw;
             }
             .about-project h3 {
                 font-size: var(--laptop_about_text);
@@ -369,6 +374,11 @@
                 display: block;
                 float: right;
                 margin-bottom: 5vw;
+            }
+            .inline-image-label {
+                font-size: 0.975vw;
+                padding-top: 0.25vw;
+                margin-left: 55%;
             }
             .quote {
                 margin-top: 2vw;
@@ -412,12 +422,12 @@
             .project-1 {
                 width: 47.5%;
                 margin-top: 1vw;
-                margin-bottom: 4vw;
+                margin-bottom: 2vw;
             }
             .project-2 {
                 width: 47.5%;
                 margin-top: 1vw;
-                margin-bottom: 4vw;
+                margin-bottom: 2vw;
             }
             .project img {
                 height: 12vw;
@@ -464,7 +474,7 @@
             }
             .about-project {
                 margin-top: 2vw;
-                margin-bottom: 4vw;
+                margin-bottom: 2vw;
             }
             .about-project h3 {
                 font-size: 1vw;
@@ -493,6 +503,11 @@
                 display: block;
                 float: right;
                 margin-bottom: 0vw;
+            }
+            .inline-image-label {
+                font-size: 0.625vw;
+                padding-top: 0.25vw;
+                margin-left: 65.6%;
             }
             .quote {
                 margin-top: 2vw;
@@ -676,7 +691,7 @@
             margin: 0 auto;
         }
         .section-break {
-            padding-bottom: 4vw;
+            padding-bottom: 6vw;
         }
 
         /* about section projects */
@@ -693,6 +708,16 @@
             margin-right: 2.5vw;
         }
         .image-inline-container img {
+            border: 1.75px solid  #D3D3D3;
+            border-radius: 3%;
+            margin-top: 0vw;
+            margin-bottom: 0px;
+            margin-left: 5vw;
+            margin-right: 8vw;
+            margin-bottom: 0vw;
+            width: auto;
+        }
+        .image-inline-container p {
             border: 1.75px solid  #D3D3D3;
             border-radius: 3%;
             margin-top: 0vw;
