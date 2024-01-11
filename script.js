@@ -20,8 +20,8 @@
     /* photo lists */ 
     var Northern_Europe = [  
         "Images/Photography/Northern-Europe/Iceland_1.JPG",
-        "Images/Photography/Northern-Europe/Finland_1.JPG",
         "Images/Photography/Northern-Europe/Iceland_2.JPG",
+        "Images/Photography/Northern-Europe/Finland_1.JPG",
         "Images/Photography/Northern-Europe/Sweden_1.JPG",
         "Images/Photography/Northern-Europe/UK_1.JPG"
         ];
@@ -47,7 +47,7 @@
     var EasternEuropeImageIndex = 0;
 
     var Southern_Europe = [  
-        "Images/Photography/Southern-Europe/Greece_1.JPG",
+        "Images/Photography/Southern-Europe/Greece_1.jpg",
         "Images/Photography/Southern-Europe/Spain_1.JPG",
         "Images/Photography/Southern-Europe/Italy_1.JPG",
         "Images/Photography/Southern-Europe/Portugal_1.JPG"
