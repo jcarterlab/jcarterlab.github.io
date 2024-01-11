@@ -10,22 +10,23 @@
 
 <body>
 
-    <header>
-        <a href="https://jcarterlab.github.io/index.html" style="text-decoration: none;"><h1>Jack Carter</h1></a>
-        <nav>
-            <ul>
-                <li><a href="https://jcarterlab.github.io/about.html">About</a></li>
-                <li><a href="https://jcarterlab.github.io/data.html">Data</a></li>
-                <li><a href="https://jcarterlab.github.io/editing.html">Editing</a></li>
-                <li><a href="https://jcarterlab.github.io/blog.html">Writing</a></li>
-                <li class="nav_final"><a href="https://jcarterlab.github.io/photography.html">Photography</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <hr>
-    </br>
-    </br>
+    <div class="header_container">
+        <header>
+            <a href="file:///C:/Users/Jack-/OneDrive/Desktop/website/index.html" style="text-decoration: none;"><h1>Jack Carter</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="file:///C:/Users/Jack-/OneDrive/Desktop/website/about.html"><b>About</b></a></li>
+                    <li><a href="file:///C:/Users/Jack-/OneDrive/Desktop/website/data.html"><b>Data</b></a></li>
+                    <li><a href="file:///C:/Users/Jack-/OneDrive/Desktop/website/editing.html"><b>Editing</b></a></li>
+                    <li><a href="file:///C:/Users/Jack-/OneDrive/Desktop/website/photography.html"><b>Photography</b></a></li>
+                    <li class="nav_final"><a href="file:///C:/Users/Jack-/OneDrive/Desktop/website/blog.html"><b>Writing</b></a></li>
+                </ul>
+            </nav>
+        </header>
+        </div>
+    
+        <hr>
+        </br>
 
 
    <div class="container" id="data">
@@ -35,30 +36,31 @@
         </div>
 
         </br>
-        </br>
 
         <h2>Business Data Science</h2>
 
         <div id="VisibleBusinessDS" class="content-section">
             <div class="project">
                 <div class="project-1">
-                    <h3>Nov 2023</h3>
-                    <a href="https://github.com/jcarterlab/SJ-Little-Hotelier-Data-Migration/blob/main/SJ_Little_Hotelier_Data_Migration.ipynb" style="text-decoration: none;">
-                        <h3><b>Little Hotelier Migration</b> - Saint James - London</h3>
-                        <p>A script that transforms reservation data into a format that can be bulk uploaded into Little Hotelier.</p>
-                        <img class="project img", src="Images/Data/Business/SJ_Little_Hotelier_1.JPG">
+                    <h3>Jan 2024</h3>
+                    <a href="https://github.com/jcarterlab/Skills-Ladder-Group-Classification/blob/main/Group-Classification.ipynb" style="text-decoration: none;">
+                        <h3><b>Group Classification</b> - Skills Ladder - Tewkesbury, UK</h3>
+                        <p>A scoring system that helps an IT training company classify its trainees into ability based groups and simulates group sizes.</p>
+                        <img class="no_border_image", src="Images/Data/Business/Skills_Ladder_Group_Scores_1.png">
                     </a>
                 </div>
                 <div class="project-2">
-                    <h3>Oct 2023</h3>
-                    <a href="" style="text-decoration: none;">
-                        <h3><b>Improved Bookings Sheet</b> - Saint James - London</h3>
-                        <p>An improved Excel booking sheet that uses formulas to keep track of housekeeping duties, supply and prices.</p>
-                        <img class="project img", src="Images/Data/Business/SJ_Booking_Sheet_1.JPG">
+                    <h3>Dec 2023</h3>
+                    <a href="https://huggingface.co/spaces/Jcarterlab/ChatSJB" style="text-decoration: none;">
+                        <h3><b>ChatSJB</b> - Saint James - London</h3>
+                        <p>A chatbot app that uses retrieval augmented generation (RAG) with a 57 page operations manual to aid training.</p>
+                        <img class="project img", src="Images/Data/Business/SJ_Chatbot_1.png">
                     </a>
                 </div>
             </div>
-            <span class="toggleButton" onclick="toggleVisibility('VisibleBusinessDS', 'HiddenBusinessDS')"><u>More business data science >></u></span>
+            <div class="section-break">
+                <span class="toggleButton" onclick="toggleVisibility('VisibleBusinessDS', 'HiddenBusinessDS')"><u>More business data science >></u></span>
+            </div>
         </div>
 
 
@@ -67,44 +69,52 @@
         <div id="HiddenBusinessDS" class="hidden-section">
             <div class="project">
                 <div class="project-1">
+                    <h3>Jan 2024</h3>
+                    <a href="https://github.com/jcarterlab/Skills-Ladder-Group-Classification/blob/main/Group-Classification.ipynb" style="text-decoration: none;">
+                        <h3><b>Group Classification</b> - Skills Ladder - Tewkesbury, UK</h3>
+                        <p>A scoring system that helps an IT training company classify its trainees into ability based groups and simulates group sizes.</p>
+                        <img class="no_border_image", src="Images/Data/Business/Skills_Ladder_Group_Scores_1.png">
+                    </a>
+                </div>
+                <div class="project-2">
+                    <h3>Dec 2023</h3>
+                    <a href="https://huggingface.co/spaces/Jcarterlab/ChatSJB" style="text-decoration: none;">
+                        <h3><b>ChatSJB</b> - Saint James - London</h3>
+                        <p>A chatbot app that uses retrieval augmented generation (RAG) with a 57 page operations manual to aid training.</p>
+                        <img class="project img", src="Images/Data/Business/SJ_Chatbot_1.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-1">
                     <h3>Nov 2023</h3>
                     <a href="https://github.com/jcarterlab/SJ-Little-Hotelier-Data-Migration/blob/main/SJ_Little_Hotelier_Data_Migration.ipynb" style="text-decoration: none;">
                         <h3><b>Little Hotelier Migration</b> - Saint James - London</h3>
-                        <p>A script that transforms reservation data into a format that can be bulk uploaded into Little Hotelier.</p>
+                        <p>A Python script that transforms reservations data (~350) into a format that can be bulk uploaded into Little Hotelier.</p>
                         <img class="project img", src="Images/Data/Business/SJ_Little_Hotelier_1.JPG">
                     </a>
                 </div>
                 <div class="project-2">
-                    <h3>Oct 2023</h3>
-                    <a href="" style="text-decoration: none;">
-                        <h3><b>Improved Bookings Sheet</b> - Saint James - London</h3>
-                        <p>An improved Excel booking sheet that uses formulas to keep track of housekeeping duties, supply and prices.</p>
-                        <img class="project img", src="Images/Data/Business/SJ_Booking_Sheet_1.JPG">
-                    </a>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-1">
                     <h3>Sep 2023</h3>
                     <a href="https://github.com/jcarterlab/SJ-Price-Algorithm/blob/main/SJ-price-algorithm.ipynb" style="text-decoration: none;">
                         <h3><b>Price Algorithm</b> - Saint James - London</h3>
-                        <p>An algorithm that facilitates demand based variable pricing and provides a number of tunable parameters.</p>
+                        <p>An algorithm that facilitates demand based variable pricing and provides a number of tuneable parameters.</p>
                         <img class="no_border_image", src="Images/Data/Business/SJ_price_algorithm_1.JPG">
-                    </a>
-                </div>
-                <div class="project-2">
-                    <h3>Aug 2023</h3>
-                    <a href="https://github.com/jcarterlab/SJ-Rota-Generator/blob/main/Rota-Generator.ipynb" style="text-decoration: none;">
-                        <h3><b>Rota Generator</b> - Saint James - London</h3>
-                        <p>A custom Python tool to generate rotas for the company's 15-17 staff with a variety of features.</p>
-                        <img class="project img", src="Images/Data/Business/SJ_Rota_Generator_1.JPG">
                     </a>
                 </div>
             </div>
 
             <div class="project">
                 <div class="project-1">
+                    <h3>Aug 2023</h3>
+                    <a href="https://github.com/jcarterlab/SJ-Rota-Generator/blob/main/Rota-Generator.ipynb" style="text-decoration: none;">
+                        <h3><b>Rota Generator</b> - Saint James - London</h3>
+                        <p>A Python tool to generate rotas for the company's 15-17 staff with a variety of features.</p>
+                        <img class="project img", src="Images/Data/Business/SJ_Rota_Generator_1.JPG">
+                    </a>
+                </div>
+                <div class="project-2">
                     <h3>July 2023</h3>
                     <a href="https://github.com/jcarterlab/SJ-Cancellations-Analysis/blob/main/SJ_cancellations_analysis.ipynb" style="text-decoration: none;">
                         <h3><b>Cancellations Analysis</b> - Saint James - London</h3>
@@ -112,7 +122,10 @@
                         <img class="no_border_image", src="Images/Data/Business/SJ_Cancellations_Analysis_1.JPG">
                     </a>
                 </div>
-                <div class="project-2">
+            </div>
+
+            <div class="project">
+                <div class="project-1">
                     <h3>July 2023</h3>
                     <a href="https://github.com/jcarterlab/SJ-No-Show-Analysis/blob/main/SJ_no_show_analysis.ipynb" style="text-decoration: none;">
                         <h3><b>No-shows Analysis</b> - Saint James - London</h3>
@@ -120,10 +133,7 @@
                         <img class="no_border_image", src="Images/Data/Business/SJ_Noshows_Analysis_1.JPG">
                     </a>
                 </div>
-            </div>
-
-            <div class="project">
-                <div class="project-1">
+                <div class="project-2">
                     <h3>July 2023</h3>
                     <a href="https://github.com/jcarterlab/SJ-Check-Outs-Analysis/blob/main/Notebooks/SJ_check_outs_analysis.ipynb" style="text-decoration: none;">
                         <h3><b>Check-outs Analysis</b> - Saint James - London</h3>
@@ -131,22 +141,25 @@
                         <img class="no_border_image", src="Images/Data/Business/SJ_Checkouts_Analysis_1.JPG">
                     </a>
                 </div>
-                <div class="project-2">
+            </div>
+
+            <div class="project">
+                <div class="project-1">
                     <h3>April 2023</h3>
                     <a href="https://github.com/jcarterlab/Skills-Ladder-Data-Analyis/blob/main/Demographic_inisghts.ipynb" style="text-decoration: none;">
                         <h3><b>Trainee Analysis</b> - Skills Ladder - Tewkesbury, UK</h3>
-                        <p>A notebook that helps a small IT training company in the UK to analyze the demographic makeup of it's trainees.</p>
+                        <p>A notebook that helps a small IT training company in the UK to analyze the demographic makeup of its trainees.</p>
                         <img class="no_border_image", src="Images/Data/Business/Skills_Ladder_Trainee_Analysis_1.JPG">
                     </a>
                 </div>
-            </div>
-            <span class="toggleButton" onclick="toggleVisibility('VisibleBusinessDS', 'HiddenBusinessDS')"><u>Less business data science ^^</u></span>
-        </div>
+                <div class="project-2">
 
-        </br>
-        </br>
-        </br>
-        </br>
+                </div>
+            </div>
+            <div class="section-break">
+                <span class="toggleButton" onclick="toggleVisibility('VisibleBusinessDS', 'HiddenBusinessDS')"><u>Less business data science ^^</u></span>
+            </div>
+        </div>
 
 
 
@@ -159,7 +172,7 @@
                     <h3>Dec 2022</h3>
                     <a href="https://github.com/jcarterlab/TIAFI-Support-Algorithm/blob/main/TIAFI_algorithm.ipynb" style="text-decoration: none;">
                         <h3><b>Support Distribution Algorithm</b> - TIAFI - Izmir, Turkey</h3>
-                        <p>An algorithm to help fairly distribute 250 monthly food & hygiene packages among Syrian refugees.</p>
+                        <p>An algorithm to help fairly distribute 250 monthly food and hygiene packages among Syrian refugees.</p>
                         <img class="no_border_image", src="Images/Data/NGO/TIAFI_support_algorithm_1.JPG">
                     </a>
                 </div>
@@ -167,12 +180,14 @@
                     <h3>Nov 2022</h3>
                     <a href="https://retool.com/" style="text-decoration: none;">
                         <h3><b>Retool Database Apps</b> - TIAFI - Izmir, Turkey</h3>
-                        <p>Retool database apps for an NGO's information point & physiotherapy teams.</p>
+                        <p>Retool database apps for an NGO's information point and physiotherapy teams.</p>
                         <img class="project img", src="Images/Data/NGO/TIAFI_Retool_App_1.JPG">
                     </a>
                 </div>
             </div>
-            <span class="toggleButton" onclick="toggleVisibility('VisibleNGODS', 'HiddenNGODS')"><u>More NGO data science >></u></span>
+            <div class="section-break">
+                <span class="toggleButton" onclick="toggleVisibility('VisibleNGODS', 'HiddenNGODS')"><u>More NGO data science >></u></span>
+            </div>
         </div>
 
         <div id="HiddenNGODS" class="hidden-section">
@@ -181,7 +196,7 @@
                     <h3>Dec 2022</h3>
                     <a href="https://github.com/jcarterlab/TIAFI-Support-Algorithm/blob/main/TIAFI_algorithm.ipynb" style="text-decoration: none;">
                         <h3><b>Support Distribution Algorithm</b> - TIAFI - Izmir, Turkey</h3>
-                        <p>An algorithm to help fairly distribute 250 monthly food & hygiene packages among Syrian refugees.</p>
+                        <p>An algorithm to help fairly distribute 250 monthly food and hygiene packages among Syrian refugees.</p>
                         <img class="no_border_image", src="Images/Data/NGO/TIAFI_support_algorithm_1.JPG">
                     </a>
                 </div>
@@ -189,7 +204,7 @@
                     <h3>Nov 2022</h3>
                     <a href="https://retool.com/" style="text-decoration: none;">
                         <h3><b>Retool Database Apps</b> - TIAFI - Izmir, Turkey</h3>
-                        <p>Retool database apps for an NGO's information point & physiotherapy teams.</p>
+                        <p>Retool database apps for an NGO's information point and physiotherapy teams.</p>
                         <img class="no_border_image", src="Images/Data/NGO/TIAFI_Retool_App_1.JPG">
                     </a>
                 </div>
@@ -219,7 +234,7 @@
                     <h3>Oct 2022</h3>
                     <a href="https://github.com/jcarterlab/TIAFI-Data-Analysis/blob/main/Monthly_reporting.ipynb" style="text-decoration: none;">
                         <h3><b>Monthly Reporting</b> - TIAFI - Izmir, Turkey</h3>
-                        <p>A notebook detailing an NGO's' monlthly interactions with their 9,000+ membership.</p>
+                        <p>A notebook detailing an NGO's' monthly interactions with their 9,000+ membership.</p>
                         <img class="no_border_image", src="Images/Data/NGO/TIAFI_Monthly_Reporting_1.JPG">
                     </a>
                 </div>
@@ -227,18 +242,15 @@
                     <h3>Sep 2022</h3>
                     <a href="https://github.com/jcarterlab/TIAFI-Extract-Physio-Data/blob/main/TIAFI_extract_physio_data.ipynb" style="text-decoration: none;">
                         <h3><b>Extract-Physio-Data</b> - TIAFI - Izmir, Turkey</h3>
-                        <p>A tool to extract & translate physiotherapy data from Arabic Word docs.</p>
+                        <p>A tool to extract and translate physiotherapy data from Arabic Word documents.</p>
                         <img class="project img", src="Images/Data/NGO/TIAFI_Extract_Physio_Data_1.JPG">
                     </a>
                 </div>
             </div>
-            <span class="toggleButton" onclick="toggleVisibility('VisibleNGODS', 'HiddenNGODS')"><u>Less NGO data science ^^</u></span>
+            <div class="section-break">
+                <span class="toggleButton" onclick="toggleVisibility('VisibleNGODS', 'HiddenNGODS')"><u>Less NGO data science ^^</u></span>
+            </div>
         </div>
-
-        </br>
-        </br>
-        </br>
-        </br>
 
 
 
@@ -259,12 +271,14 @@
                     <h3>April 2023</h3>
                     <a href="https://github.com/jcarterlab/London-Boulevard/blob/main/London%20Boulevard.ipynb" style="text-decoration: none;">
                         <h3><b>London Boulevard</b></h3>
-                        <p>An analysis of the best neighborhoods in London based on rent, green spaces, travel & safety.</p>
+                        <p>An analysis of the best neighbourhoods in London based on rent, green spaces, travel and safety.</p>
                         <img class="no_border_image", src="Images/Data/Personal/London_Boulevard_1.JPG">
                     </a>
                 </div>
             </div>
-            <span class="toggleButton" onclick="toggleVisibility('VisiblePersonalDS', 'HiddenVisiblePersonalDS')"><u>More personal data science >></u></span>
+            <div class="section-break">
+                <span class="toggleButton" onclick="toggleVisibility('VisiblePersonalDS', 'HiddenVisiblePersonalDS')"><u>More personal data science >></u></span>
+            </div>
         </div>
 
         <div id="HiddenVisiblePersonalDS" class="hidden-section">
@@ -281,7 +295,7 @@
                     <h3>April 2023</h3>
                     <a href="https://github.com/jcarterlab/London-Boulevard/blob/main/London%20Boulevard.ipynb" style="text-decoration: none;">
                         <h3><b>London Boulevard</b></h3>
-                        <p>An analysis of the best neighborhoods in London based on rent, green spaces, travel & safety.</p>
+                        <p>An analysis of the best neighborhoods in London based on rent, green spaces, travel and safety.</p>
                         <img class="no_border_image", src="Images/Data/Personal/London_Boulevard_1.JPG">
                     </a>
                 </div>
@@ -420,49 +434,64 @@
                     </a>
                 </div>
             </div>
-            <span class="toggleButton" onclick="toggleVisibility('VisiblePersonalDS', 'HiddenVisiblePersonalDS')"><u>Less personal data science ^^</u></span>
+            <div class="section-break">
+                <span class="toggleButton" onclick="toggleVisibility('VisiblePersonalDS', 'HiddenVisiblePersonalDS')"><u>Less personal data science ^^</u></span>
+            </div>
         </div>
-
-        </br>
-        </br>
-        </br>
-        </br>
-
 
         <h2>Data Science Feedback</h2>
 
         <div id="VisibleDataFeedback" class="content-section">
             <div class="quote">
                 <div class="quote-type">
-                    <p>Sep 2023 - Email reply</p>
+                    <p>Dec 2023 - Email</p>
                 </div>
-                <h4><span>Stephen Sie</span> - Owner at Saint James Hostel</h4>
+                <h4><span>Stephen Sie</span>, Owner at Saint James --- Training chatbot</h4>
                 <div class="quote-text">
-                    <p>"Awesome Jack. This could be a real time/life saver."</p> 
-                    <p>"Same helpful analytics - well done!"</p>
+                    <p>"This looks awesome; a useful adjunct to the operations manual. Well done."</p> 
                 </div>
             </div>
-
-            <span class="toggleButton" onclick="toggleVisibility('VisibleDataFeedback', 'HiddenDataFeedback')"><u>More data science feedback >></u></span>
+            <div class="section-break">
+                <span class="toggleButton" onclick="toggleVisibility('VisibleDataFeedback', 'HiddenDataFeedback')"><u>More data science feedback >></u></span>
+            </div>
         </div>
 
         <div id="HiddenDataFeedback" class="hidden-section">
             <div class="quote">
                 <div class="quote-type">
-                    <p>Sep 2023 - Email reply</p>
+                    <p>Dec 2023 - Email</p>
                 </div>
-                <h4><span>Stephen Sie</span> - Owner at Saint James Hostel</h4>
+                <h4><span>Stephen Sie</span>, Owner at Saint James --- Training chatbot</h4>
+                <div class="quote-text">
+                    <p>"This looks awesome; a useful adjunct to the operations manual. Well done."</p> 
+                </div>
+            </div>
+
+            <div class="quote">
+                <div class="quote-type">
+                    <p>Aug 2023 - Email</p>
+                </div>
+                <h4><span>Stephen Sie</span>, Owner at Saint James --- Rota Generator</h4>
                 <div class="quote-text">
                     <p>"Awesome Jack. This could be a real time/life saver."</p> 
+                </div>
+            </div>
+
+            <div class="quote">
+                <div class="quote-type">
+                    <p>July 2023 - Email</p>
+                </div>
+                <h4><span>Stephen Sie</span>, Owner at Saint James --- Cancellations/no-shows analyses</h4>
+                <div class="quote-text">
                     <p>"Same helpful analytics - well done!"</p>
                 </div>
             </div>
 
             <div class="quote">
                 <div class="quote-type">
-                    <p>Aug 2023 - Whatsapp message</p>
+                    <p>Aug 2023 - WhatsApp</p>
                 </div>
-                <h4><span>Andrew Darowski</span> - Manager at TIAFI</h4>
+                <h4><span>Andrew Darowski</span>, Manager at TIAFI --- Distribution algorithm</h4>
                 <div class="quote-text">
                     <p>"You're the best man, thank you."</p>
                 </div>
@@ -470,9 +499,9 @@
 
             <div class="quote">
                 <div class="quote-type">
-                    <p>April 2023 - Email reply</p>
+                    <p>April 2023 - Email</p>
                 </div>
-                <h4><span>Daniel Heaford</span> - Manager at Skills Ladder</h4>
+                <h4><span>Daniel Heaford</span>, Manager at Skills Ladder --- Trainee analysis</h4>
                 <div class="quote-text">
                     <p>"Nice one Jack. Thank you."</p>
                 </div>
@@ -482,34 +511,34 @@
                 <div class="quote-type">
                     <p>Dec 2022 - Requested review</p>
                 </div>
-                <h4><span>Anne O’Rork</span> - Founder at TIAFI</h4>
+                <h4><span>Anne O’Rork</span>, Founder at TIAFI  --- Retool database apps</h4>
                 <div class="quote-text">
-                    <p>"Jack’s database apps have made it much easier to understand what’s going on with our information point & physiotherapy teams. Thank you Jack."</p>
+                    <p>"Jack’s database apps have made it much easier to understand what’s going on with our information point and physiotherapy teams. Thank you Jack."</p>
                 </div>
             </div>
-            <span class="toggleButton" onclick="toggleVisibility('VisibleDataFeedback', 'HiddenDataFeedback')"><u>Less data science feedback ^^</u></span>
+            <div class="section-break">
+                <span class="toggleButton" onclick="toggleVisibility('VisibleDataFeedback', 'HiddenDataFeedback')"><u>Less data science feedback ^^</u></span>
+            </div>
         </div>
-
-
-        </br>
-        </br>
-        </br>
-        </br>
 
     </div>
 
+    </br>
     <hr>
+    
 
-    <footer>
-        <nav>
-            <ul>
-                <li>&copy; 2023 Jack Carter</li>
-                <li>jack@mosaique.co.uk</li>
-                <li><a href="https://www.linkedin.com/in/jack-carter-74b608148/">LinkedIn</a></li>
-                <li class="nav_final"><a href="https://github.com/jcarterlab">Github</a></li>
-            </ul>
-        </nav>
-    </footer>
+    <div class="footer_container">
+        <footer>
+            <nav>
+                <ul>
+                    <li><b>&copy; 2023 Jack Carter</b></li>
+                    <li><b>jack@mosaique.co.uk</b></li>
+                    <li><a href="https://www.linkedin.com/in/jack-carter-74b608148/"><b>LinkedIn</b></a></li>
+                    <li class="nav_final"><a href="https://github.com/jcarterlab"><b>Github</b></a></li>
+                </ul>
+            </nav>
+        </footer>
+        </div>
 
 </body>
 </html>
