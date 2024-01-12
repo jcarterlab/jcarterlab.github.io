@@ -188,7 +188,7 @@
             }
             h2 {
                 font-size: 1.6vw;
-                margin-top: 1vw;
+                margin-top: 0.5vw;
             }
             h3 {
                 font-size: var(--laptop_standard_text);
@@ -209,7 +209,7 @@
             .page-title h1 {
                 font-size: 1.8vw;
                 padding-left: 0vw;
-                padding-top: 2vw;
+                padding-top: 1.5vw;
             }
             .project h3 {
                 font-size: var(--laptop_standard_text);
@@ -238,19 +238,22 @@
             .about-project p {
                 font-size: var(--laptop_about_text);
             }
-            .text-inline p {
-                font-size: var(--laptop_about_text);
-            }
             .image-inline-container img {
-                height: 19vw;
+                height: 20vw;
                 display: block;
                 float: right;
-                margin-bottom: 5vw;
+                padding-bottom: 4.25vw;
+                margin-top: 1.375vw;
             }
             .inline-image-label {
                 font-size: 0.975vw;
                 padding-top: 0.5vw;
                 margin-left: 55%;
+            }
+            .text-inline p {
+                font-size: 1.3vw;
+                padding-top: 0.5vw;
+                padding-bottom: 0.5vw;
             }
             .quote {
                 margin-top: 2vw;
@@ -316,7 +319,7 @@
             }
             h2 {
                 font-size: 1.6vw;
-                margin-top: 1vw;
+                margin-top: 0.5vw;
             }
             h3 {
                 font-size: var(--laptop_standard_text);
@@ -337,7 +340,7 @@
             .page-title h1 {
                 font-size: 1.8vw;
                 padding-left: 0vw;
-                padding-top: 2vw;
+                padding-top: 1.5vw;
             }
             .project h3 {
                 font-size: var(--laptop_standard_text);
@@ -366,19 +369,22 @@
             .about-project p {
                 font-size: var(--laptop_about_text);
             }
-            .text-inline p {
-                font-size: var(--laptop_about_text);
-            }
             .image-inline-container img {
-                height: 19vw;
+                height: 20vw;
                 display: block;
                 float: right;
-                margin-bottom: 5vw;
+                padding-bottom: 4.25vw;
+                margin-top: 1.375vw;
             }
             .inline-image-label {
                 font-size: 0.975vw;
                 padding-top: 0.5vw;
                 margin-left: 55%;
+            }
+            .text-inline p {
+                font-size: 1.3vw;
+                padding-top: 0.5vw;
+                padding-bottom: 0.5vw;
             }
             .quote {
                 margin-top: 2vw;
@@ -443,7 +449,7 @@
             }
             h2 {
                 font-size: 1.25vw;
-                margin-top: 1vw;
+                margin-top: 0.5vw;
             }
             h3 {
                 font-size: 1vw;
@@ -463,7 +469,7 @@
             }
             .page-title h1 {
                 font-size: 1.5vw;
-                padding-top: 2vw;
+                padding-top: 1.5vw;
             }
             .project h3 {
                 font-size: 1vw;
@@ -495,19 +501,22 @@
             .text-image-wrap {
                 margin-bottom: 0vw;
             }
-            .text-inline p {
-                font-size: 1vw;
-            }
             .image-inline-container img {
-                height: 12vw;
+                height: 15vw;
                 display: block;
                 float: right;
-                margin-bottom: 0vw;
+                padding-bottom: 4.25vw;
+                margin-top: 0.55vw;
             }
             .inline-image-label {
                 font-size: 0.625vw;
                 padding-top: 0.5vw;
                 margin-left: 65.6%;
+            }
+            .text-inline p {
+                font-size: 1.125vw;
+                padding-top: 0.5vw;
+                padding-bottom: 0.5vw;
             }
             .quote {
                 margin-top: 2vw;
@@ -618,7 +627,7 @@
             overflow: hidden;
         }
         .header_container {
-            padding: 0.85vw;
+            padding: 0.5vw;
             margin: 0vw;
             background-color:#b3002d;
             opacity: 0.95;
@@ -691,7 +700,7 @@
             margin: 0 auto;
         }
         .section-break {
-            padding-bottom: 6vw;
+            margin-bottom: 8vw;
         }
 
         /* about section projects */
@@ -701,6 +710,7 @@
         .text-image-wrap {
             margin-top: 0vw;
             padding-top: 0vw;
+            padding-bottom: 0.75vw;
             display: inline-block;
         }
         .text-inline {
@@ -708,22 +718,10 @@
             margin-right: 2.5vw;
         }
         .image-inline-container img {
-            border: 1.75px solid  #D3D3D3;
-            border-radius: 3%;
-            margin-top: 0vw;
+            border: none;
             margin-bottom: 0px;
-            margin-left: 5vw;
-            margin-right: 8vw;
-            margin-bottom: 0vw;
-            width: auto;
-        }
-        .image-inline-container p {
-            border: 1.75px solid  #D3D3D3;
-            border-radius: 3%;
-            margin-top: 0vw;
-            margin-bottom: 0px;
-            margin-left: 5vw;
-            margin-right: 8vw;
+            margin-left: 7vw;
+            margin-right: 7vw;
             margin-bottom: 0vw;
             width: auto;
         }
@@ -811,7 +809,7 @@
             overflow: hidden;
         }
         .footer_container {
-            padding: 0.85vw;
+            padding: 0.5vw;
             margin: 0vw;
             background-color: #b3002d;
             opacity: 0.95;
