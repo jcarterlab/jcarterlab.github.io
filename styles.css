@@ -1,4 +1,4 @@
-﻿        /* CSS Reset */
+        /* CSS Reset */
         html, body, div, span, applet, object, iframe,
         h1, h2, h3, h4, h5, h6, p, blockquote, pre,
         a, abbr, acronym, address, big, cite, code,
@@ -19,7 +19,7 @@
         :root {
             --laptop_about_text: 1.215vw;
             --laptop_standard_text: 1.1vw;
-            --laptop_nav_link_text: 1.315vw;
+            --laptop_nav_link_text: 1.25vw;
             --laptop_header_footer_margins: 0.5vw;
           }
 
@@ -29,6 +29,12 @@
             header {
                 width: 100%;
                 margin: 0 auto;
+            }
+            .header_h2 {
+                color: white; 
+                font-weight: normal; 
+                padding-left: 0.8vw;
+                font-size: 1.2vw;
             }
             .container {
                 width: 95%;
@@ -157,6 +163,13 @@
                 width: 92.5%;
                 margin: 0 auto;
             }
+            .header_h2 {
+                color: white; 
+                font-weight: normal; 
+                padding-left: 0.75vw;
+                padding-bottom: 0vw;
+                font-size: 1.5vw;
+            }
             .container {
                 width: 75%;
             }
@@ -183,8 +196,8 @@
                 left: 27vw;
             }
             h1 {
-                font-size: 2.2vw;
-                padding-right:0vw;
+                font-size: 2vw;
+                padding-right: 1.5vw;
             }
             h2 {
                 font-size: 1.6vw;
@@ -239,7 +252,7 @@
                 font-size: var(--laptop_about_text);
             }
             .image-inline-container img {
-                height: 20vw;
+                height: 18vw;
                 display: block;
                 float: right;
                 padding-bottom: 4.25vw;
@@ -251,7 +264,7 @@
                 margin-left: 55%;
             }
             .text-inline p {
-                font-size: 1.3vw;
+                font-size: 1.275vw;
                 padding-top: 0.5vw;
                 padding-bottom: 0.5vw;
             }
@@ -288,6 +301,13 @@
                 width: 92.5%;
                 margin: 0 auto;
             }
+            .header_h2 {
+                color: white; 
+                font-weight: normal; 
+                padding-left: 3.55vw;
+                padding-bottom: 0vw;
+                font-size: 1.2vw;
+            }
             .container {
                 width: 75%;
             }
@@ -314,8 +334,8 @@
                 left: 27vw;
             }
             h1 {
-                font-size: 2.2vw;
-                padding-right:1vw;
+                font-size: 2.1vw;
+                padding-right: 2.5vw;
             }
             h2 {
                 font-size: 1.6vw;
@@ -335,7 +355,7 @@
             }
             nav li a {
                 font-size: var(--laptop_nav_link_text);
-                margin-left: 9vw;
+                margin-left: 8.5vw;
             }
             .page-title h1 {
                 font-size: 1.8vw;
@@ -370,7 +390,7 @@
                 font-size: var(--laptop_about_text);
             }
             .image-inline-container img {
-                height: 20vw;
+                height: 18vw;
                 display: block;
                 float: right;
                 padding-bottom: 4.25vw;
@@ -382,7 +402,7 @@
                 margin-left: 55%;
             }
             .text-inline p {
-                font-size: 1.3vw;
+                font-size: 1.25vw;
                 padding-top: 0.5vw;
                 padding-bottom: 0.5vw;
             }
@@ -419,6 +439,13 @@
                 width: 92.5%;
                 margin: 0 auto;
             }
+            .header_h2 {
+                color: white; 
+                font-weight: normal; 
+                padding-left: 0.75vw;
+                padding-bottom: 0.25vw;
+                font-size: 1.1vw;
+            }
             .container {
                 width: 70%;
             }
@@ -445,7 +472,8 @@
                 left: 22.55vw;
             }
             h1 {
-                font-size: 1.65vw;
+                font-size: 1.6vw;
+                padding-right: 4vw;
             }
             h2 {
                 font-size: 1.25vw;
@@ -465,7 +493,7 @@
             }
             nav li a {
                 font-size: 1vw; 
-                margin-left: 11.5vw;
+                margin-left: 10vw;
             }
             .page-title h1 {
                 font-size: 1.5vw;
@@ -809,7 +837,7 @@
             overflow: hidden;
         }
         .footer_container {
-            padding: 0.5vw;
+            padding: 1.85vw;
             margin: 0vw;
             background-color: #b3002d;
             opacity: 0.95;
