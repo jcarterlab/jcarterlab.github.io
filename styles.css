@@ -19,7 +19,7 @@
         :root {
             --laptop_about_text: 1.215vw;
             --laptop_standard_text: 1.1vw;
-            --laptop_nav_link_text: 1.25vw;
+            --laptop_nav_link_text: 1.3vw;
             --laptop_header_footer_margins: 0.5vw;
           }
 
@@ -166,9 +166,9 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 0.75vw;
+                padding-left: 3.55vw;
                 padding-bottom: 0vw;
-                font-size: 1.5vw;
+                font-size: 1.2vw;
             }
             .container {
                 width: 75%;
@@ -178,12 +178,12 @@
             }
             .project-1 {
                 width: 47.5%;
-                margin-top: 2vw;
-                margin-bottom: 4vw;
+                margin-top: 1vw;
+                margin-bottom: 3vw;
             }
             .project-2 {
                 width: 47.5%;
-                margin-top: 2vw;
+                margin-top: 1vw;
                 margin-bottom: 3vw;
             }
             .project img {
@@ -196,8 +196,8 @@
                 left: 27vw;
             }
             h1 {
-                font-size: 2vw;
-                padding-right: 1.5vw;
+                font-size: 2.1vw;
+                padding-right: 2vw;
             }
             h2 {
                 font-size: 1.6vw;
@@ -264,7 +264,7 @@
                 margin-left: 55%;
             }
             .text-inline p {
-                font-size: 1.275vw;
+                font-size: 1.25vw;
                 padding-top: 0.5vw;
                 padding-bottom: 0.5vw;
             }
@@ -335,7 +335,7 @@
             }
             h1 {
                 font-size: 2.1vw;
-                padding-right: 2.5vw;
+                padding-right: 2vw;
             }
             h2 {
                 font-size: 1.6vw;
@@ -355,7 +355,7 @@
             }
             nav li a {
                 font-size: var(--laptop_nav_link_text);
-                margin-left: 8.5vw;
+                margin-left: 9vw;
             }
             .page-title h1 {
                 font-size: 1.8vw;
@@ -442,12 +442,12 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 0.75vw;
-                padding-bottom: 0.25vw;
-                font-size: 1.1vw;
+                padding-left: 3.55vw;
+                padding-bottom: 0vw;
+                font-size: 1.2vw;
             }
             .container {
-                width: 70%;
+                width: 75%;
             }
             .project {
                 display: flex;
@@ -463,86 +463,84 @@
                 margin-bottom: 3vw;
             }
             .project img {
-                height: 12vw;
+                height: 14vw;
             }
             .previous {
-                right: 22.55vw;
+                right: 27vw;
             }
             .next {
-                left: 22.55vw;
+                left: 27vw;
             }
             h1 {
-                font-size: 1.6vw;
-                padding-right: 4vw;
+                font-size: 2.1vw;
+                padding-right: 2vw;
             }
             h2 {
-                font-size: 1.25vw;
+                font-size: 1.6vw;
                 margin-top: 0.5vw;
             }
             h3 {
-                font-size: 1vw;
+                font-size: var(--laptop_standard_text);
             }
             p {
-                font-size: 0.85vw;
+                font-size: var(--laptop_standard_text);
             }
             u {
-                font-size: 1vw;
+                font-size: var(--laptop_about_text);
             }
             ul {
-                font-size: 1vw;
+                font-size: var(--laptop_standard_text);
             }
             nav li a {
-                font-size: 1vw; 
-                margin-left: 10vw;
+                font-size: var(--laptop_nav_link_text);
+                margin-left: 9vw;
             }
             .page-title h1 {
-                font-size: 1.5vw;
+                font-size: 1.8vw;
+                padding-left: 0vw;
                 padding-top: 1.5vw;
             }
             .project h3 {
-                font-size: 1vw;
+                font-size: var(--laptop_standard_text);
                 padding-bottom: 1vw;
             }
             .project p {
-                font-size: 1vw;
+                font-size: var(--laptop_standard_text);
             }
             .about-project {
                 margin-top: 2vw;
                 margin-bottom: 3vw;
             }
             .about-project h3 {
-                font-size: 1vw;
+                font-size: var(--laptop_about_text);
                 padding-bottom: 1vw;
             }
             .about-project ul {
-                margin-bottom: 3vw;
+                margin-bottom: 2vw;
             }
             .about-project li {
-                font-size: 1vw;
+                font-size: var(--laptop_about_text);
             }
             .about-project u {
-                font-size: 1vw;
+                font-size: var(--laptop_about_text);
             }
             .about-project p {
-                font-size: 1vw;
-            }
-            .text-image-wrap {
-                margin-bottom: 0vw;
+                font-size: var(--laptop_about_text);
             }
             .image-inline-container img {
-                height: 15vw;
+                height: 18vw;
                 display: block;
                 float: right;
                 padding-bottom: 4.25vw;
-                margin-top: 0.55vw;
+                margin-top: 1.375vw;
             }
             .inline-image-label {
-                font-size: 0.625vw;
+                font-size: 0.975vw;
                 padding-top: 0.5vw;
-                margin-left: 65.6%;
+                margin-left: 55%;
             }
             .text-inline p {
-                font-size: 1.125vw;
+                font-size: 1.25vw;
                 padding-top: 0.5vw;
                 padding-bottom: 0.5vw;
             }
@@ -551,26 +549,26 @@
                 margin-bottom: 3vw;
             }
             .quote p {
-                font-size: 1vw;
+                font-size: var(--laptop_standard_text);
             }
             .quote h4 {
-                font-size: 1vw;
+                font-size: var(--laptop_standard_text);
             }
             .quote-text {
-                font-size: 1vw;
+                font-size: var(--laptop_standard_text);
             }
             .quote-text p {
-                font-size: 1vw;
+                font-size: var(--laptop_standard_text);
             }
             footer li {
-                font-size: 1vw;
-                padding: 1.25vw;
+                font-size: 1.1vw;
+                padding: var(--laptop_header_footer_margins);
                 padding-left: 4vw;
                 padding-right: 6vw;
             }
             footer li a {
-                font-size: 1vw;
-                padding: 1.25vw;
+                font-size: 1.1vw;
+                padding: var(--laptop_header_footer_margins);
             }
         }
 

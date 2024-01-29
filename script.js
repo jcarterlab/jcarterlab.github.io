@@ -19,7 +19,7 @@
 
     /* photo lists */ 
     var Europe = [  
-        "Images/Photography/Europe/Greece_1.JPG",
+        "Images/Photography/Europe/Greece_1.jpg",
         "Images/Photography/Europe/Spain_1.JPG",
         "Images/Photography/Europe/Italy_1.JPG",
         "Images/Photography/Europe/Austria_1.JPG",
@@ -49,7 +49,6 @@
     var Asia = [ 
         "Images/Photography/Asia/Cambodia_1.JPG",
         "Images/Photography/Asia/Cambodia_2.JPG",
-        "Images/Photography/Asia/Cambodia_3.JPG",
         "Images/Photography/Asia/Philippines_1.JPG",
         "Images/Photography/Asia/Thailand_1.JPG", 
         "Images/Photography/Asia/Vietnam_1.JPG",
