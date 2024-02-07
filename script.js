@@ -41,8 +41,7 @@
         "Images/Photography/Middle-East/Turkey_1.JPG",
         "Images/Photography/Middle-East/Turkey_2.JPG",
         "Images/Photography/Middle-East/Turkey_3.JPG",
-        "Images/Photography/Middle-East/Turkey_4.JPG",
-        "Images/Photography/Middle-East/Turkey_5.JPG"
+        "Images/Photography/Middle-East/Turkey_4.JPG"
         ];
     var MiddleEastImageIndex = 0;
 
