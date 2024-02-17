@@ -19,7 +19,7 @@
         :root {
             --laptop_about_text: 1.215vw;
             --laptop_standard_text: 1.1vw;
-            --laptop_nav_link_text: 1.1vw;
+            --laptop_nav_link_text: 1.115vw;
             --laptop_header_footer_margins: 0.5vw;
           }
 
@@ -167,7 +167,7 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 3.55vw;
+                padding-left: 3.56vw;
                 padding-bottom: 0vw;
                 font-size: 1.25vw;
             }
@@ -219,8 +219,7 @@
             nav li a {
                 font-size: var(--laptop_nav_link_text);
                 margin-left: 5.5vw;
-                opacity: 0.94;
-
+                opacity: 1;
             }
             .page-title h1 {
                 font-size: 1.8vw;
@@ -308,7 +307,7 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 3.55vw;
+                padding-left: 3.56vw;
                 padding-bottom: 0vw;
                 font-size: 1.25vw;
             }
@@ -360,7 +359,7 @@
             nav li a {
                 font-size: var(--laptop_nav_link_text);
                 margin-left: 5.5vw;
-                opacity: 0.94;
+                opacity: 1;
             }
             .page-title h1 {
                 font-size: 1.8vw;
@@ -448,7 +447,7 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 3.55vw;
+                padding-left: 3.56vw;
                 padding-bottom: 0vw;
                 font-size: 1.25vw;
             }
@@ -500,7 +499,7 @@
             nav li a {
                 font-size: var(--laptop_nav_link_text);
                 margin-left: 5.5vw;
-                opacity: 0.94;
+                opacity: 1;
             }
             .page-title h1 {
                 font-size: 1.8vw;
@@ -687,6 +686,9 @@
         }
         .nav_final {
             margin-right: 5vw;
+        }
+        .emojis {
+            opacity: 0.83;
         }
 
 
