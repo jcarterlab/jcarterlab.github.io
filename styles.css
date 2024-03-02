@@ -18,7 +18,7 @@
 
         :root {
             --theme_color: #C20E35;
-            --laptop_nav_text: 1.25vw;
+            --laptop_nav_text: 1.2vw;
             --laptop_about_text: 1.215vw;
             --laptop_standard_text: 1.1vw;
             --laptop_nav_link_text: 1.115vw;
@@ -169,9 +169,9 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 3.35vw;
+                padding-left: 1.9075vw;
                 padding-bottom: 0vw;
-                font-size: var(--laptop_nav_text);
+                font-size: 1.05vw;
             }
             .container {
                 width: 75%;
@@ -289,13 +289,13 @@
                 font-size: var(--laptop_standard_text);
             }
             footer li {
-                font-size: 1.25vw;
+                font-size: 1.065vw;
                 padding: var(--laptop_header_footer_margins);
                 padding-left: 2.75vw;
                 padding-right: 6vw;
             }
             footer li a {
-                font-size: 1.25vw;
+                font-size: 1.065vw;
                 padding: var(--laptop_header_footer_margins);
                 opacity: 0.94;
             }
@@ -309,9 +309,9 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 3.35vw;
+                padding-left: 1.9075vw;
                 padding-bottom: 0vw;
-                font-size: var(--laptop_nav_text);
+                font-size: 1.05vw;
             }
             .container {
                 width: 75%;
@@ -429,13 +429,13 @@
                 font-size: var(--laptop_standard_text);
             }
             footer li {
-                font-size: 1.25vw;
+                font-size: 1.065vw;
                 padding: var(--laptop_header_footer_margins);
                 padding-left: 2.75vw;
                 padding-right: 6vw;
             }
             footer li a {
-                font-size: 1.25vw;
+                font-size: 1.065vw;
                 padding: var(--laptop_header_footer_margins);
                 opacity: 0.94;
             }
@@ -449,9 +449,9 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 3.35vw;
+                padding-left: 1.9075vw;
                 padding-bottom: 0vw;
-                font-size: var(--laptop_nav_text);
+                font-size: 1.05vw;
             }
             .container {
                 width: 75%;
@@ -569,13 +569,13 @@
                 font-size: var(--laptop_standard_text);
             }
             footer li {
-                font-size: 1.25vw;
+                font-size: 1.065vw;
                 padding: var(--laptop_header_footer_margins);
                 padding-left: 2.75vw;
                 padding-right: 6vw;
             }
             footer li a {
-                font-size: 1.25vw;
+                font-size: 1.065vw;
                 padding: var(--laptop_header_footer_margins);
                 opacity: 0.94;
             }
