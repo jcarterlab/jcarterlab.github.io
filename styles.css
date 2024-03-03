@@ -18,7 +18,7 @@
 
         :root {
             --theme_color: #C20E35;
-            --laptop_nav_text: 1.2215vw;
+            --laptop_nav_text: 1.17vw;
             --laptop_about_text: 1.215vw;
             --laptop_standard_text: 1.1vw;
             --laptop_nav_link_text: 1.115vw;
@@ -169,9 +169,9 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 2.4vw;
+                padding-left: 2.3vw;
                 padding-bottom: 0vw;
-                font-size: 0.95vw;
+                font-size: 0.975vw;
             }
             .container {
                 width: 75%;
@@ -309,9 +309,9 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 2.4vw;
+                padding-left: 2.3vw;
                 padding-bottom: 0vw;
-                font-size: 0.95vw;
+                font-size: 0.975vw;
             }
             .container {
                 width: 75%;
@@ -359,6 +359,7 @@
                 font-size: var(--laptop_standard_text);
             }
             nav li a {
+                font-weight: bold;
                 font-size: var(--laptop_nav_text);
                 margin-left: 4.5vw;
                 opacity: 1;
@@ -449,9 +450,9 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 2.4vw;
+                padding-left: 2.3vw;
                 padding-bottom: 0vw;
-                font-size: 0.95vw;
+                font-size: 0.975vw;
             }
             .container {
                 width: 75%;
