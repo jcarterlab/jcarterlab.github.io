@@ -18,7 +18,7 @@
 
         :root {
             --theme_color: #C20E35;
-            --laptop_nav_text: 1.17vw;
+            --laptop_nav_text: 1.1vw;
             --laptop_about_text: 1.215vw;
             --laptop_standard_text: 1.1vw;
             --laptop_nav_link_text: 1.115vw;
@@ -169,7 +169,7 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 2.3vw;
+                padding-left: 2.325vw;
                 padding-bottom: 0vw;
                 font-size: 0.975vw;
             }
@@ -309,7 +309,7 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 2.3vw;
+                padding-left: 2.325vw;
                 padding-bottom: 0vw;
                 font-size: 0.975vw;
             }
@@ -450,7 +450,7 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 2.3vw;
+                padding-left: 2.325vw;
                 padding-bottom: 0vw;
                 font-size: 0.975vw;
             }
