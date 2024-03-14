@@ -18,7 +18,7 @@
 
         :root {
             --theme_color: #C20E35;
-            --laptop_nav_text: 1.12vw;
+            --laptop_nav_text: 1.1vw;
             --laptop_about_text: 1.215vw;
             --laptop_standard_text: 1.1vw;
             --laptop_nav_link_text: 1vw;
@@ -194,12 +194,12 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 1.8vw;
+                padding-left: 1.8375vw;
                 padding-bottom: 0vw;
-                font-size: 0.9vw;
+                font-size: 0.875vw;
             }
             .emojis {
-                opacity: 0;
+                opacity: 0.9;
             }
             .container {
                 width: 75%;
@@ -262,7 +262,7 @@
             nav li a {
                 font-weight: bold;
                 font-size: var(--laptop_nav_text);
-                margin-left: 4.25vw;
+                margin-left: 4vw;
                 opacity: 1;
             }
             .page-title h1 {
@@ -330,16 +330,11 @@
             .quote-text p {
                 font-size: var(--laptop_standard_text);
             }
-            footer {
-                padding-top: 5vw;
-                margin-bottom: 5vw;
-            }
             footer li {
                 font-size: 1.065vw;
                 padding: var(--laptop_header_footer_margins);
                 padding-left: 2.75vw;
                 padding-right: 6vw;
-
             }
             footer li a {
                 font-size: 1.065vw;
@@ -356,9 +351,9 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 1.8vw;
+                padding-left: 1.8375vw;
                 padding-bottom: 0vw;
-                font-size: 0.9vw;
+                font-size: 0.875vw;
             }
             .emojis {
                 opacity: 0.9;
@@ -513,12 +508,12 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 1.8vw;
+                padding-left: 1.8375vw;
                 padding-bottom: 0vw;
-                font-size: 0.9vw;
+                font-size: 0.875vw;
             }
             .emojis {
-                opacity: 0;
+                opacity: 0.9;
             }
             .container {
                 width: 75%;
@@ -581,7 +576,7 @@
             nav li a {
                 font-weight: bold;
                 font-size: var(--laptop_nav_text);
-                margin-left: 4.25vw;
+                margin-left: 4vw;
                 opacity: 1;
             }
             .page-title h1 {
