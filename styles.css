@@ -18,7 +18,7 @@
 
         :root {
             --theme_color: #C20E35;
-            --laptop_nav_text: 1.1vw;
+            --laptop_nav_text: 1.16vw;
             --laptop_about_text: 1.215vw;
             --laptop_standard_text: 1.1vw;
             --laptop_nav_link_text: 1vw;
@@ -194,12 +194,15 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 1.846vw;
+                padding-left: 1.85vw;
                 padding-bottom: 0vw;
-                font-size: 0.875vw;
+                font-size: 0.9vw;
             }
             .emojis {
-                opacity: 0.9;
+                height: 1.2vw; 
+                width: auto; 
+                margin-right: 0.7vw;
+                border: none;
             }
             .container {
                 width: 75%;
@@ -351,12 +354,15 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 1.9vw;
+                padding-left: 1.85vw;
                 padding-bottom: 0vw;
-                font-size: 0.875vw;
+                font-size: 0.9vw;
             }
             .emojis {
-                opacity: 0.9;
+                height: 1.2vw; 
+                width: auto; 
+                margin-right: 0.7vw;
+                border: none;
             }
             .container {
                 width: 75%;
@@ -508,12 +514,15 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 1.86vw;
+                padding-left: 1.85vw;
                 padding-bottom: 0vw;
-                font-size: 0.875vw;
+                font-size: 0.9vw;
             }
             .emojis {
-                opacity: 0.9;
+                height: 1.2vw; 
+                width: auto; 
+                margin-right: 0.7vw;
+                border: none;
             }
             .container {
                 width: 75%;
