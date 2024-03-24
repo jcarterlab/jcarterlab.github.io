@@ -194,9 +194,17 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 2.171vw;
+                padding-left: 1.97vw;
                 padding-bottom: 0vw;
-                font-size: 0.975vw;
+                font-size: 1.025vw;
+            }
+            .h2_emoji {
+                margin-left: 0.2vw; 
+                margin-bottom: -0.275vw; 
+                padding-bottom: 0vw;  
+                height: 1.25vw; 
+                width: auto; 
+                border: none;
             }
             .emojis {
                 height: 1.2vw; 
@@ -354,9 +362,17 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 2.171vw;
+                padding-left: 1.97vw;
                 padding-bottom: 0vw;
-                font-size: 0.975vw;
+                font-size: 1.025vw;
+            }
+            .h2_emoji {
+                margin-left: 0.2vw; 
+                margin-bottom: -0.275vw; 
+                padding-bottom: 0vw;  
+                height: 1.25vw; 
+                width: auto; 
+                border: none;
             }
             .emojis {
                 height: 1.2vw; 
@@ -514,9 +530,17 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 2.171vw;
+                padding-left: 1.97vw;
                 padding-bottom: 0vw;
-                font-size: 0.975vw;
+                font-size: 1.025vw;
+            }
+            .h2_emoji {
+                margin-left: 0.2vw; 
+                margin-bottom: -0.275vw; 
+                padding-bottom: 0vw;  
+                height: 1.25vw; 
+                width: auto; 
+                border: none;
             }
             .emojis {
                 height: 1.2vw; 
