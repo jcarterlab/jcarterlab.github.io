@@ -194,9 +194,9 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 2.125vw;
+                padding-left: 2.08vw;
                 padding-bottom: 0vw;
-                font-size: 1vw;
+                font-size: 1.025vw;
             }
             .h2_emoji {
                 margin-left: 0.2vw; 
@@ -362,9 +362,9 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 2.125vw;
+                padding-left: 2.08vw;
                 padding-bottom: 0vw;
-                font-size: 1vw;
+                font-size: 1.025vw;
             }
             .h2_emoji {
                 margin-left: 0.2vw; 
@@ -512,8 +512,8 @@
             footer li {
                 font-size: 1.065vw;
                 padding: var(--laptop_header_footer_margins);
-                padding-left: 2.75vw;
-                padding-right: 8vw;
+                padding-left: 5vw;
+                padding-right: 5vw;
             }
             footer li a {
                 font-size: 1.065vw;
@@ -530,9 +530,9 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 2.125vw;
+                padding-left: 2.08vw;
                 padding-bottom: 0vw;
-                font-size: 1vw;
+                font-size: 1.025vw;
             }
             .h2_emoji {
                 margin-left: 0.2vw; 
