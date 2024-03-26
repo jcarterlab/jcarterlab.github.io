@@ -344,8 +344,10 @@
             footer li {
                 font-size: 1.065vw;
                 padding: var(--laptop_header_footer_margins);
-                padding-left: 2.75vw;
-                padding-right: 6vw;
+                margin-left: 0vw;
+                margin-right: 0vw;
+                padding-left: 0vw;
+                padding-right: 0vw;
             }
             footer li a {
                 font-size: 1.065vw;
@@ -512,8 +514,10 @@
             footer li {
                 font-size: 1.065vw;
                 padding: var(--laptop_header_footer_margins);
-                padding-left: 5vw;
-                padding-right: 5vw;
+                margin-left: 0vw;
+                margin-right: 0vw;
+                padding-left: 0vw;
+                padding-right: 0vw;
             }
             footer li a {
                 font-size: 1.065vw;
@@ -680,8 +684,10 @@
             footer li {
                 font-size: 1.065vw;
                 padding: var(--laptop_header_footer_margins);
-                padding-left: 2.75vw;
-                padding-right: 6vw;
+                margin-left: 0vw;
+                margin-right: 0vw;
+                padding-left: 0vw;
+                padding-right: 0vw;
             }
             footer li a {
                 font-size: 1.065vw;
