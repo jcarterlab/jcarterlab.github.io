@@ -194,7 +194,7 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 2.08vw;
+                padding-left: 2.45vw;
                 padding-bottom: 0vw;
                 font-size: 1.025vw;
             }
@@ -211,6 +211,10 @@
                 width: auto; 
                 margin-right: 0.7vw;
                 border: none;
+            }
+            .not_emojis_about {
+                color: #454545;
+                font-size: var(--laptop_about_text);
             }
             .container {
                 width: 75%;
@@ -230,6 +234,9 @@
             }
             .project img {
                 height: 14vw;
+            }
+            .chatbot {
+                width: 60vw;
             }
             .previous {
                 right: 27vw;
@@ -364,7 +371,7 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 2.08vw;
+                padding-left: 2.45vw;
                 padding-bottom: 0vw;
                 font-size: 1.025vw;
             }
@@ -381,6 +388,10 @@
                 width: auto; 
                 margin-right: 0.7vw;
                 border: none;
+            }
+            .not_emojis_about {
+                color: #454545;
+                font-size: var(--laptop_about_text);
             }
             .container {
                 width: 75%;
@@ -400,6 +411,9 @@
             }
             .project img {
                 height: 14vw;
+            }
+            .chatbot {
+                width: 60vw;
             }
             .previous {
                 right: 27vw;
@@ -534,7 +548,7 @@
             .header_h2 {
                 color: white; 
                 font-weight: normal; 
-                padding-left: 2.08vw;
+                padding-left: 2.45vw;
                 padding-bottom: 0vw;
                 font-size: 1.025vw;
             }
@@ -551,6 +565,10 @@
                 width: auto; 
                 margin-right: 0.7vw;
                 border: none;
+            }
+            .not_emojis_about {
+                color: #454545;
+                font-size: var(--laptop_about_text);
             }
             .container {
                 width: 75%;
@@ -570,6 +588,9 @@
             }
             .project img {
                 height: 14vw;
+            }
+            .chatbot {
+                width: 40vw;
             }
             .previous {
                 right: 27vw;
