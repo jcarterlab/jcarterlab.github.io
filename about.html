@@ -46,17 +46,55 @@
 
 
         <h2>Interactive Overview</h2>
-        <p>One of the things I can do as a data scientist is create custom-built chatbot applications. The chatbot below answers questions about me based on the information on this page. Why not give it a go and ask a question?</p>
-        <div style="display: flex; justify-content: center; align-items: center;">
+        <p>One of the things I can do as a data scientist is create custom-built chatbot applications. The chatbot below answers questions about me based on the information on this page. Why not give it a go?</p>
+        <br>
+        <br>
+        <br>
+        <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 5vw;">
             <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.24.0/gradio.js"></script>
             <gradio-app src="https://jcarterlab-about-me.hf.space" class="chatbot"></gradio-app>
         </div>
-        <div class="section-break">
-        </div>
+        <p>Another thing I can do is create custom visualizations. Check out the Tableau dashboard below for an overview on which parts of my CV demonstrate experience with data.</p>
+    </div>
+
+
+        <div class='tableauPlaceholder' id='viz1712386165527' style='position: relative; margin: 0 auto; margin-bottom: 4vw;'><noscript>
+            <a href='#'>
+                <img alt='Cut to the data ✂--The parts of my CV that involve data--** hover for details** ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cu&#47;Cuttothedata&#47;Cuttothedata&#47;1_rss.png' style='border: none' />
+            </a>
+        </noscript>
+        <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> 
+            <param name='site_root' value='' />
+            <param name='name' value='Cuttothedata&#47;Cuttothedata' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cu&#47;Cuttothedata&#47;Cuttothedata&#47;1.png' /> 
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-GB' />
+        </object>
+        </div>                
+        <script type='text/javascript'>                    
+            var divElement = document.getElementById('viz1712386165527');                    
+            var vizElement = divElement.getElementsByTagName('object')[0];                    
+            if ( divElement.offsetWidth > 1400 ) { vizElement.style.width='1199px'; vizElement.style.height='780px';} 
+            else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='75vw'; vizElement.style.height='780px';} 
+            else { vizElement.style.width='100%';vizElement.style.height='1777px';}                     
+            var scriptElement = document.createElement('script');                    
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
 
 
 
 
+    <div class="container" id="about">
+        
         <h2>Skills</h2>
         <div class="about-project" style="margin-left: 0vw;">
 
@@ -87,15 +125,158 @@
         </div>
 
 
-        <h2>Freelance Experience</h2>
-        <div class="about-project" style="margin-bottom: 5vw;">
-            <p>I started freelancing in 2021, initially editing online content before transitioning into data science. My  innate sense of commercial awareness coupled with my domain knowledge has helped me to provide value for:</p>
-            <div style="display: flex; justify-content: center; align-items: center;">
-                <img class="no_border_image" src="Images/Me/freelance_jobs.png" style="height: 18vw; margin-top:1vw; width: auto;">
+
+
+        <h2 style="margin-top: 8vw;">Accomplishments</h2>
+
+        <div id="VisibleAccomplishments" class="content-section">
+            <div class="about-project">
+                <div class="about-project">
+                    <h3>Dec 2023 - Present</h3>
+                    <h3><b>Chatbot Solutions Implemented</b></h3>
+                    <ul>
+                        <li>Excelbot, trainee classification --- Skills Ladder, Tewkesbury (UK)</i></li>
+    
+                        <li>Lumapps Vs Igloo, customers information --- Mosaique, Gloucestershire (UK)</li>
+    
+                        <li>ChatSJB, staff training --- Saint James, London (UK)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-break">
+                <span class="toggleButton" onclick="toggleVisibility('VisibleAccomplishments', 'HiddenAccomplishments')"><u>More accomplishments >></u></span>
             </div>
         </div>
-        <div class="section-break">
+
+        <div id="HiddenAccomplishments" class="hidden-section">
+
+            <div class="about-project">
+                <h3>Dec 2023 - Present</h3>
+                <h3><b>Chatbot Solutions Implemented</b></h3>
+                <ul>
+                    <li>Excelbot, trainee classification --- Skills Ladder, Tewkesbury (UK)</i></li>
+
+                    <li>Lumapps Vs Igloo, customers information --- Mosaique, Gloucestershire (UK)</li>
+
+                    <li>ChatSJB, staff training --- Saint James, London (UK)</li>
+                </ul>
+            </div>
+
+            <div class="about-project">
+                <h3>Nov 2022 - Present</h3>
+                <h3><b>Algorithms Developed</b></h3>
+                <ul>
+                    <li>Dynamic pricing --- Saint James Hostel, London</i></li>
+
+                    <li>Group classificaiton --- Skills Ladder, Tewkesbury (UK)</li>
+
+                    <li>Distribution optimization --- TIAFI, Izmir (Turkey)</li>
+                </ul>
+            </div>
+
+            <div class="about-project">
+                <h3>Sep 2020 - Present</h3>
+                <h3><b>Notable Authors Proofread</b></h3>
+                <ul>
+                    <li>Julio A. Jeldres --- Chilean Ambassador to Cambodia</i></li>
+
+                    <li>Carmen Moreno --- EU Ambassador to Cambodia</li>
+
+                    <li>Pablo Kang --- Australian Ambassador to Cambodia</li>
+
+                    <li>Pou Sothirak --- Former Cambodian Ambassador to Japan</li>
+
+                    <li>Simon Tay --- Singapore’s Ambassador to Greece</li>
+                </ul>
+            </div>
+
+            <div class="about-project">
+                <h3>Sep 2020 - Present</h3>
+                <h3><b>Foreign Affairs Publications Proofread</b></h3>
+                <ul>
+                    <li>Diplomatic Briefing: Volume 6 - CICP and KAS Cambodia</i></li>
+
+                    <li>Diplomatic Briefing: Volume 5 - CICP and KAS Cambodia</li>
+
+                    <li>Beyond the Wordy Statements - Chhay Lim, KAS Cambodia</li>
+
+                    <li>Diplomatic Briefing: Volume 4 - CICP and KAS Cambodia</li>
+
+                    <li>Cambodia’s ASEAN Chairmanship in 2022 - AVI and KAS</li>
+
+                    <li>Cambodia's Chairmanship of ASEAN - CICP Cambodia</li>
+
+                    <li>The Impact of Covid-19 - CICP Cambodia</li>
+
+                    <li>CICP Op-Ed Series - CICP Cambodia</li>
+                </ul>
+            </div>
+
+            <div class="about-project">
+                <h3>July 2013 - Sep 2018</h3>
+                <h3><b>University Achievements</b></h3>
+                <ul>
+                    <li>High distinction in my master's thesis --- King's College London</li>
+                    <li>2017 Student of the Year Award --- Cardiff Metropolitan</li>
+                </ul>
+            </div>
+            <div class="section-break">
+                <span class="toggleButton" onclick="toggleVisibility('VisibleAccomplishments', 'HiddenAccomplishments')"><u>Less accomplishments ^^</u></span>
+            </div>
         </div>
+
+
+
+
+        <h2>Freelance Experience</h2>
+
+        <div id="VisibleFreelanceExperience" class="content-section">
+            <div class="about-project" style="margin-bottom: 5vw;">
+                <p>I started freelancing in 2021, initially editing online content before transitioning into data science. My domain knowledge coupled with my innate sense of commercial awareness has helped me to provide value for these organizations and more:</p>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <img class="no_border_image" src="Images/Me/freelance_jobs.png" style="height: 18vw; margin-top:1vw; width: auto;">
+                </div>
+            </div>
+            <div class="section-break">
+                <span class="toggleButton" onclick="toggleVisibility('VisibleFreelanceExperience', 'HiddenFreelanceExperience')"><u>More freelance experience >></u></span>
+            </div>
+        </div>
+
+        <div id="HiddenFreelanceExperience" class="hidden-section">
+            <div class="about-project" style="margin-bottom: 5vw;">
+                <p>I started freelancing in 2021, initially editing online content before transitioning into data science. My domain knowledge coupled with my innate sense of commercial awareness has helped me to provide value for these organizations and more:</p>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <img class="no_border_image" src="Images/Me/freelance_jobs.png" style="height: 18vw; margin-top:1vw; width: auto;">
+                </div>
+            </div>
+
+            <div class="about-project">
+                <h3>Dec 2023 – Present</h3>
+                <h3><b>Freelance Data Scientist</b> --- small businesses, in-person & online</h3>
+                <ul>
+                    <li>LLM powered chatbot apps</li>
+                    <li>Data visualization in Tableau and Python</li>
+                    <li>Custom solutions (distribution optimization, dynamic pricing, rota generation etc.)</li>
+                </ul>
+            </div>
+
+            <div class="about-project">
+                <h3>Sep 2021 – Present</h3>
+                <h3><b>Freelance Editor</b> --- NGOs, Academics and businesses, online</h3>
+                <ul>
+                    <li>International relations publications for Southeast Asian think tanks</li>
+                    <li>Journal article publications in a range of fields</li>
+                    <li>PhD theses in the social sciences and arts fields</li>
+                    <li>Web content for various businesses including travel articles for easyJet</li>
+                </ul>
+            </div>
+
+            <div class="section-break">
+                <span class="toggleButton" onclick="toggleVisibility('VisibleFreelanceExperience', 'HiddenFreelanceExperience')"><u>Less employment experience ^^</u></span>
+            </div>
+        </div>
+
 
 
 
@@ -134,22 +315,11 @@
             </div>
 
             <div class="about-project">
-                <h3>Sep 2021 – May 2023</h3>
-                <h3><b>Freelance Editor</b> --- NGOs, Academics and businesses, online</h3>
-                <ul>
-                    <li>International relations publications for Southeast Asian think tanks</li>
-                    <li>Journal article publications in a range of fields</li>
-                    <li>PhD theses in the social sciences and arts fields</li>
-                    <li>Web content for various businesses including travel articles for easyJet</li>
-                </ul>
-            </div>
-
-            <div class="about-project">
                 <h3>Sep – Dec 2022</h3>
                 <h3><b>Data Analyst</b> --- TIAFI, Izmir</h3>
                 <ul>
                     <li>Created several support package distribution algorithms</li>
-                    <li>Build 2 Retool database apps to help manage interactions with 9,000+ members</li>
+                    <li>Built 2 Retool database apps to help manage interactions with 9,000+ members</li>
                     <li>Conducted monthly data analysis to provide specific figures for outside donors</li>
                     <li>Made a tool to read-in and translate scores data from Arabic Word documents</li>
                 </ul>
@@ -241,62 +411,6 @@
 
 
 
-      <h2 style="margin-top: 8vw;">Notable Accomplishments</h2>
-
-        <div id="VisibleAccomplishments" class="content-section">
-            <div class="about-project">
-                <h3>Sep 2020 - Present</h3>
-                <h3><b>Authors proofread</b></h3>
-                <ul>
-                    <li>Julio A. Jeldres --- Chilean Ambassador to Cambodia</i></li>
-
-                    <li>Carmen Moreno --- EU Ambassador to Cambodia</li>
-
-                    <li>Pablo Kang --- Australian Ambassador to Cambodia</li>
-
-                    <li>Pou Sothirak --- Former Cambodian Ambassador to Japan</li>
-
-                    <li>Simon Tay --- Singapore’s Ambassador to Greece</li>
-                </ul>
-            </div>
-
-            <div class="section-break">
-                <span class="toggleButton" onclick="toggleVisibility('VisibleAccomplishments', 'HiddenAccomplishments')"><u>More accomplishments >></u></span>
-            </div>
-        </div>
-
-        <div id="HiddenAccomplishments" class="hidden-section">
-            <div class="about-project">
-                <h3>Sep 2020 - Present</h3>
-                <h3><b>Authors proofread</b></h3>
-                <ul>
-                    <li>Julio A. Jeldres --- Chilean Ambassador to Cambodia</i></li>
-
-                    <li>Carmen Moreno --- EU Ambassador to Cambodia</li>
-
-                    <li>Pablo Kang --- Australian Ambassador to Cambodia</li>
-
-                    <li>Pou Sothirak --- Former Cambodian Ambassador to Japan</li>
-
-                    <li>Simon Tay --- Singapore’s Ambassador to Greece</li>
-                </ul>
-            </div>
-
-            <div class="about-project">
-                <h3>July 2013 - Sep 2018</h3>
-                <h3><b>University achievements</b></h3>
-                <ul>
-                    <li>High distinction in my master's thesis --- King's College London</li>
-                    <li>2017 Student of the Year Award --- Cardiff Metropolitan</li>
-                </ul>
-            </div>
-            <div class="section-break">
-                <span class="toggleButton" onclick="toggleVisibility('VisibleAccomplishments', 'HiddenAccomplishments')"><u>Less accomplishments ^^</u></span>
-            </div>
-        </div>
-
-
-
         <h2>Education</h2>
 
         <div id="VisibleEducation" class="content-section">
@@ -348,6 +462,8 @@
                 <span class="toggleButton" onclick="toggleVisibility('VisibleEducation', 'HiddenEducation')"><u>Less education ^^</u></span>
             </div>
         </div>
+
+
 
 
     </br>
