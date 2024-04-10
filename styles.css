@@ -194,7 +194,7 @@ time, mark, audio, video {
     .header_h2 {
         color: white; 
         font-weight: normal; 
-        padding-left: 2.45vw;
+        padding-left: 2.475vw;
         padding-bottom: 0vw;
         font-size: 1.025vw;
     }
@@ -385,7 +385,7 @@ time, mark, audio, video {
     .header_h2 {
         color: white; 
         font-weight: normal; 
-        padding-left: 2.465vw;
+        padding-left: 2.475vw;
         padding-bottom: 0vw;
         font-size: 1.025vw;
     }
@@ -576,7 +576,7 @@ time, mark, audio, video {
     .header_h2 {
         color: white; 
         font-weight: normal; 
-        padding-left: 2.45vw;
+        padding-left: 2.475vw;
         padding-bottom: 0vw;
         font-size: 1.025vw;
     }
@@ -618,7 +618,7 @@ time, mark, audio, video {
         height: 14vw;
     }
     .chatbot {
-        width: 50vw;
+        width: 60vw;
     }
     .gradio-container {
         background-color: #fbf7fb !important;
@@ -627,9 +627,12 @@ time, mark, audio, video {
         background-color: #fbf7fb !important;
     }
     .tableau {
-        display: flex;
-        justify-content: center;
         width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        margin-left: auto; 
+        margin-right: auto;
     }
     .previous {
         right: 27vw;
