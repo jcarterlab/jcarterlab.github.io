@@ -22,7 +22,7 @@ time, mark, audio, video {
     --laptop_about_text: 1.215vw;
     --laptop_standard_text: 1.1vw;
     --laptop_nav_link_text: 1vw;
-    --laptop_header_footer_margins: 0.5vw;
+    --laptop_header_footer_margins: 0.75vw;
   }
 
 
@@ -217,7 +217,7 @@ time, mark, audio, video {
         font-size: var(--laptop_about_text);
     }
     .container {
-        width: 75%;
+        width: 76%;
     }
     .project {
         display: flex;
@@ -333,7 +333,7 @@ time, mark, audio, video {
         height: 18vw;
         display: block;
         float: right;
-        padding-bottom: 4.25vw;
+        padding-bottom: 3.25vw;
         margin-top: 1.75vw;
     }
     .inline-image-label {
@@ -342,9 +342,9 @@ time, mark, audio, video {
         margin-left: 55%;
     }
     .text-inline p {
-        font-size: 1.21vw;
-        padding-top: 0.5vw;
-        padding-bottom: 0.5vw;
+        font-size: 1.22vw;
+        padding-top: 0.25vw;
+        padding-bottom: 0.25vw;
     }
     .quote {
         margin-top: 2vw;
@@ -408,7 +408,7 @@ time, mark, audio, video {
         font-size: var(--laptop_about_text);
     }
     .container {
-        width: 75%;
+        width: 76%;
     }
     .project {
         display: flex;
@@ -524,7 +524,7 @@ time, mark, audio, video {
         height: 18vw;
         display: block;
         float: right;
-        padding-bottom: 4.25vw;
+        padding-bottom: 3.25vw;
         margin-top: 1.75vw;
     }
     .inline-image-label {
@@ -533,9 +533,9 @@ time, mark, audio, video {
         margin-left: 55%;
     }
     .text-inline p {
-        font-size: 1.2215vw;
-        padding-top: 0.5vw;
-        padding-bottom: 0.5vw;
+        font-size: 1.22vw;
+        padding-top: 0.25vw;
+        padding-bottom: 0.25vw;
     }
     .quote {
         margin-top: 2vw;
@@ -599,7 +599,7 @@ time, mark, audio, video {
         font-size: var(--laptop_about_text);
     }
     .container {
-        width: 75%;
+        width: 76%;
     }
     .project {
         display: flex;
@@ -715,7 +715,7 @@ time, mark, audio, video {
         height: 18vw;
         display: block;
         float: right;
-        padding-bottom: 4.25vw;
+        padding-bottom: 3.25vw;
         margin-top: 1.75vw;
     }
     .inline-image-label {
@@ -724,9 +724,9 @@ time, mark, audio, video {
         margin-left: 55%;
     }
     .text-inline p {
-        font-size: 1.21vw;
-        padding-top: 0.5vw;
-        padding-bottom: 0.5vw;
+        font-size: 1.22vw;
+        padding-top: 0.25vw;
+        padding-bottom: 0.25vw;
     }
     .quote {
         margin-top: 2vw;
