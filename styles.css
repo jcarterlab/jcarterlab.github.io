@@ -330,11 +330,11 @@ time, mark, audio, video {
         font-size: var(--laptop_about_text);
     }
     .image-inline-container img {
-        height: 18vw;
+        height: 17.75vw;
         display: block;
         float: right;
         padding-bottom: 4.25vw;
-        margin-top: 1.375vw;
+        margin-top: 1.75vw;
     }
     .inline-image-label {
         font-size: 0.975vw;
@@ -342,7 +342,7 @@ time, mark, audio, video {
         margin-left: 55%;
     }
     .text-inline p {
-        font-size: 1.225vw;
+        font-size: 1.21vw;
         padding-top: 0.5vw;
         padding-bottom: 0.5vw;
     }
@@ -521,11 +521,11 @@ time, mark, audio, video {
         font-size: var(--laptop_about_text);
     }
     .image-inline-container img {
-        height: 18vw;
+        height: 17.75vw;
         display: block;
         float: right;
         padding-bottom: 4.25vw;
-        margin-top: 1.375vw;
+        margin-top: 1.75vw;
     }
     .inline-image-label {
         font-size: 0.975vw;
@@ -533,7 +533,7 @@ time, mark, audio, video {
         margin-left: 55%;
     }
     .text-inline p {
-        font-size: 1.225vw;
+        font-size: 1.21vw;
         padding-top: 0.5vw;
         padding-bottom: 0.5vw;
     }
@@ -712,11 +712,11 @@ time, mark, audio, video {
         font-size: var(--laptop_about_text);
     }
     .image-inline-container img {
-        height: 18vw;
+        height: 17.75vw;
         display: block;
         float: right;
         padding-bottom: 4.25vw;
-        margin-top: 1.375vw;
+        margin-top: 1.75vw;
     }
     .inline-image-label {
         font-size: 0.975vw;
@@ -724,7 +724,7 @@ time, mark, audio, video {
         margin-left: 55%;
     }
     .text-inline p {
-        font-size: 1.225vw;
+        font-size: 1.21vw;
         padding-top: 0.5vw;
         padding-bottom: 0.5vw;
     }
