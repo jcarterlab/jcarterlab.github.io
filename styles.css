@@ -379,7 +379,7 @@ time, mark, audio, video {
     .header_h2 {
         color: white; 
         font-weight: normal; 
-        padding-left: 2.45vw;
+        padding-left: 2.465vw;
         padding-bottom: 0vw;
         font-size: 1.025vw;
     }
@@ -422,6 +422,12 @@ time, mark, audio, video {
     }
     .chatbot {
         width: 60vw;
+    }
+    .gradio-container {
+        background-color: #fbf7fb !important;
+    }
+    .block.svelte-12cmxck {
+        background-color: #fbf7fb !important;
     }
     .tableau {
         width: 100%;
