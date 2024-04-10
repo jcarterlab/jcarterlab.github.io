@@ -238,6 +238,12 @@ time, mark, audio, video {
     .chatbot {
         width: 60vw;
     }
+    .gradio-container {
+        background-color: #fbf7fb !important;
+    }
+    .block.svelte-12cmxck {
+        background-color: #fbf7fb !important;
+    }
     .tableau {
         width: 100%;
         height: 100%;
@@ -613,6 +619,12 @@ time, mark, audio, video {
     }
     .chatbot {
         width: 50vw;
+    }
+    .gradio-container {
+        background-color: #fbf7fb !important;
+    }
+    .block.svelte-12cmxck {
+        background-color: #fbf7fb !important;
     }
     .tableau {
         display: flex;
