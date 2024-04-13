@@ -26,21 +26,118 @@ time, mark, audio, video {
   }
 
 
-/* different size options for different screen sizes */
+
+
 @media screen and (max-width: 600px) {
+
+    .header-container-desktop {
+        display: none;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: left;
+        padding: 3vw;
+        text-decoration: none;
+    }
+  
+    /* Add an active class to highlight the current page */
+    .active {
+        background-color: #C20E35;
+        color: white;
+    }
+    
+    /* Hide the link that should open and close the topnav on small screens */
+    .topnav .icon {
+        margin-right: 5vw;
+        margin-top: 3.65vw;
+        font-size: 4vw;
+        display: none;
+    }
+    
+    /* Add a dark background on topnav links and the dropdown button on hover */
+    .topnav a:hover, .dropdown:hover .dropbtn {
+        background-color: #C20E35;
+        color: white;
+    }
+  
+    /* Add a grey background to dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #ddd;
+        color: #C20E35;
+    }
+  
+    /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+  
+    /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  
+    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+
     header {
         width: 100%;
         margin: 0 auto;
     }
-    .not_emojis {
-        font-size: 0vw;
-    }
     .header_h2 {
         color: white; 
         font-weight: normal; 
-        padding-left: 1.25vw;
+        margin-left: 8.3vw;
         padding-bottom: 0vw;
-        font-size: 0vw;
+        font-size: 1.85vw;
+    }
+    .h2_emoji {
+        margin-left: 0.2vw; 
+        margin-bottom: -0.275vw; 
+        padding-bottom: 0vw;  
+        height: 1.85vw; 
+        width: auto; 
+        border: none;
+    }
+    .emojis {
+        height: 4vw; 
+        width: auto; 
+        margin-right: 2vw;
+        margin-bottom: -0.175vw; 
+        border: none;
+    }
+    .nav_links {
+        font-size: 3vw;
+        margin-left: 3.75vw;
+    }
+    .final_nav_link {
+        font-size: 3vw;
+        margin-left: 3.75vw;
+        margin-bottom: 3vw;
     }
     .container {
         width: 80%;
@@ -61,11 +158,34 @@ time, mark, audio, video {
     .project img {
         height: 30vw;
     }
+    .chatbot {
+        width: 80vw;
+    }
+    .gradio-container {
+        background-color: #fbf7fb !important;
+    }
+    .block.svelte-12cmxck {
+        background-color: #fbf7fb !important;
+    }
+    .tableau {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    #freelance-pics {
+        margin-bottom: 2vw;
+        height: 27.5vw; 
+        margin-top:1vw; 
+        width: auto;
+    }
     .previous {
-        right: 61.75vw;
+        right: 60vw;
     }
     .next {
-        left: 61.75vw;
+        left: 60vw;
     }
     button {
         display: flex;
@@ -73,12 +193,19 @@ time, mark, audio, video {
         vertical-align: middle;
         margin: auto;
         font-size: 3vw;
-        width: 3vw;
-        height: auto;
-      }
+        width: 7.5vw;
+        height: 15vw;
+    }
+   .photo-arrow {
+        padding: 0vw;
+        padding-top: 5.25vw;
+        margin: 0vw;
+        border:none;
+        opacity: 0.75;
+    }
     h1 {
         font-size: 3.65vw;
-        padding-bottom: 1.15vw;
+        padding-bottom: 0vw;
         padding-left: 5vw; 
         padding-right: 5vw;
         padding-top: 1.45vw;
@@ -102,13 +229,6 @@ time, mark, audio, video {
         font-size: 3vw;
         padding-left: 0vw;
     }
-    nav {
-        margin-top: 0vw;
-    }
-    nav li a {
-        margin-left: 1.6vw;
-        margin-right: 1.6vw;
-    }
     .page-title h1 {
         padding-top: 2vw;
         font-size: 3.75vw;
@@ -120,10 +240,12 @@ time, mark, audio, video {
     }
     .project p {
         font-size: 3vw;
+        line-height: 120%;
     }
     .about-project {
         margin-top: 2vw;
         margin-bottom: 12vw;
+        line-height:120%;
     }
     .about-project h3 {
         font-size: 3.25vw;
@@ -139,6 +261,11 @@ time, mark, audio, video {
         font-size: 3vw;
     }
     .about-project p {
+        font-size: 3vw;
+    }
+    .skills-list {
+        line-height:180%; 
+        margin-left: 0vw;
         font-size: 3vw;
     }
     .section-break {
@@ -175,26 +302,75 @@ time, mark, audio, video {
     }
     .quote-text p {
         font-size: 3vw;
+    } 
+    .footer-container-mobile {
+        padding: 1.8vw;
+        margin: 0vw;
+        background-color: var(--theme_color);
+        opacity: 0.95;
     }
-    footer li {
-        font-size: 2vw;
-        padding-left: 1.5vw;
-        padding-right: 1.5vw;
+
+    .footer-container-desktop {
+        display: none;
     }
-    footer li a {
-        font-size: 2vw;
+
+    footer {
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+        white-space: nowrap;
+        overflow: hidden;
     }
-}
+    footer p {
+        color: white;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.5vw;
+    }
+    .column {
+        width: calc(33.33% - 8vw);
+    }
+    .column h3 {
+        color: #fff;
+        font-size: 1.5vw;
+    }
+    .column p {
+        color: #ccc;
+        font-size: 1.5vw;
+    }
+    .footer_a {
+        color: white;
+        font-size: 2.75vw;
+        font-weight: bold;
+    }
+  }
 
 @media screen and (min-width: 601px) and (max-width: 1366px) {
-    header {
+    .header-container-mobile {
+        display: none;
+    }
+    .header-container-desktop {
+        padding: 0.2vw;
+        margin: 0vw;
+        background-color: var(--theme_color);
+        opacity: 0.95;
+    }
+    .header {
         width: 92.5%;
         margin: 0 auto;
+    }
+    h1 {
+        font-size: 2vw;
+        padding-left: 2.5vw; 
+        padding-top: 1.45vw;
     }
     .header_h2 {
         color: white; 
         font-weight: normal; 
-        padding-left: 2.475vw;
+        padding-left: 4.075vw;
         padding-bottom: 0vw;
         font-size: 1.025vw;
     }
@@ -205,6 +381,15 @@ time, mark, audio, video {
         height: 1.225vw; 
         width: auto; 
         border: none;
+    }
+    nav {
+        margin-top: 0.25vw;
+    }
+    nav li a {
+        font-weight: bold;
+        font-size: var(--laptop_nav_text);
+        margin-left: 5.75vw;
+        opacity: 1;
     }
     .emojis {
         height: 1.2vw; 
@@ -252,6 +437,12 @@ time, mark, audio, video {
         margin-left: auto; 
         margin-right: auto;
     }
+    #freelance-pics {
+        margin-bottom: 2vw;
+        height: 18vw; 
+        margin-top:1vw; 
+        width: auto;
+    }
     .previous {
         right: 27vw;
     }
@@ -263,14 +454,14 @@ time, mark, audio, video {
         text-align: center;
         vertical-align: middle;
         margin: auto;
-        font-size: 3vw;
-        width: 3vw;
+        width: 5vw;
         height: auto;
       }
-    h1 {
-        font-size: 2vw;
-        padding-left: 0.85vw; 
-        padding-top: 1.45vw;
+    .photo-arrow {
+        padding-right: 3vw;
+        padding-top: 0.5vw;
+        border:none;
+        opacity: 0.25;
     }
     h2 {
         font-size: 1.6vw;
@@ -287,15 +478,6 @@ time, mark, audio, video {
     }
     ul {
         font-size: var(--laptop_standard_text);
-    }
-    nav {
-        margin-top: 0.25vw;
-    }
-    nav li a {
-        font-weight: bold;
-        font-size: var(--laptop_nav_text);
-        margin-left: 4vw;
-        opacity: 1;
     }
     .page-title h1 {
         font-size: 1.8vw;
@@ -328,6 +510,10 @@ time, mark, audio, video {
     }
     .about-project p {
         font-size: var(--laptop_about_text);
+    }
+    .skills-list {
+        line-height:120%; 
+        margin-left: 0vw;
     }
     .image-inline-container img {
         height: 18vw;
@@ -362,30 +548,70 @@ time, mark, audio, video {
     .quote-text p {
         font-size: var(--laptop_standard_text);
     }
+    .footer-container-mobile { 
+        display: none;
+    }
+    .footer-container-desktop {
+        padding: 2vw;
+        margin: 0vw;
+        background-color: var(--theme_color);
+        opacity: 0.95;
+    }
+    footer {
+        width: 85%;
+        margin: 0 auto;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    footer ul {
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: nowrap;
+    }
     footer li {
-        font-size: 1.065vw;
-        padding: var(--laptop_header_footer_margins);
-        margin-left: 0vw;
-        margin-right: 0vw;
-        padding-left: 0vw;
-        padding-right: 0vw;
+        font-weight: bold;
+        display: inline;
+        color: white;
+        text-decoration: none;
+        margin: 0.25vw;
     }
     footer li a {
-        font-size: 1.065vw;
-        padding: var(--laptop_header_footer_margins);
-        opacity: 0.94;
+        text-decoration: none;
+        margin: 0.25vw;
+    }
+    .final_footer_link {
+        margin-right: 4vw;
     }
 }
 
 @media screen and (min-width: 1366px) and (max-width: 1920px) {
-    header {
+    .header-container-mobile {
+        display: none;
+    }
+    .header-container-desktop {
+        padding: 0.2vw;
+        margin: 0vw;
+        background-color: var(--theme_color);
+        opacity: 0.95;
+    }
+    .header {
         width: 92.5%;
         margin: 0 auto;
+    }
+    h1 {
+        font-size: 2vw;
+        padding-left: 2.5vw; 
+        padding-top: 1.45vw;
     }
     .header_h2 {
         color: white; 
         font-weight: normal; 
-        padding-left: 2.475vw;
+        padding-left: 4.075vw;
         padding-bottom: 0vw;
         font-size: 1.025vw;
     }
@@ -396,6 +622,15 @@ time, mark, audio, video {
         height: 1.225vw; 
         width: auto; 
         border: none;
+    }
+    nav {
+        margin-top: 0.25vw;
+    }
+    nav li a {
+        font-weight: bold;
+        font-size: var(--laptop_nav_text);
+        margin-left: 5.75vw;
+        opacity: 1;
     }
     .emojis {
         height: 1.2vw; 
@@ -443,6 +678,12 @@ time, mark, audio, video {
         margin-left: auto; 
         margin-right: auto;
     }
+    #freelance-pics {
+        margin-bottom: 2vw;
+        height: 18vw; 
+        margin-top:1vw; 
+        width: auto;
+    }
     .previous {
         right: 27vw;
     }
@@ -454,14 +695,14 @@ time, mark, audio, video {
         text-align: center;
         vertical-align: middle;
         margin: auto;
-        font-size: 3vw;
-        width: 3vw;
+        width: 5vw;
         height: auto;
       }
-    h1 {
-        font-size: 2vw;
-        padding-left: 0.85vw; 
-        padding-top: 1.45vw;
+    .photo-arrow {
+        padding-right: 3vw;
+        padding-top: 0.5vw;
+        border:none;
+        opacity: 0.25;
     }
     h2 {
         font-size: 1.6vw;
@@ -478,15 +719,6 @@ time, mark, audio, video {
     }
     ul {
         font-size: var(--laptop_standard_text);
-    }
-    nav {
-        margin-top: 0.25vw;
-    }
-    nav li a {
-        font-weight: bold;
-        font-size: var(--laptop_nav_text);
-        margin-left: 4vw;
-        opacity: 1;
     }
     .page-title h1 {
         font-size: 1.8vw;
@@ -519,6 +751,10 @@ time, mark, audio, video {
     }
     .about-project p {
         font-size: var(--laptop_about_text);
+    }
+    .skills-list {
+        line-height:120%; 
+        margin-left: 0vw;
     }
     .image-inline-container img {
         height: 18vw;
@@ -553,30 +789,70 @@ time, mark, audio, video {
     .quote-text p {
         font-size: var(--laptop_standard_text);
     }
+    .footer-container-mobile { 
+        display: none;
+    }
+    .footer-container-desktop {
+        padding: 2vw;
+        margin: 0vw;
+        background-color: var(--theme_color);
+        opacity: 0.95;
+    }
+    footer {
+        width: 85%;
+        margin: 0 auto;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    footer ul {
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: nowrap;
+    }
     footer li {
-        font-size: 1.065vw;
-        padding: var(--laptop_header_footer_margins);
-        margin-left: 0vw;
-        margin-right: 0vw;
-        padding-left: 0vw;
-        padding-right: 0vw;
+        font-weight: bold;
+        display: inline;
+        color: white;
+        text-decoration: none;
+        margin: 0.25vw;
     }
     footer li a {
-        font-size: 1.065vw;
-        padding: var(--laptop_header_footer_margins);
-        opacity: 0.94;
+        text-decoration: none;
+        margin: 0.25vw;
+    }
+    .final_footer_link {
+        margin-right: 4vw;
     }
 }
 
 @media screen and (min-width: 1920px) {
-    header {
+    .header-container-mobile {
+        display: none;
+    }
+    .header-container-desktop {
+        padding: 0.2vw;
+        margin: 0vw;
+        background-color: var(--theme_color);
+        opacity: 0.95;
+    }
+    .header {
         width: 92.5%;
         margin: 0 auto;
+    }
+    h1 {
+        font-size: 2vw;
+        padding-left: 2.5vw; 
+        padding-top: 1.45vw;
     }
     .header_h2 {
         color: white; 
         font-weight: normal; 
-        padding-left: 2.475vw;
+        padding-left: 4.075vw;
         padding-bottom: 0vw;
         font-size: 1.025vw;
     }
@@ -587,6 +863,15 @@ time, mark, audio, video {
         height: 1.225vw; 
         width: auto; 
         border: none;
+    }
+    nav {
+        margin-top: 0.25vw;
+    }
+    nav li a {
+        font-weight: bold;
+        font-size: var(--laptop_nav_text);
+        margin-left: 5.75vw;
+        opacity: 1;
     }
     .emojis {
         height: 1.2vw; 
@@ -634,6 +919,12 @@ time, mark, audio, video {
         margin-left: auto; 
         margin-right: auto;
     }
+    #freelance-pics {
+        margin-bottom: 2vw;
+        height: 18vw; 
+        margin-top:1vw; 
+        width: auto;
+    }
     .previous {
         right: 27vw;
     }
@@ -645,14 +936,14 @@ time, mark, audio, video {
         text-align: center;
         vertical-align: middle;
         margin: auto;
-        font-size: 3vw;
-        width: 3vw;
+        width: 5vw;
         height: auto;
       }
-    h1 {
-        font-size: 2vw;
-        padding-left: 0.85vw; 
-        padding-top: 1.45vw;
+    .photo-arrow {
+        padding-right: 3vw;
+        padding-top: 0.5vw;
+        border:none;
+        opacity: 0.25;
     }
     h2 {
         font-size: 1.6vw;
@@ -669,15 +960,6 @@ time, mark, audio, video {
     }
     ul {
         font-size: var(--laptop_standard_text);
-    }
-    nav {
-        margin-top: 0.25vw;
-    }
-    nav li a {
-        font-weight: bold;
-        font-size: var(--laptop_nav_text);
-        margin-left: 4vw;
-        opacity: 1;
     }
     .page-title h1 {
         font-size: 1.8vw;
@@ -710,6 +992,10 @@ time, mark, audio, video {
     }
     .about-project p {
         font-size: var(--laptop_about_text);
+    }
+    .skills-list {
+        line-height:120%; 
+        margin-left: 0vw;
     }
     .image-inline-container img {
         height: 18vw;
@@ -744,18 +1030,44 @@ time, mark, audio, video {
     .quote-text p {
         font-size: var(--laptop_standard_text);
     }
+    .footer-container-mobile { 
+        display: none;
+    }
+    .footer-container-desktop {
+        padding: 2vw;
+        margin: 0vw;
+        background-color: var(--theme_color);
+        opacity: 0.95;
+    }
+    footer {
+        width: 85%;
+        margin: 0 auto;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    footer ul {
+        justify-content: space-between;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: nowrap;
+    }
     footer li {
-        font-size: 1.065vw;
-        padding: var(--laptop_header_footer_margins);
-        margin-left: 0vw;
-        margin-right: 0vw;
-        padding-left: 0vw;
-        padding-right: 0vw;
+        font-weight: bold;
+        display: inline;
+        color: white;
+        text-decoration: none;
+        margin: 0.25vw;
     }
     footer li a {
-        font-size: 1.065vw;
-        padding: var(--laptop_header_footer_margins);
-        opacity: 0.94;
+        text-decoration: none;
+        margin: 0.25vw;
+    }
+    .final_footer_link {
+        margin-right: 4vw;
     }
 }
 
@@ -766,6 +1078,13 @@ body {
    max-width: 100%;
    padding: 0px;
    margin: 0px;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #C20E35;
+    overflow: hidden;
 }
 
 
@@ -819,6 +1138,7 @@ hr {
     padding: 0px;
     margin: 0px;
   }
+  
 
 
 /* header section with name and nav bar */
@@ -829,12 +1149,6 @@ header {
     padding-top: var(--laptop_header_footer_margins);
     padding-bottom: var(--laptop_header_footer_margins);
     overflow: hidden;
-}
-.header_container {
-    padding: 0.2vw;
-    margin: 0vw;
-    background-color: var(--theme_color);
-    opacity: 0.95;
 }
 nav {
     padding-right: 0vw;
@@ -855,7 +1169,7 @@ nav li a {
     color: white;
 }
 .nav_final {
-    margin-right: 5vw;
+    margin-right: 10vw;
 }
 
 
@@ -1000,39 +1314,4 @@ nav li a {
 .previous:hover, .next:hover {
     background-color: grey;
     opacity: 1;
-}
-
-/* footer section */ 
-footer {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-    white-space: nowrap;
-    overflow: hidden;
-}
-.footer_container {
-    padding: 1.8vw;
-    margin: 0vw;
-    background-color: var(--theme_color);
-    opacity: 0.95;
-}
-footer ul {
-    justify-content: space-between;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: nowrap;
-}
-footer li {
-    font-weight: bold;
-    display: inline;
-    color: white;
-    text-decoration: none;
-    margin: 0.25vw;
-}
-footer li a {
-    text-decoration: none;
-    margin: 0.25vw;
 }

@@ -11,24 +11,41 @@
 
 <body>
 
-    <div class="header_container">
-    <header>
-        <a href="https://jcarterlab.github.io/index.html" style="text-decoration: none;">
-            <h1>Jack Carter</h1>
-            <h2 class="header_h2">Data Strategy <img class="h2_emoji" src='Images\Icons\digital.png'></h2>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="https://jcarterlab.github.io/about.html"><img class='emojis' src='Images\Icons\user.png'><span class="not_emojis">About</span></a></li>
-                <li><a href="https://jcarterlab.github.io/ai.html"><img class='emojis' src='Images\Icons\ai.png'><span class="not_emojis">AI</span></a></li>
-                <li><a href="https://jcarterlab.github.io/data.html"><img class='emojis' src='Images\Icons\data.png'><span class="not_emojis">Data</span></a></li>
-                <li><a href="https://jcarterlab.github.io/proofing.html"><img class='emojis' src='Images\Icons\editing.png'><span class="not_emojis">Proofing</span></a></li>
-                <li><a href="https://jcarterlab.github.io/writing.html"><img class='emojis' src='Images\Icons\writing.png'><span class="not_emojis">Writing</span></a></li>
-                <li class="nav_final"><a href="https://jcarterlab.github.io/photography.html"><img class='emojis' src='Images\Icons\camera.png'><span class="not_emojis">Photography</span></a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="header-container-mobile">
+        <div class="topnav" id="myTopnav">
+            <a href="https://jcarterlab.github.io" class='active' style='font-size: 4vw; font-family: Century Gothic, sans-serif;'>
+                <h1>Jack Carter</h1>
+                <h2 class="header_h2">Data Strategy <img class="h2_emoji" src='Images\Icons\digital.png'></h2>
+            </a>
+            <a href="https://jcarterlab.github.io/about.html" class="nav_links"><img class='emojis' src='Images\Icons\user.png'><span class="not_emojis">About</span></a>
+            <a href="https://jcarterlab.github.io/ai.html" class="nav_links"><img class='emojis' src='Images\Icons\ai.png'><span class="not_emojis">AI</span></a>
+            <a href="https://jcarterlab.github.io/data.html" class="nav_links"><img class='emojis' src='Images\Icons\data.png'><span class="not_emojis">Data</span></a>
+            <a href="https://jcarterlab.github.io/proofing.html" class="nav_links"><img class='emojis' src='Images\Icons\editing.png'><span class="not_emojis">Proofing</span></a>
+            <a href="https://jcarterlab.github.io/photography.html" class="final_nav_link"><img class='emojis' src='Images\Icons\camera.png'><span class="not_emojis">Photography</span></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
     </div>
+
+
+<div class="header-container-desktop">
+
+<header>
+    <a href="https://jcarterlab.github.io/index.html" style="text-decoration: none;">
+        <h1>Jack Carter</h1>
+        <h2 class="header_h2">Data Strategy <img class="h2_emoji" src='Images\Icons\digital.png'></h2>
+    </a>
+    <nav>
+        <ul>
+            <li><a href="https://jcarterlab.github.io/about.html"><img class='emojis' src='Images\Icons\user.png'><span class="not_emojis">About</span></a></li>
+            <li><a href="https://jcarterlab.github.io/ai.html"><img class='emojis' src='Images\Icons\ai.png'><span class="not_emojis">AI</span></a></li>
+            <li><a href="https://jcarterlab.github.io/data.html"><img class='emojis' src='Images\Icons\data.png'><span class="not_emojis">Data</span></a></li>
+            <li><a href="https://jcarterlab.github.io/proofing.html"><img class='emojis' src='Images\Icons\editing.png'><span class="not_emojis">Proofing</span></a></li>
+            <li class="nav_final"><a href="https://jcarterlab.github.io/photography.html"><img class='emojis' src='Images\Icons\camera.png'><span class="not_emojis">Photography</span></a></li>
+        </ul>
+    </nav>
+</header>
+
+</div>
 
     <hr>
     </br>
@@ -85,7 +102,7 @@
             var vizElement = divElement.getElementsByTagName('object')[0];                    
             if ( divElement.offsetWidth > 1400 ) { vizElement.style.width='1199px'; vizElement.style.height='720px';} 
             else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='75vw'; vizElement.style.height='720px';} 
-            else { vizElement.style.width='100%';vizElement.style.height='1777px';}                     
+            else { vizElement.style.width='85vw';vizElement.style.height='1777px';}                     
             var scriptElement = document.createElement('script');                    
             scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
             vizElement.parentNode.insertBefore(scriptElement, vizElement);                
@@ -97,7 +114,7 @@
     <div class="container" id="about">
         
         <h2>Skills</h2>
-        <div class="about-project" style="margin-left: 0vw;">
+        <div class="skills-list">
 
             <img class='emojis' src='Images\Icons\languages.png' style='margin-bottom: -0.15vw;'><span class="not_emojis_about"><b>Languages</b>  --- advanced Spanish and intermediate French</span>
             
@@ -233,10 +250,10 @@
         <h2>Freelance Experience</h2>
 
         <div id="VisibleFreelanceExperience" class="content-section">
-            <div class="about-project" style="margin-bottom: 5vw;">
+            <div class="about-project">
                 <p>I started freelancing in 2021, initially editing online content before transitioning into data science. My domain knowledge coupled with my innate sense of commercial awareness has helped me to provide value for these organizations and more:</p>
                 <div style="display: flex; justify-content: center; align-items: center;">
-                    <img class="no_border_image" src="Images/Me/freelance_jobs.png" style="height: 18vw; margin-top:1vw; width: auto;">
+                    <img class="no_border_image" id="freelance-pics" src="Images/Me/freelance_jobs.png">
                 </div>
             </div>
             <div class="section-break">
@@ -245,7 +262,7 @@
         </div>
 
         <div id="HiddenFreelanceExperience" class="hidden-section">
-            <div class="about-project" style="margin-bottom: 5vw;">
+            <div class="about-project">
                 <p>I started freelancing in 2021, initially editing online content before transitioning into data science. My domain knowledge coupled with my innate sense of commercial awareness has helped me to provide value for these organizations and more:</p>
                 <div style="display: flex; justify-content: center; align-items: center;">
                     <img class="no_border_image" src="Images/Me/freelance_jobs.png" style="height: 18vw; margin-top:1vw; width: auto;">
@@ -471,19 +488,63 @@
     </div>
     <hr>
 
-    <div class="footer_container">
+
+    <div class="footer-container-mobile">
+
         <footer>
+
+            <div class="row">
+                <div class="column">
+                    <h3></h3>
+                    <p><a href="" class='footer_a'>&copy; 2023</a></p>
+                </div>
+                <div class="column">
+                    <h3></h3>
+                    <p><a href="https://github.com/jcarterlab" class='footer_a'>Github</a></p>
+                </div>
+                <div class="column">
+                    <h3></h3>
+                    <p><a href="https://huggingface.co/Jcarterlab" class='footer_a'>HF</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <h3></h3>
+                    <p><a href="https://www.linkedin.com/in/jack-carter-74b608148/" class='footer_a'>LinkedIn</a></p>
+                    
+                </div>
+                <div class="column">
+                    <h3></h3>
+                    <p><a href="https://public.tableau.com/app/profile/jack.carter7699/vizzes" class='footer_a'>Tableau</a></p>
+                </div>
+                <div class="column">
+                    <h3></h3>
+                    <p><a href="https://www.kaggle.com/jcarterlab" class='footer_a'>Kaggle</a></p>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <div class="footer-container-desktop">
+
+        <footer>
+
             <nav>
                 <ul>
                     <li>&copy; 2023 Jack Carter</li>
                     <li><a href="https://www.linkedin.com/in/jack-carter-74b608148/">LinkedIn</a></li>
                     <li><a href="https://github.com/jcarterlab">Github</a></li>
-                    <li><a href="https://huggingface.co/Jcarterlab">HuggingFace</a></li>
-                    <li><a href="https://www.kaggle.com/jackpaulcarter"></a>Kaggle</li>
                     <li><a href="https://public.tableau.com/app/profile/jack.carter7699/vizzes">Tableau</a></li>
+                    <li><a href="https://huggingface.co/Jcarterlab">HuggingFace</a></li>
+                    <li class='final_footer_link'><a href="https://www.kaggle.com/jcarterlab">Kaggle</a></li>
                 </ul>
             </nav>
+            
         </footer>
+
     </div>
 
 </body>

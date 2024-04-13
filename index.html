@@ -11,24 +11,42 @@
 
 <body>
 
-    <div class="header_container">
-    <header>
-        <a href="https://jcarterlab.github.io/index.html" style="text-decoration: none;">
-            <h1>Jack Carter</h1>
-            <h2 class="header_h2">Data Strategy <img class="h2_emoji" src='Images\Icons\digital.png'></h2>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="https://jcarterlab.github.io/about.html"><img class='emojis' src='Images\Icons\user.png'><span class="not_emojis">About</span></a></li>
-                <li><a href="https://jcarterlab.github.io/ai.html"><img class='emojis' src='Images\Icons\ai.png'><span class="not_emojis">AI</span></a></li>
-                <li><a href="https://jcarterlab.github.io/data.html"><img class='emojis' src='Images\Icons\data.png'><span class="not_emojis">Data</span></a></li>
-                <li><a href="https://jcarterlab.github.io/proofing.html"><img class='emojis' src='Images\Icons\editing.png'><span class="not_emojis">Proofing</span></a></li>
-                <li><a href="https://jcarterlab.github.io/writing.html"><img class='emojis' src='Images\Icons\writing.png'><span class="not_emojis">Writing</span></a></li>
-                <li class="nav_final"><a href="https://jcarterlab.github.io/photography.html"><img class='emojis' src='Images\Icons\camera.png'><span class="not_emojis">Photography</span></a></li>
-            </ul>
-        </nav>
-    </header>
+            <div class="header-container-mobile">
+                <div class="topnav" id="myTopnav">
+                    <a href="https://jcarterlab.github.io" class='active' style='font-size: 4vw; font-family: Century Gothic, sans-serif;'>
+                        <h1>Jack Carter</h1>
+                        <h2 class="header_h2">Data Strategy <img class="h2_emoji" src='Images\Icons\digital.png'></h2>
+                    </a>
+                    <a href="https://jcarterlab.github.io/about.html" class="nav_links"><img class='emojis' src='Images\Icons\user.png'><span class="not_emojis">About</span></a>
+                    <a href="https://jcarterlab.github.io/ai.html" class="nav_links"><img class='emojis' src='Images\Icons\ai.png'><span class="not_emojis">AI</span></a>
+                    <a href="https://jcarterlab.github.io/data.html" class="nav_links"><img class='emojis' src='Images\Icons\data.png'><span class="not_emojis">Data</span></a>
+                    <a href="https://jcarterlab.github.io/proofing.html" class="nav_links"><img class='emojis' src='Images\Icons\editing.png'><span class="not_emojis">Proofing</span></a>
+                    <a href="https://jcarterlab.github.io/photography.html" class="final_nav_link"><img class='emojis' src='Images\Icons\camera.png'><span class="not_emojis">Photography</span></a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                </div>
+            </div>
+
+
+    <div class="header-container-desktop">
+
+        <header>
+            <a href="https://jcarterlab.github.io/index.html" style="text-decoration: none;">
+                <h1>Jack Carter</h1>
+                <h2 class="header_h2">Data Strategy <img class="h2_emoji" src='Images\Icons\digital.png'></h2>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="https://jcarterlab.github.io/about.html"><img class='emojis' src='Images\Icons\user.png'><span class="not_emojis">About</span></a></li>
+                    <li><a href="https://jcarterlab.github.io/ai.html"><img class='emojis' src='Images\Icons\ai.png'><span class="not_emojis">AI</span></a></li>
+                    <li><a href="https://jcarterlab.github.io/data.html"><img class='emojis' src='Images\Icons\data.png'><span class="not_emojis">Data</span></a></li>
+                    <li><a href="https://jcarterlab.github.io/proofing.html"><img class='emojis' src='Images\Icons\editing.png'><span class="not_emojis">Proofing</span></a></li>
+                    <li class="nav_final"><a href="https://jcarterlab.github.io/photography.html"><img class='emojis' src='Images\Icons\camera.png'><span class="not_emojis">Photography</span></a></li>
+                </ul>
+            </nav>
+        </header>
+        
     </div>
+    
 
     <hr>
     </br>
@@ -147,31 +165,6 @@
 
 
 
-        <h2>Writing</h2>
-
-        <div class="project">
-            <div class="project-1">
-                <a href="" style="text-decoration: none;">
-                    <h3><b>There is No Center of the World</b></h3>
-                    <p>If there were a center of the world, where would it be and why? The answer is harder than you might think...</p>
-                    <img class="editing-project img", src="Images/Writing/Svİtlana_1.png">
-                </a>
-            </div>
-            <div class="project-2">
-                <a href="" style="text-decoration: none;">
-                    <h3><b>Haunted by the Ghosts of a Russian Past</b></h3>
-                    <p>Svitlana's story shows how this young Ukrainian can run from Russian bombs but not the memories of a Russian past.</p>
-                    <img class="editing-project img", src="Images/Writing/Svİtlana_1.png">
-                </a>
-            </div>
-        </div>
-
-        <div class="section-break">
-            <a href="https://jcarterlab.github.io/blog.html" style="text-decoration: none;">
-                <p><u>More writing >></u></p>
-            </a>
-        </div>
-
 
 
         <h2>Photography</h2>
@@ -180,21 +173,21 @@
             <div class="project-1">
                 <h3><b>Europe</b></h3>
                 <div class="photography-container">
-                    <button class="previous" onclick="previousImage('Europe-img-id')">&#8249;</button>
+                    <button class="previous" onclick="previousImage('Europe-img-id')"><img class='photo-arrow' style='height: 3vw;' src='Images\Icons\previous.png'></button>
 
                         <img class="photography-image" id="Europe-img-id" src="Images/Photography/Europe/Greece_1.jpg">
 
-                    <button class="next" onclick="nextImage('Europe-img-id')">&#8250;</button>
+                    <button class="next" onclick="nextImage('Europe-img-id')"><img class='photo-arrow' style='height: 3vw;' src='Images\Icons\next.png'></button>
                 </div>
             </div>
             <div class="project-2">
                 <h3><b>Middle-East</b></h3>
                 <div class="photography-container">
-                    <button class="previous" onclick="previousImage('Middle-East-img-id')">&#8249;</button>
+                    <button class="previous" onclick="previousImage('Middle-East-img-id')"><img class='photo-arrow' style='height: 3vw;' src='Images\Icons\previous.png'></button>
 
-                        <img class="photography-image" id="Middle-East-img-id" src="Images/Photography/Middle-East/Egypt_1.JPG" loading="lazy">
+                        <img class="photography-image" id="Middle-East-img-id" src="Images/Photography/Middle-East/Egypt_1.JPG">
 
-                    <button class="next" onclick="nextImage('Middle-East-img-id')">&#8250;</button>
+                    <button class="next" onclick="nextImage('Middle-East-img-id')"><img class='photo-arrow' style='height: 3vw;' src='Images\Icons\next.png'></button>
                 </div>
             </div>
         </div>
@@ -210,20 +203,68 @@
     </br>
     <hr>
 
-    <div class="footer_container">
+
+
+    <div class="footer-container-mobile">
+
         <footer>
+
+            <div class="row">
+                <div class="column">
+                    <h3></h3>
+                    <p><a href="" class='footer_a'>&copy; 2023</a></p>
+                </div>
+                <div class="column">
+                    <h3></h3>
+                    <p><a href="https://github.com/jcarterlab" class='footer_a'>Github</a></p>
+                </div>
+                <div class="column">
+                    <h3></h3>
+                    <p><a href="https://huggingface.co/Jcarterlab" class='footer_a'>HF</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <h3></h3>
+                    <p><a href="https://www.linkedin.com/in/jack-carter-74b608148/" class='footer_a'>LinkedIn</a></p>
+                    
+                </div>
+                <div class="column">
+                    <h3></h3>
+                    <p><a href="https://public.tableau.com/app/profile/jack.carter7699/vizzes" class='footer_a'>Tableau</a></p>
+                </div>
+                <div class="column">
+                    <h3></h3>
+                    <p><a href="https://www.kaggle.com/jcarterlab" class='footer_a'>Kaggle</a></p>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <div class="footer-container-desktop">
+
+        <footer>
+
             <nav>
                 <ul>
                     <li>&copy; 2023 Jack Carter</li>
                     <li><a href="https://www.linkedin.com/in/jack-carter-74b608148/">LinkedIn</a></li>
                     <li><a href="https://github.com/jcarterlab">Github</a></li>
-                    <li><a href="https://huggingface.co/Jcarterlab">HuggingFace</a></li>
-                    <li><a href="https://www.kaggle.com/jackpaulcarter"></a>Kaggle</li>
                     <li><a href="https://public.tableau.com/app/profile/jack.carter7699/vizzes">Tableau</a></li>
+                    <li><a href="https://huggingface.co/Jcarterlab">HuggingFace</a></li>
+                    <li class='final_footer_link'><a href="https://www.kaggle.com/jcarterlab">Kaggle</a></li>
                 </ul>
             </nav>
+            
         </footer>
-        </div>
+
+    </div>
+
+
+
 
 
 </body>
