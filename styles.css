@@ -438,7 +438,7 @@ time, mark, audio, video {
         margin-right: auto;
     }
     #freelance-pics {
-        margin-bottom: 2vw;
+        margin-bottom: 0vw;
         height: 18vw; 
         margin-top:1vw; 
         width: auto;
@@ -679,7 +679,7 @@ time, mark, audio, video {
         margin-right: auto;
     }
     #freelance-pics {
-        margin-bottom: 2vw;
+        margin-bottom: 0vw;
         height: 18vw; 
         margin-top:1vw; 
         width: auto;
@@ -902,8 +902,14 @@ time, mark, audio, video {
     .project img {
         height: 14vw;
     }
+    .chatbot-container {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        margin-bottom: 5vw;
+    }
     .chatbot {
-        width: 60vw;
+        width: 40vw;
     }
     .gradio-container {
         background-color: #fbf7fb !important;
@@ -920,7 +926,7 @@ time, mark, audio, video {
         margin-right: auto;
     }
     #freelance-pics {
-        margin-bottom: 2vw;
+        margin-bottom: 0vw;
         height: 18vw; 
         margin-top:1vw; 
         width: auto;
