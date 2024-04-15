@@ -34,6 +34,34 @@ time, mark, audio, video {
         display: none;
     }
 
+    header {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 4vw;
+        padding-bottom: 0vw;
+        padding-left: 4.5vw; 
+        padding-right: 5vw;
+        padding-top: 1.9vw;
+    }
+    .header_h2 {
+        color: white; 
+        font-weight: normal; 
+        margin-left: 8.3vw;
+        padding-bottom: 0vw;
+        font-size: 0vw;
+    }
+    .h2_emoji {
+        margin-left: 0.2vw; 
+        margin-bottom: -0.275vw; 
+        padding-bottom: 0vw;  
+        height: 0vw; 
+        width: auto; 
+        border: none;
+    }
+
     /* Style the links inside the navigation bar */
     .topnav a {
         float: left;
@@ -52,8 +80,9 @@ time, mark, audio, video {
     
     /* Hide the link that should open and close the topnav on small screens */
     .topnav .icon {
-        margin-right: 5vw;
-        margin-top: 3.65vw;
+        margin-right: 6vw;
+        margin-top: 1.75vw;
+        margin-bottom: 1.5vw;
         font-size: 4vw;
         display: none;
     }
@@ -103,31 +132,11 @@ time, mark, audio, video {
       width: 100%;
       text-align: left;
     }
-
-    header {
-        width: 100%;
-        margin: 0 auto;
-    }
-    .header_h2 {
-        color: white; 
-        font-weight: normal; 
-        margin-left: 8.3vw;
-        padding-bottom: 0vw;
-        font-size: 1.85vw;
-    }
-    .h2_emoji {
-        margin-left: 0.2vw; 
-        margin-bottom: -0.275vw; 
-        padding-bottom: 0vw;  
-        height: 1.85vw; 
-        width: auto; 
-        border: none;
-    }
     .emojis {
-        height: 4vw; 
+        height: 3.25vw; 
         width: auto; 
         margin-right: 2vw;
-        margin-bottom: -0.175vw; 
+        margin-bottom: -0.275vw; 
         border: none;
     }
     .nav_links {
@@ -141,6 +150,7 @@ time, mark, audio, video {
     }
     .container {
         width: 80%;
+        line-height: 200%;
     }
     .project {
         display: inline;
@@ -203,13 +213,6 @@ time, mark, audio, video {
         border:none;
         opacity: 0.75;
     }
-    h1 {
-        font-size: 3.65vw;
-        padding-bottom: 0vw;
-        padding-left: 5vw; 
-        padding-right: 5vw;
-        padding-top: 1.45vw;
-    }
     h2 {
         font-size: 3.75vw;
         padding-bottom: 2.5vw;
@@ -240,16 +243,21 @@ time, mark, audio, video {
     }
     .project p {
         font-size: 3vw;
-        line-height: 120%;
     }
     .about-project {
         margin-top: 2vw;
         margin-bottom: 12vw;
-        line-height:120%;
     }
     .about-project h3 {
         font-size: 3.25vw;
         padding-bottom: 0.75vw;
+    }
+    .emojis-about {
+        margin-bottom: -0.5vw;
+        height: 3.25vw; 
+        width: auto; 
+        margin-right: 2vw;
+        border: none;
     }
     .about-project ul {
         margin-bottom: 5vw;
@@ -264,9 +272,13 @@ time, mark, audio, video {
         font-size: 3vw;
     }
     .skills-list {
-        line-height:180%; 
         margin-left: 0vw;
         font-size: 3vw;
+    }
+    .skills-p {
+        padding-bottom: 1vw; 
+        padding-top: 0.25vw; 
+        padding-left: 5.25vw;
     }
     .section-break {
         margin-top: -6vw;
@@ -331,7 +343,7 @@ time, mark, audio, video {
         margin-bottom: 1.5vw;
     }
     .column {
-        width: calc(33.33% - 8vw);
+        width: calc(33.33% - 11vw);
     }
     .column h3 {
         color: #fff;
@@ -370,7 +382,7 @@ time, mark, audio, video {
     .header_h2 {
         color: white; 
         font-weight: normal; 
-        padding-left: 4.075vw;
+        padding-left: 4.085vw;
         padding-bottom: 0vw;
         font-size: 1.025vw;
     }
@@ -482,7 +494,7 @@ time, mark, audio, video {
     .page-title h1 {
         font-size: 1.8vw;
         padding-left: 0vw;
-        padding-top: 2.25vw;
+        padding-top: 2vw;
     }
     .project h3 {
         font-size: var(--laptop_standard_text);
@@ -499,6 +511,13 @@ time, mark, audio, video {
         font-size: var(--laptop_about_text);
         padding-bottom: 1vw;
     }
+    .emojis-about {
+        margin-bottom: -0.15vw;
+        height: 1.25vw; 
+        width: auto; 
+        margin-right: 2vw;
+        border: none;
+    }
     .about-project ul {
         margin-bottom: 2vw;
     }
@@ -514,6 +533,11 @@ time, mark, audio, video {
     .skills-list {
         line-height:120%; 
         margin-left: 0vw;
+    }
+    .skills-p {
+        padding-bottom: 1vw; 
+        padding-top: 0.25vw; 
+        padding-left: 3.25vw;
     }
     .image-inline-container img {
         height: 18vw;
@@ -611,7 +635,7 @@ time, mark, audio, video {
     .header_h2 {
         color: white; 
         font-weight: normal; 
-        padding-left: 4.075vw;
+        padding-left: 4.085vw;
         padding-bottom: 0vw;
         font-size: 1.025vw;
     }
@@ -723,7 +747,7 @@ time, mark, audio, video {
     .page-title h1 {
         font-size: 1.8vw;
         padding-left: 0vw;
-        padding-top: 2.25vw;
+        padding-top: 2vw;
     }
     .project h3 {
         font-size: var(--laptop_standard_text);
@@ -740,6 +764,13 @@ time, mark, audio, video {
         font-size: var(--laptop_about_text);
         padding-bottom: 1vw;
     }
+    .emojis-about {
+        margin-bottom: -0.15vw;
+        height: 1.25vw; 
+        width: auto; 
+        margin-right: 2vw;
+        border: none;
+    }
     .about-project ul {
         margin-bottom: 2vw;
     }
@@ -755,6 +786,11 @@ time, mark, audio, video {
     .skills-list {
         line-height:120%; 
         margin-left: 0vw;
+    }
+    .skills-p {
+        padding-bottom: 1vw; 
+        padding-top: 0.25vw; 
+        padding-left: 3.25vw;
     }
     .image-inline-container img {
         height: 18vw;
@@ -852,7 +888,7 @@ time, mark, audio, video {
     .header_h2 {
         color: white; 
         font-weight: normal; 
-        padding-left: 4.075vw;
+        padding-left: 4.085vw;
         padding-bottom: 0vw;
         font-size: 1.025vw;
     }
@@ -970,7 +1006,7 @@ time, mark, audio, video {
     .page-title h1 {
         font-size: 1.8vw;
         padding-left: 0vw;
-        padding-top: 2.25vw;
+        padding-top: 2vw;
     }
     .project h3 {
         font-size: var(--laptop_standard_text);
@@ -987,6 +1023,13 @@ time, mark, audio, video {
         font-size: var(--laptop_about_text);
         padding-bottom: 1vw;
     }
+    .emojis-about {
+        margin-bottom: -0.15vw;
+        height: 1.25vw; 
+        width: auto; 
+        margin-right: 2vw;
+        border: none;
+    }
     .about-project ul {
         margin-bottom: 2vw;
     }
@@ -1002,6 +1045,11 @@ time, mark, audio, video {
     .skills-list {
         line-height:120%; 
         margin-left: 0vw;
+    }
+    .skills-p {
+        padding-bottom: 1vw; 
+        padding-top: 0.25vw; 
+        padding-left: 3.25vw;
     }
     .image-inline-container img {
         height: 18vw;

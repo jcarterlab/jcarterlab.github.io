@@ -63,16 +63,16 @@
 
 
         <h2>Interactive Overview</h2>
-        <p style="margin-bottom: 2.5vw;">One of the things I can do as a data strategist is create custom-built chatbot applications. The chatbot below answers questions about me based on the information on this page. Why not give it a go?</p>
+        <p style="margin-bottom: 2.5vw;">I am a data nerd at heart. One of the things I can do as a data nerd is create custom-built chatbot applications. The chatbot below answers questions about me based on the information on this page. Why not give it a go?</p>
 
-        <div class="chatbot-container">
+        <div class="chatbot-container" style="margin-bottom: 5vw;">
 
             <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.24.0/gradio.js"></script>
             <gradio-app src="https://jcarterlab-about-me.hf.space" class="chatbot"></gradio-app>
             
         </div>
 
-        <p>Another thing I can do is create custom visualizations. The Tableau dashboard below highlights the parts of my CV that demonstrate experience working with data.</p>
+        <p>Another thing I can do as a data nerd is create custom visualizations. The Tableau dashboard below highlights the parts of my CV that showcase experience working with data. Why not give it a scan?</p>
     </div>
 
 
@@ -113,30 +113,32 @@
 
     <div class="container" id="about">
         
-        <h2>Skills</h2>
+        <h2 style="padding-bottom: 1.5vw;">Skills</h2>
         <div class="skills-list">
 
-            <img class='emojis' src='Images\Icons\languages.png' style='margin-bottom: -0.15vw;'><span class="not_emojis_about"><b>Languages</b>  --- advanced Spanish and intermediate French</span>
+            <img class='emojis-about' src='Images\Icons\languages.png'><span class="not_emojis_about"><b>Languages</b></span>
             
-            <p style='padding-bottom: 0.05vw;'></p>
+            <p class='skills-p'>Advanced Spanish and intermediate French</p>
 
-            <img class='emojis' src='Images\Icons\interpersonal.png' style='margin-bottom: -0.15vw;'><span class="not_emojis_about"><b>Interpersonal</b> --- communication, teamwork and leadership</span>
+            <img class='emojis-about' src='Images\Icons\interpersonal.png'><span class="not_emojis_about"><b>Interpersonal</b></span>
 
-            <p style='padding-bottom: 0.05vw;'></p>
+            <p class='skills-p'>Communication, teamwork and leadership</p>
 
-            <img class='emojis' src='Images\Icons\business.png' style='margin-bottom: -0.15vw;'><span class="not_emojis_about"><b>Business</b> --- commercial awareness and attention to business value</span>
+            <img class='emojis-about'  src='Images\Icons\business.png'><span class="not_emojis_about"><b>Business</b></span>
 
-            <p style='padding-bottom: 0.05vw;'></p>
+            <p class='skills-p'>Commercial awareness and attention to business value</p>
 
-            <img class='emojis' src='Images\Icons\programming.png' style='margin-bottom: -0.15vw;'><span class="not_emojis_about"><b>Programming</b> --- Python, R, SQL, HTML and CSS</span>
+            <img class='emojis-about'  src='Images\Icons\programming.png'><span class="not_emojis_about"><b>Programming</b></span>
 
-            <p style='padding-bottom: 0.05vw;'></p>
+            <p class='skills-p'>Python, R, SQL, HTML and CSS</p>
 
-            <img class='emojis' src='Images\Icons\ml.png' style='margin-bottom: -0.15vw;'><span class="not_emojis_about"><b>Machine Learning</b> --- LLMs, neural networks, classificaiton, regression and clustering</span>
+            <img class='emojis-about'  src='Images\Icons\ml.png'><span class="not_emojis_about"><b>Machine Learning</b></span>
 
-            <p style='padding-bottom: 0.05vw;'></p>
+            <p class='skills-p'>NLP, LLM chatbot apps, neural networks, classificaiton and regression</p>
 
-            <img class='emojis' src='Images\Icons\vizualization.png' style='margin-bottom: -0.15vw;'><span class="not_emojis_about"><b>Data Vizualization</b> --- Tableau, Matplotlib and ggplot2</span>
+            <img class='emojis-about' src='Images\Icons\vizualization.png'><span class="not_emojis_about"><b>Data Vizualization</b></span>
+
+            <p class='skills-p'>Tableau, Matplotlib and ggplot2</p>
 
         </div>
         <div class="section-break">
@@ -155,7 +157,7 @@
                     <ul>
                         <li>Trainee classification --- Skills Ladder, Tewkesbury (UK)</i></li>
     
-                        <li>Customers information --- Mosaique, Gloucestershire (UK)</li>
+                        <li>Customer information --- Mosaique, Gloucestershire (UK)</li>
     
                         <li>Staff training --- Saint James, London (UK)</li>
                     </ul>
@@ -170,15 +172,17 @@
         <div id="HiddenAccomplishments" class="hidden-section">
 
             <div class="about-project">
-                <h3>Dec 2023 - Present</h3>
-                <h3><b>Chatbot Solutions Implemented</b></h3>
-                <ul>
-                    <li>Excelbot, trainee classification --- Skills Ladder, Tewkesbury (UK)</i></li>
-
-                    <li>Lumapps Vs Igloo, customers information --- Mosaique, Gloucestershire (UK)</li>
-
-                    <li>ChatSJB, staff training --- Saint James, London (UK)</li>
-                </ul>
+                <div class="about-project">
+                    <h3>Dec 2023 - Present</h3>
+                    <h3><b>Chatbot Solutions Implemented</b></h3>
+                    <ul>
+                        <li>Trainee classification --- Skills Ladder, Tewkesbury (UK)</i></li>
+    
+                        <li>Customer information --- Mosaique, Gloucestershire (UK)</li>
+    
+                        <li>Staff training --- Saint James, London (UK)</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="about-project">
@@ -265,7 +269,7 @@
             <div class="about-project">
                 <p>I started freelancing in 2021, initially editing online content before transitioning into data science. My domain knowledge coupled with my innate sense of commercial awareness has helped me to provide value for these organizations and more:</p>
                 <div style="display: flex; justify-content: center; align-items: center;">
-                    <img class="no_border_image" src="Images/Me/freelance_jobs.png" style="height: 18vw; margin-top:1vw; width: auto;">
+                    <img class="no_border_image" id="freelance-pics" src="Images/Me/freelance_jobs.png">
                 </div>
             </div>
 
@@ -504,7 +508,7 @@
                 </div>
                 <div class="column">
                     <h3></h3>
-                    <p><a href="https://huggingface.co/Jcarterlab" class='footer_a'>HF</a></p>
+                    <p><a href="https://public.tableau.com/app/profile/jack.carter7699/vizzes" class='footer_a'>Tableau</a></p>
                 </div>
             </div>
             <div class="row">
@@ -515,7 +519,7 @@
                 </div>
                 <div class="column">
                     <h3></h3>
-                    <p><a href="https://public.tableau.com/app/profile/jack.carter7699/vizzes" class='footer_a'>Tableau</a></p>
+                    <p><a href="https://huggingface.co/Jcarterlab" class='footer_a'>HuggingFace</a></p>
                 </div>
                 <div class="column">
                     <h3></h3>
