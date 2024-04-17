@@ -276,8 +276,8 @@ time, mark, audio, video {
         font-size: 3vw;
     }
     .skills-p {
-        padding-bottom: 1vw; 
-        padding-top: 0.25vw; 
+        padding-bottom: 0.5vw; 
+        padding-top: 0.5vw; 
         padding-left: 5.25vw;
     }
     .section-break {
@@ -1035,8 +1035,8 @@ time, mark, audio, video {
         padding-bottom: 1vw;
     }
     .emojis-about {
-        margin-bottom: -0.15vw;
-        height: 1.25vw; 
+        margin-bottom: -0.125vw;
+        height: 1.15vw; 
         width: auto; 
         margin-right: 2vw;
         border: none;
@@ -1058,8 +1058,8 @@ time, mark, audio, video {
         margin-left: 0vw;
     }
     .skills-p {
-        padding-bottom: 1vw; 
-        padding-top: 0.25vw; 
+        padding-bottom: 0.5vw; 
+        padding-top: 0.5vw; 
         padding-left: 3.25vw;
     }
     .image-inline-container img {
