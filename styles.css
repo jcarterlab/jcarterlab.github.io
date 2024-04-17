@@ -375,16 +375,14 @@ time, mark, audio, video {
         margin: 0 auto;
     }
     h1 {
-        font-size: 1.85vw;
-        padding-left: 3.5vw; 
+        font-size: 2vw;
+        padding-left: 2.5vw; 
         padding-top: 1.45vw;
-        padding-top: 2vw;
-        padding-bottom: 2vw;
     }
     .header_h2 {
         color: white; 
         font-weight: normal; 
-        padding-left: 4.085vw;
+        padding-left: 4.0815vw;
         padding-bottom: 0vw;
         font-size: 1.025vw;
     }
@@ -402,7 +400,7 @@ time, mark, audio, video {
     nav li a {
         font-weight: bold;
         font-size: var(--laptop_nav_text);
-        margin-left: 5.75vw;
+        margin-left: 6.75vw;
         opacity: 1;
     }
     .emojis {
@@ -540,8 +538,9 @@ time, mark, audio, video {
     }
     .skills-p {
         padding-bottom: 1vw; 
-        padding-top: 0.25vw; 
+        padding-top: 0vw; 
         padding-left: 3.25vw;
+        font-size: var(--laptop_standard_text);
     }
     .image-inline-container img {
         height: 18vw;
@@ -888,16 +887,14 @@ time, mark, audio, video {
         margin: 0 auto;
     }
     h1 {
-        font-size: 1.85vw;
-        padding-left: 3.5vw; 
+        font-size: 2vw;
+        padding-left: 2.5vw; 
         padding-top: 1.45vw;
-        padding-top: 2vw;
-        padding-bottom: 2vw;
     }
     .header_h2 {
         color: white; 
         font-weight: normal; 
-        padding-left: 4.085vw;
+        padding-left: 4.0815vw;
         padding-bottom: 0vw;
         font-size: 1.025vw;
     }
@@ -915,7 +912,7 @@ time, mark, audio, video {
     nav li a {
         font-weight: bold;
         font-size: var(--laptop_nav_text);
-        margin-left: 5.75vw;
+        margin-left: 6.75vw;
         opacity: 1;
     }
     .emojis {
@@ -947,14 +944,8 @@ time, mark, audio, video {
     .project img {
         height: 14vw;
     }
-    .chatbot-container {
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        margin-bottom: 5vw;
-    }
     .chatbot {
-        width: 40vw;
+        width: 60vw;
     }
     .gradio-container {
         background-color: #fbf7fb !important;
@@ -1035,8 +1026,8 @@ time, mark, audio, video {
         padding-bottom: 1vw;
     }
     .emojis-about {
-        margin-bottom: -0.125vw;
-        height: 1.15vw; 
+        margin-bottom: -0.15vw;
+        height: 1.25vw; 
         width: auto; 
         margin-right: 2vw;
         border: none;
@@ -1058,9 +1049,10 @@ time, mark, audio, video {
         margin-left: 0vw;
     }
     .skills-p {
-        padding-bottom: 0.5vw; 
-        padding-top: 0.5vw; 
+        padding-bottom: 1vw; 
+        padding-top: 0vw; 
         padding-left: 3.25vw;
+        font-size: var(--laptop_standard_text);
     }
     .image-inline-container img {
         height: 18vw;
