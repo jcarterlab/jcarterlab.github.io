@@ -43,7 +43,7 @@ time, mark, audio, video {
         font-size: 4vw;
         padding-left: 4.5vw; 
         padding-right: 5vw;
-        padding-top: 2.25vw;
+        padding-top: 2vw;
     }
     .header_h2 {
         color: white; 
@@ -316,6 +316,9 @@ time, mark, audio, video {
         font-size: 3vw;
     } 
     .footer-container-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 1.8vw;
         margin: 0vw;
         background-color: var(--theme_color);
@@ -339,11 +342,14 @@ time, mark, audio, video {
     }
     .row {
         display: flex;
-        justify-content: space-between;
+        justify-content:  space-around;
         margin-bottom: 1.5vw;
     }
     .column {
-        width: calc(33.33% - 11vw);
+        flex: 1;
+        text-align: center;
+        padding: 0 4vw;
+        max-width: 33.33%;
     }
     .column h3 {
         color: #fff;
