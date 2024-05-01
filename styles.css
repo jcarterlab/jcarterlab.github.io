@@ -644,7 +644,7 @@ time, mark, audio, video {
     .header_h2 {
         color: white; 
         font-weight: normal; 
-        padding-left: 4.0815vw;
+        padding-left: 4.2vw;
         padding-bottom: 0vw;
         font-size: 1.025vw;
     }
@@ -662,7 +662,7 @@ time, mark, audio, video {
     nav li a {
         font-weight: bold;
         font-size: var(--laptop_nav_text);
-        margin-left: 6.75vw;
+        margin-left: 7.75vw;
         opacity: 1;
     }
     .emojis {
@@ -718,22 +718,23 @@ time, mark, audio, video {
         width: auto;
     }
     .previous {
-        right: 27vw;
+        right: 27.5vw;
     }
     .next {
-        left: 27vw;
+        left: 27.5vw;
     }
     button {
         display: flex;
         text-align: center;
         vertical-align: middle;
         margin: auto;
-        width: 4.5vw;
-        height: 5.25vw;
+        width: 4vw;
+        height: 4.5vw;
       }
     .photo-arrow {
-        height: 2.5vw !important;
-        padding-right: 3vw;
+        height: 1.75vw !important;
+        width: auto;
+        padding-right: 0.25vw;
         padding-top: 0.5vw;
         border:none;
         opacity: 0.25;

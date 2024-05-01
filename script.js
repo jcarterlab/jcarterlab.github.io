@@ -16,93 +16,123 @@
 
 
     /* photography */
-    /* photo lists */ 
-    var Europe = [  
-        "Images/Photography/Europe/Greece_1.jpg",
-        "Images/Photography/Europe/Spain_1.JPG",
-        "Images/Photography/Europe/Slovakia_1.JPG",
-        "Images/Photography/Europe/Iceland_1.JPG",
-        "Images/Photography/Europe/UK_1.JPG",
-        "Images/Photography/Europe/Hungary_1.JPG"
-        ];
-    var EuropeImageIndex = 0;
-
-    var Middle_East = [  
-        "Images/Photography/Middle-East/Egypt_1.JPG",
-        "Images/Photography/Middle-East/Egypt_2.JPG",
-        "Images/Photography/Middle-East/Morocco_1.JPG",
-        "Images/Photography/Middle-East/Morocco_2.JPG",
-        "Images/Photography/Middle-East/Turkey_1.JPG",
-        "Images/Photography/Middle-East/Turkey_2.JPG",
-        "Images/Photography/Middle-East/Turkey_3.JPG",
-        "Images/Photography/Middle-East/Turkey_4.JPG",
-        "Images/Photography/Middle-East/UAE_1.JPG",
-        "Images/Photography/Middle-East/Jordan_1.JPG"
-        ];
-    var MiddleEastImageIndex = 0;
-
-    var Southeast_Asia = [
-        "Images/Photography/Southeast-Asia/Singapore_1.JPG", 
-        "Images/Photography/Southeast-Asia/Cambodia_1.JPG",
-        "Images/Photography/Southeast-Asia/Cambodia_2.JPG",
-        "Images/Photography/Southeast-Asia/Philippines_1.JPG",
-        "Images/Photography/Southeast-Asia/Vietnam_1.JPG",
-        "Images/Photography/Southeast-Asia/Thailand_1.JPG"
+    var SoutheastAsia = [
+        "Images/Photography/Southeast Asia/Singapore_1.JPG", 
+        "Images/Photography/Southeast Asia/Cambodia_1.JPG",
+        "Images/Photography/Southeast Asia/Cambodia_2.JPG"
         ];
     var SoutheastAsiaImageIndex = 0;
 
-    var Hotels = [  
-        "Images/Photography/Hotels/Saint_James_1.JPG",
-        "Images/Photography/Hotels/Saint_James_2.JPG",
-        "Images/Photography/Hotels/Saint_James_3.JPG",
-        "Images/Photography/Hotels/villa_kemi_1.JPG",
-        "Images/Photography/Hotels/villa_kemi_2.JPG"
+    var SouthernEurope = [  
+        "Images/Photography/Southern Europe/Greece_1.jpg",
+        "Images/Photography/Southern Europe/Spain_1.JPG",
+        "Images/Photography/Southern Europe/Portugal_1.JPG"
         ];
-    var HotelsImageIndex = 0;
+    var SouthernEuropeImageIndex = 0;
+
+    var NorthAfrica = [
+        "Images/Photography/North Africa/Egypt_1.JPG",
+        "Images/Photography/North Africa/Morocco_1.JPG",
+        "Images/Photography/North Africa/Morocco_2.JPG"
+        ];
+    var NorthAfricaImageIndex = 0;
+
+    var MiddleEast = [
+        "Images/Photography/Middle East/Turkey_1.JPG",
+        "Images/Photography/Middle East/Turkey_2.JPG",
+        "Images/Photography/Middle East/Jordan_1.JPG"
+    ]
+    var MiddleEastImageIndex = 0;
+
+    var CentralEurope = [  
+        "Images/Photography/Central Europe/Austria_1.JPG",
+        "Images/Photography/Central Europe/Hungary_1.JPG",
+        "Images/Photography/Central Europe/Slovakia_1.JPG"
+        ];
+    var CentralEuropeImageIndex = 0;
+
+    var TheCaucasus = [
+        "Images/Photography/The Caucasus/Turkey_1.JPG",
+        "Images/Photography/The Caucasus/Georgia_1.JPG",
+        "Images/Photography/The Caucasus/Georgia_2.JPG"
+        ];
+    var TheCaucasusImageIndex = 0;
+
+    var NorthernEurope = [
+        "Images/Photography/Northern Europe/Iceland_1.JPG",
+        "Images/Photography/Northern Europe/Finland_1.JPG",
+        "Images/Photography/Northern Europe/The_UK_1.JPG"
+        ];
+    var NorthernEuropeImageIndex = 0;
+
+
 
 
     /* photo elements on page load */
     window.onload = function () {
-        EuropeElement = document.getElementById('Europe-img-id');
-        MiddleEastElement = document.getElementById('Middle-East-img-id');
-        SoutheastAsiaElement = document.getElementById('Southeast_Asia-img-id');
-        HotelsElement = document.getElementById('Hotels-img-id');
+        SouthernEuropeElement = document.getElementById('SouthernEurope-img-id');
+        NorthAfricaElement = document.getElementById('NorthAfrica-img-id');
+        MiddleEastElement = document.getElementById('MiddleEast-img-id');
+        CentralEuropeElement = document.getElementById('CentralEurope-img-id');
+        SoutheastAsiaElement = document.getElementById('SoutheastAsia-img-id');
+        TheCaucasusElement = document.getElementById('TheCaucasus-img-id');
+        NorthernEuropeElement = document.getElementById('NorthernEurope-img-id');
     }
 
 
     /* next image function */ 
     function nextImage(id) {
-        if(id === 'Europe-img-id') {
-            EuropeImageIndex = (EuropeImageIndex + 1) % Europe.length;
-            EuropeElement.src = Europe[EuropeImageIndex];
-        } else if(id === 'Middle-East-img-id') {
-            MiddleEastImageIndex = (MiddleEastImageIndex + 1) % Middle_East.length;
-            MiddleEastElement.src = Middle_East[MiddleEastImageIndex];
-        } else if(id === 'Southeast_Asia-img-id') {
-            SoutheastAsiaImageIndex = (SoutheastAsiaImageIndex + 1) % Southeast_Asia.length;
-            SoutheastAsiaElement.src = Southeast_Asia[SoutheastAsiaImageIndex];
-        } else if(id === 'Hotels-img-id') {
-            HotelsImageIndex = (HotelsImageIndex + 1) % Hotels.length;
-            HotelsElement.src = Hotels[HotelsImageIndex];
+        if(id === 'SouthernEurope-img-id') {
+            SouthernEuropeImageIndex = (SouthernEuropeImageIndex + 1) % SouthernEurope.length;
+            SouthernEuropeElement.src = SouthernEurope[SouthernEuropeImageIndex];
+        } else if(id === 'NorthAfrica-img-id') {
+            NorthAfricaImageIndex = (NorthAfricaImageIndex + 1) % NorthAfrica.length;
+            NorthAfricaElement.src = NorthAfrica[NorthAfricaImageIndex];
+        }  else if(id === 'MiddleEast-img-id') {
+            MiddleEastImageIndex = (MiddleEastImageIndex + 1) % MiddleEast.length;
+            MiddleEastElement.src = MiddleEast[MiddleEastImageIndex];
+        } else if(id === 'CentralEurope-img-id') {
+            CentralEuropeImageIndex = (CentralEuropeImageIndex + 1) % CentralEurope.length;
+            CentralEuropeElement.src = CentralEurope[CentralEuropeImageIndex];
+        } else if(id === 'TheCaucasus-img-id') {
+            TheCaucasusImageIndex = (TheCaucasusImageIndex + 1) % TheCaucasus.length;
+            TheCaucasusElement.src = TheCaucasus[TheCaucasusImageIndex];
+        } else if(id === 'NorthernEurope-img-id') {
+            NorthernEuropeImageIndex = (NorthernEuropeImageIndex + 1) % NorthernEurope.length;
+            NorthernEuropeElement.src = NorthernEurope[NorthernEuropeImageIndex];
+        } else if(id === 'SoutheastAsia-img-id') {
+            SoutheastAsiaImageIndex = (SoutheastAsiaImageIndex + 1) % SoutheastAsia.length;
+            SoutheastAsiaElement.src = SoutheastAsia[SoutheastAsiaImageIndex];
         }
     }
     
     /* next image function */ 
     function previousImage(id) {
-        if(id === 'Europe-img-id') {
-            EuropeImageIndex = (EuropeImageIndex - 1 + Europe.length) % Europe.length;
-            EuropeElement.src = Europe[EuropeImageIndex];
-        } else if(id === 'Middle-East-img-id') {
-            MiddleEastImageIndex = (MiddleEastImageIndex - 1 + Middle_East.length) % Middle_East.length;
-            MiddleEastElement.src = Middle_East[MiddleEastImageIndex];
-        } else if(id === 'Southeast_Asia-img-id') {
-            SoutheastAsiaImageIndex = (SoutheastAsiaImageIndex - 1 + Southeast_Asia.length) % Southeast_Asia.length;
-            SoutheastAsiaElement.src = Southeast_Asia[SoutheastAsiaImageIndex];
-        } else if(id === 'Hotels-img-id') {
-            HotelsImageIndex = (HotelsImageIndex - 1 + Hotels.length) % Hotels.length;
-            HotelsElement.src = Hotels[HotelsImageIndex]; 
+        if(id === 'SouthernEurope-img-id') {
+            SouthernEuropeImageIndex = (SouthernEuropeImageIndex - 1 + SouthernEurope.length) % SouthernEurope.length;
+            SouthernEuropeElement.src = SouthernEurope[SouthernEuropeImageIndex];
+        } else if(id === 'NorthAfrica-img-id') {
+            NorthAfricaImageIndex = (NorthAfricaImageIndex - 1 + NorthAfrica.length) % NorthAfrica.length;
+            NorthAfricaElement.src = NorthAfrica[NorthAfricaImageIndex];
+        } else if(id === 'MiddleEast-img-id') {
+            MiddleEastImageIndex = (MiddleEastImageIndex - 1 + MiddleEast.length) % MiddleEast.length;
+            MiddleEastElement.src = MiddleEast[MiddleEastImageIndex];
+        } else if(id === 'CentralEurope-img-id') {
+            CentralEuropeImageIndex = (CentralEuropeImageIndex - 1 + CentralEurope.length) % CentralEurope.length;
+            CentralEuropeElement.src = CentralEurope[CentralEuropeImageIndex];
+        } else if(id === 'TheCaucasus-img-id') {
+            TheCaucasusImageIndex = (TheCaucasusImageIndex - 1 + TheCaucasus.length) % TheCaucasus.length;
+            TheCaucasusElement.src = TheCaucasus[TheCaucasusImageIndex];
+        } else if(id === 'NorthernEurope-img-id') {
+            NorthernEuropeImageIndex = (NorthernEuropeImageIndex - 1 + NorthernEurope.length) % NorthernEurope.length;
+            NorthernEuropeElement.src = NorthernEurope[NorthernEuropeImageIndex];
+        } else if(id === 'SoutheastAsia-img-id') {
+            SoutheastAsiaImageIndex = (SoutheastAsiaImageIndex - 1 + SoutheastAsia.length) % SoutheastAsia.length;
+            SoutheastAsiaElement.src = SoutheastAsia[SoutheastAsiaImageIndex];
         }
     }
+
+
 
 
 
