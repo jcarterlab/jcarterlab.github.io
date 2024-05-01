@@ -69,6 +69,11 @@
 
     /* photo elements on page load */
     window.onload = function () {
+        aboutIconElement = document.getElementById('about-icon-id');
+        dataIconElement = document.getElementById('data-icon-id');
+        editingIconElement = document.getElementById('editing-icon-id');
+        photographyIconElement = document.getElementById('photography-icon-id');
+
         SouthernEuropeElement = document.getElementById('SouthernEurope-img-id');
         NorthAfricaElement = document.getElementById('NorthAfrica-img-id');
         MiddleEastElement = document.getElementById('MiddleEast-img-id');
@@ -116,7 +121,7 @@
         }
       }
       
-      
+
     
     /* next image function */ 
     function previousImage(id) {
