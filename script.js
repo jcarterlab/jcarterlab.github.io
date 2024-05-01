@@ -67,7 +67,6 @@
 
 
 
-
     /* photo elements on page load */
     window.onload = function () {
         SouthernEuropeElement = document.getElementById('SouthernEurope-img-id');
@@ -80,60 +79,81 @@
     }
 
 
+
     /* next image function */ 
     function nextImage(id) {
-        if(id === 'SouthernEurope-img-id') {
+        switch (id) {
+          case 'SouthernEurope-img-id':
             SouthernEuropeImageIndex = (SouthernEuropeImageIndex + 1) % SouthernEurope.length;
             SouthernEuropeElement.src = SouthernEurope[SouthernEuropeImageIndex];
-        } else if(id === 'NorthAfrica-img-id') {
+            break;
+          case 'NorthAfrica-img-id':
             NorthAfricaImageIndex = (NorthAfricaImageIndex + 1) % NorthAfrica.length;
             NorthAfricaElement.src = NorthAfrica[NorthAfricaImageIndex];
-        }  else if(id === 'MiddleEast-img-id') {
+            break;
+          case 'MiddleEast-img-id':
             MiddleEastImageIndex = (MiddleEastImageIndex + 1) % MiddleEast.length;
             MiddleEastElement.src = MiddleEast[MiddleEastImageIndex];
-        } else if(id === 'CentralEurope-img-id') {
+            break;
+          case 'CentralEurope-img-id':
             CentralEuropeImageIndex = (CentralEuropeImageIndex + 1) % CentralEurope.length;
             CentralEuropeElement.src = CentralEurope[CentralEuropeImageIndex];
-        } else if(id === 'TheCaucasus-img-id') {
+            break;
+          case 'TheCaucasus-img-id':
             TheCaucasusImageIndex = (TheCaucasusImageIndex + 1) % TheCaucasus.length;
             TheCaucasusElement.src = TheCaucasus[TheCaucasusImageIndex];
-        } else if(id === 'NorthernEurope-img-id') {
+            break;
+          case 'NorthernEurope-img-id':
             NorthernEuropeImageIndex = (NorthernEuropeImageIndex + 1) % NorthernEurope.length;
             NorthernEuropeElement.src = NorthernEurope[NorthernEuropeImageIndex];
-        } else if(id === 'SoutheastAsia-img-id') {
+            break;
+          case 'SoutheastAsia-img-id':
             SoutheastAsiaImageIndex = (SoutheastAsiaImageIndex + 1) % SoutheastAsia.length;
             SoutheastAsiaElement.src = SoutheastAsia[SoutheastAsiaImageIndex];
+            break;
+          default:
+            console.warn("Invalid image ID provided:", id); // Handle invalid ID gracefully (optional)
         }
-    }
+      }
+      
+      
     
     /* next image function */ 
     function previousImage(id) {
-        if(id === 'SouthernEurope-img-id') {
+        switch (id) {
+          case 'SouthernEurope-img-id':
             SouthernEuropeImageIndex = (SouthernEuropeImageIndex - 1 + SouthernEurope.length) % SouthernEurope.length;
             SouthernEuropeElement.src = SouthernEurope[SouthernEuropeImageIndex];
-        } else if(id === 'NorthAfrica-img-id') {
+            break;
+          case 'NorthAfrica-img-id':
             NorthAfricaImageIndex = (NorthAfricaImageIndex - 1 + NorthAfrica.length) % NorthAfrica.length;
             NorthAfricaElement.src = NorthAfrica[NorthAfricaImageIndex];
-        } else if(id === 'MiddleEast-img-id') {
+            break;
+          case 'MiddleEast-img-id':
             MiddleEastImageIndex = (MiddleEastImageIndex - 1 + MiddleEast.length) % MiddleEast.length;
             MiddleEastElement.src = MiddleEast[MiddleEastImageIndex];
-        } else if(id === 'CentralEurope-img-id') {
+            break;
+          case 'CentralEurope-img-id':
             CentralEuropeImageIndex = (CentralEuropeImageIndex - 1 + CentralEurope.length) % CentralEurope.length;
             CentralEuropeElement.src = CentralEurope[CentralEuropeImageIndex];
-        } else if(id === 'TheCaucasus-img-id') {
+            break;
+          case 'TheCaucasus-img-id':
             TheCaucasusImageIndex = (TheCaucasusImageIndex - 1 + TheCaucasus.length) % TheCaucasus.length;
             TheCaucasusElement.src = TheCaucasus[TheCaucasusImageIndex];
-        } else if(id === 'NorthernEurope-img-id') {
+            break;
+          case 'NorthernEurope-img-id':
             NorthernEuropeImageIndex = (NorthernEuropeImageIndex - 1 + NorthernEurope.length) % NorthernEurope.length;
             NorthernEuropeElement.src = NorthernEurope[NorthernEuropeImageIndex];
-        } else if(id === 'SoutheastAsia-img-id') {
+            break;
+          case 'SoutheastAsia-img-id':
             SoutheastAsiaImageIndex = (SoutheastAsiaImageIndex - 1 + SoutheastAsia.length) % SoutheastAsia.length;
             SoutheastAsiaElement.src = SoutheastAsia[SoutheastAsiaImageIndex];
+            break;
+          default:
+            console.warn("Invalid image ID provided:", id); // Handle invalid ID gracefully (optional)
         }
-    }
-
-
-
+      }
+      
 
 
     /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
