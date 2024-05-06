@@ -69,6 +69,7 @@
 
     /* photo elements on page load */
     window.onload = function () {
+        homeElement = document.getElementById('home-icon-id');
         aboutIconElement = document.getElementById('about-icon-id');
         dataIconElement = document.getElementById('data-icon-id');
         editingIconElement = document.getElementById('editing-icon-id');
