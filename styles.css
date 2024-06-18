@@ -170,12 +170,6 @@ time, mark, audio, video {
     .chatbot {
         width: 80vw;
     }
-    .gradio-container {
-        background-color: #fbf7fb !important;
-    }
-    .block.svelte-12cmxck {
-        background-color: #fbf7fb !important;
-    }
     .tableau {
         width: 100%;
         height: 100%;
@@ -447,12 +441,6 @@ time, mark, audio, video {
     .chatbot {
         width: 60vw;
     }
-    .gradio-container {
-        background-color: #fbf7fb !important;
-    }
-    .block.svelte-12cmxck {
-        background-color: #fbf7fb !important;
-    }
     .tableau {
         width: 100%;
         height: 100%;
@@ -710,12 +698,6 @@ time, mark, audio, video {
     .chatbot {
         width: 60vw;
     }
-    .gradio-container {
-        background-color: #fbf7fb !important;
-    }
-    .block.svelte-12cmxck {
-        background-color: #fbf7fb !important;
-    }
     .tableau {
         width: 100%;
         height: 100%;
@@ -972,12 +954,6 @@ time, mark, audio, video {
     }
     .chatbot {
         width: 60vw;
-    }
-    .gradio-container {
-        background-color: #fbf7fb !important;
-    }
-    .block.svelte-12cmxck {
-        background-color: #fbf7fb !important;
     }
     .tableau {
         width: 100%;
@@ -1402,3 +1378,30 @@ nav li a {
     background-color: grey;
     opacity: 1;
 }
+
+
+
+
+
+
+
+
+/*    old css for gradio container in VS
+
+
+.gradio-container {
+        background-color: #fbf7fb !important;
+    }
+.block.svelte-12cmxck {
+        background-color: #fbf7fb !important;
+    }
+*/
+
+
+/*    old css for gradio container in HF
+
+.gradio-container {
+    background-color: #fbf7fb !important;
+}
+
+*/
