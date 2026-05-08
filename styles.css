@@ -339,7 +339,7 @@ a {
         justify-content: flex-start;
     }
     .logo-container {
-        gap: 10px;
+        gap: 10.25px;
     } 
     .logo-avatar {
         width: 42.47px;
@@ -347,7 +347,11 @@ a {
     }
     .logo-text {
         font-size: 22px;
-        gap: 10px;
+        gap: 10.25px;
+    }
+    .logo-icon {
+        width: 14.25px;
+        height: 14.25px;
     }
     .burger-container { 
         padding-right: 25px;
