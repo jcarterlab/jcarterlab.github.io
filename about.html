@@ -1,547 +1,157 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jack Carter | Data Scientist</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🙋‍♂️</text></svg>">
-    <link rel="stylesheet", href="styles.css">
-    <script type="text/javascript" src="script.js"></script>
+    <title>Jack P. Carter | About</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon-command-line-003087.svg">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Link to fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <div class="header-container-mobile">
+    <a href="#main" class="skip-link">Skip to content</a>
 
-        <div class="topnav" id="myTopnav">
-            <a href="https://jcarterlab.github.io" class='active' style='font-size: 4vw; font-family: Century Gothic, sans-serif;'>
-                <h1>Jack Carter</h1>
+    <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+    <!-- HEADER -->
+    <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+    <header class="header-container">
+
+        <!-- Logo -->
+        <div class="header-content">
+            <a href="index.html">
+                <div class="logo-container" id="logo">
+                    <img src="assets/profile_pic.png" alt="Jack P. Carter" class="logo-avatar">
+                    <h3 class="logo-text">
+                        Jack P. Carter
+                        <img src="assets/favicon-command-line-003087.svg" alt="Command line icon" class="logo-icon">
+                    </h3>
+                </div>
             </a>
-            <a href="https://jcarterlab.github.io/about.html" class="nav_links"><img class='emojis' id="about-icon-id" src='Images\Icons\user.png'><span class="not_emojis">About</span></a>
-            <a href="https://jcarterlab.github.io/data.html" class="nav_links"><img class='emojis' id="data-icon-id" src='Images\Icons\data.png'><span class="not_emojis">Data</span></a>
-            <a href="https://jcarterlab.github.io/editing.html" class="nav_links"><img class='emojis' id="editing-icon-id" src='Images\Icons\editing.png'><span class="not_emojis">Editing</span></a>
-            <a href="https://jcarterlab.github.io/photography.html" class="final_nav_link"><img class='emojis' id="photography-icon-id" src='Images\Icons\camera.png'><span class="not_emojis">Photography</span></a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+            <!-- Nav menu -->
+            <div class="burger-container">
+                <button class="burger" id="burger" aria-label="Open menu" aria-controls="menu" aria-expanded="false">
+                    <img src="assets/icons/burger.svg" alt="Menu Icon" class="icon" />
+                </button>
+            </div>
+
         </div>
-        
-    </div>
-
-
-    <div class="header-container-desktop">
-
-        <header>
-            <a href="https://jcarterlab.github.io/index.html" style="text-decoration: none;">
-                <img class="no_border_image" id="home-icon-id" style="margin-left: 3vw; margin-top: 1.35vw; margin-bottom: 0.375vw; height: 4.5vw; width: auto;" src='Images\Icons\home-icon.png'>
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="https://jcarterlab.github.io/about.html">About</span></a></li>
-                    <li><a href="https://jcarterlab.github.io/data.html"><span class="not_emojis">Data</span></a></li>
-                    <li><a href="https://jcarterlab.github.io/editing.html"><span class="not_emojis">Editing</span></a></li>
-                    <li class="nav_final"><a href="https://jcarterlab.github.io/photography.html"><span class="not_emojis">Photography</span></a></li>
-                </ul>
+        <div class="nav-links-container">
+            <nav class="nav-links" id="menu" aria-label="Primary">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="data.html" class="nav-link" style="padding-bottom: 1.5em">Data</a>
             </nav>
-        </header>
-        
-    </div>
-    
-
-    <hr>
-    </br>
-
-
-    <div class="container" id="about">
-
-        <div class="page-title">
-            <h1>About</h1>
         </div>
 
+    </header>
 
 
-
-        <h2>Interactive Overview</h2>
-        <p>I'm passionate about data science. Whether it involves politics, economics, technology, finance, health or a different kind of data, I can using Python, R and SQL to engineer real-world solutions.</p>
-        <p style="margin-bottom: 2.5vw;">One of the things I can do as a data practitioner is create chatbot applications. The chatbot below answers questions about me based on the information on this page. Why not give it a go?</p>
-
-        <div class="chatbot-container" style="margin-bottom: 5vw;">
-
-            <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.24.0/gradio.js"></script>
-            <gradio-app src="https://jcarterlab-about-me.hf.space" class="chatbot"></gradio-app>
-            
-        </div>
-
-        <p>Another thing I can do is create custom visualizations. The Tableau dashboard below highlights the parts of my CV that involve working with data. See the larger icons for a quick summary or continue for more detail.</p>
-    </div>
+    <main id="main">
 
 
-        <div class='tableauPlaceholder' id='viz1712386165527' style='position: relative; margin: 0 auto; margin-bottom: 5vw;'><noscript>
-            <a href='#'>
-                <img alt='Cut to the data ✂--The parts of my CV that involve data--** hover for details** ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cu&#47;Cuttothedata&#47;Cuttothedata&#47;1_rss.png' style='border: none' />
-            </a>
-        </noscript>
-        <object class='tableauViz'  style='display:none;'>
-            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-            <param name='embed_code_version' value='3' /> 
-            <param name='site_root' value='' />
-            <param name='name' value='Cuttothedata&#47;Cuttothedata' />
-            <param name='tabs' value='no' />
-            <param name='toolbar' value='yes' />
-            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cu&#47;Cuttothedata&#47;Cuttothedata&#47;1.png' /> 
-            <param name='animate_transition' value='yes' />
-            <param name='display_static_image' value='yes' />
-            <param name='display_spinner' value='yes' />
-            <param name='display_overlay' value='yes' />
-            <param name='display_count' value='yes' />
-            <param name='language' value='en-GB' />
-        </object>
-        </div>                
-        <script type='text/javascript'>                    
-            var divElement = document.getElementById('viz1712386165527');                    
-            var vizElement = divElement.getElementsByTagName('object')[0];                    
-            if ( divElement.offsetWidth > 1400 ) { vizElement.style.width='1199px'; vizElement.style.height='720px';} 
-            else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='75vw'; vizElement.style.height='720px';} 
-            else { vizElement.style.width='85vw';vizElement.style.height='1777px';}                     
-            var scriptElement = document.createElement('script');                    
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-        </script>
+        <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+        <!-- MAIN HERO -->
+        <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+        <section class="hero-container">
+            <div class="hero-text">
+                <h1 id="first-hero-text-primary">About</h1>
+            </div>
+            <div class="hero-image-container">
+                <img src="assets/hero_images/about_hero.png" alt="Hero image" />
+            </div>
+        </section>
+
+        <br><br><br><br>
 
 
+        <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+        <!-- MAIN CONTENT -->
+        <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+
+        <div class="main-content-container">
 
 
-    <div class="container" id="about">
-        
-        <h2 style="padding-bottom: 1.5vw;">Skills</h2>
-        <div class="skills-list">
-
-            <img class='emojis-about' src='Images\Icons\languages.png'><span class="not_emojis_about"><b>Languages</b></span>
-            
-            <p class='skills-p'>Advanced Spanish, intermediate French and beginner Chinese</p>
-
-            <img class='emojis-about' src='Images\Icons\interpersonal.png'><span class="not_emojis_about"><b>Interpersonal</b></span>
-
-            <p class='skills-p'>Communication, teamwork and leadership</p>
-
-            <img class='emojis-about'  src='Images\Icons\business.png'><span class="not_emojis_about"><b>Business</b></span>
-
-            <p class='skills-p'>Commercial awareness and attention to business value</p>
-
-            <img class='emojis-about'  src='Images\Icons\programming.png'><span class="not_emojis_about"><b>Programming</b></span>
-
-            <p class='skills-p'>Python, R, SQL, HTML and CSS</p>
-
-            <img class='emojis-about' src='Images\Icons\vizualization.png'><span class="not_emojis_about"><b>Data Vizualization</b></span>
-
-            <p class='skills-p'>Tableau, Power BI, Matplotlib and ggplot2</p>
-
-            <img class='emojis-about'  src='Images\Icons\stats.png'><span class="not_emojis_about"><b>Statistics</b></span>
-
-            <p class='skills-p'>Multiple regression, central limit theorem and Monte Carlo methods</p>
-
-            <img class='emojis-about'  src='Images\Icons\ml.png'><span class="not_emojis_about"><b>Machine Learning</b></span>
-
-            <p class='skills-p'>Deep learning, classificaiton, regression and clustering algorithms</p>
-
-        </div>
-        <div class="section-break">
-        </div>
+        <br>
 
 
+        <p>
+            I’m an AI and automation developer specialising in LLM-powered tools that solve real-world business problems.
+            I am passionate about providing access to needed information faster and more efficiently through production ready AI systems.
+        </p>
 
 
-        <h2 style="margin-top: 8vw;">Accomplishments</h2>
+        <br><br><br><br>
 
-        <div id="VisibleAccomplishments" class="content-section">
-            <div class="about-project">
-                <div class="about-project">
-                    <h3>Dec 2023 - Present</h3>
-                    <h3><b>Chatbot Solutions Implemented</b></h3>
-                    <ul>
-                        <li>Trainee classification --- Skills Ladder, Tewkesbury (UK)</i></li>
-    
-                        <li>Customer information --- Mosaique, Gloucestershire (UK)</li>
-    
-                        <li>Staff training --- Saint James, London (UK)</li>
-                    </ul>
+
+        <section class="contact-section">
+            <div class="contact-container">
+                <h2>Get in contact</h2>
+                <p class="contact-subtext">
+                    If you'd like to work together, I'd love to hear from you.
+                </p>
+
+                <div class="contact-grid">
+
+                    <div class="contact-card">
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:jackpcarter.dev@gmail.com" class="contact-value">
+                            jackpcarter.dev@gmail.com
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <span class="contact-label">Phone</span>
+                        <a href="tel:+447593047683" class="contact-value">
+                            +44 7593 047683
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <span class="contact-label">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/jack-p-carter-74b608148" 
+                        target="_blank" 
+                        class="contact-value">
+                            linkedin.com/in/jack-p-carter
+                        </a>
+                    </div>
+
                 </div>
             </div>
-
-            <div class="section-break">
-                <span class="toggleButton" onclick="toggleVisibility('VisibleAccomplishments', 'HiddenAccomplishments')"><u>More accomplishments >></u></span>
-            </div>
-        </div>
-
-        <div id="HiddenAccomplishments" class="hidden-section">
-
-            <div class="about-project">
-                <div class="about-project">
-                    <h3>Dec 2023 - Present</h3>
-                    <h3><b>Chatbot Solutions Implemented</b></h3>
-                    <ul>
-                        <li>Trainee classification --- Skills Ladder, Tewkesbury (UK)</i></li>
-    
-                        <li>Customer information --- Mosaique, Gloucestershire (UK)</li>
-    
-                        <li>Staff training --- Saint James, London (UK)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="about-project">
-                <h3>Nov 2022 - Present</h3>
-                <h3><b>Algorithms Developed</b></h3>
-                <ul>
-                    <li>Dynamic pricing --- Saint James Hostel, London</i></li>
-
-                    <li>Group classificaiton --- Skills Ladder, Tewkesbury (UK)</li>
-
-                    <li>Distribution optimization --- TIAFI, Izmir (Turkey)</li>
-                </ul>
-            </div>
-
-            <div class="about-project">
-                <h3>Sep 2020 - Present</h3>
-                <h3><b>Notable Authors Proofread</b></h3>
-                <ul>
-                    <li>Julio A. Jeldres --- Chilean Ambassador to Cambodia</i></li>
-
-                    <li>Carmen Moreno --- EU Ambassador to Cambodia</li>
-
-                    <li>Pablo Kang --- Australian Ambassador to Cambodia</li>
-
-                    <li>Pou Sothirak --- Former Cambodian Ambassador to Japan</li>
-
-                    <li>Simon Tay --- Singapore’s Ambassador to Greece</li>
-                </ul>
-            </div>
-
-            <div class="about-project">
-                <h3>July 2013 - Sep 2018</h3>
-                <h3><b>University Achievements</b></h3>
-                <ul>
-                    <li>High distinction in my master's thesis --- King's College London</li>
-                    <li>2017 Student of the Year Award --- Cardiff Metropolitan</li>
-                </ul>
-            </div>
-            <div class="section-break">
-                <span class="toggleButton" onclick="toggleVisibility('VisibleAccomplishments', 'HiddenAccomplishments')"><u>Less accomplishments ^^</u></span>
-            </div>
-        </div>
+        </section>
 
 
+        <br><br><br><br>
+        <br><br><br><br>
 
-
-        <h2>Freelance Experience</h2>
-
-        <div id="VisibleFreelanceExperience" class="content-section">
-            <div class="about-project">
-                <p>I started freelancing in 2021, initially editing online content before transitioning into data science. My domain knowledge coupled with my innate sense of commercial awareness has helped me provide value for the following and more:</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <img class="no_border_image" id="freelance-pics" src="Images/Me/freelance_jobs.png">
-                </div>
-            </div>
-            <div class="section-break">
-                <span class="toggleButton" onclick="toggleVisibility('VisibleFreelanceExperience', 'HiddenFreelanceExperience')"><u>More freelance experience >></u></span>
-            </div>
-        </div>
-
-        <div id="HiddenFreelanceExperience" class="hidden-section">
-            <div class="about-project">
-                <p>I started freelancing in 2021, initially editing online content before transitioning into data science. My domain knowledge coupled with my innate sense of commercial awareness has helped me provide value for the following and more:</p>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <img class="no_border_image" id="freelance-pics" src="Images/Me/freelance_jobs.png">
-                </div>
-            </div>
-
-            <div class="about-project">
-                <h3>Dec 2023 – Present</h3>
-                <h3><b>Freelance Data Scientist</b> --- small businesses, in-person & online</h3>
-                <ul>
-                    <li>LLM powered chatbot apps</li>
-                    <li>Data visualization in Tableau and Python</li>
-                    <li>Custom solutions (distribution optimization, dynamic pricing, rota generation etc.)</li>
-                </ul>
-            </div>
-
-            <div class="about-project">
-                <h3>Sep 2021 – April 2023</h3>
-                <h3><b>Freelance Editor</b> --- NGOs, Academics and businesses, online</h3>
-                <ul>
-                    <li>International relations publications for Southeast Asian think tanks</li>
-                    <li>Journal article publications in a range of fields</li>
-                    <li>PhD theses in the social sciences and arts fields</li>
-                    <li>Web content for various businesses including travel articles for easyJet</li>
-                </ul>
-            </div>
-
-            <div class="section-break">
-                <span class="toggleButton" onclick="toggleVisibility('VisibleFreelanceExperience', 'HiddenFreelanceExperience')"><u>Less employment experience ^^</u></span>
-            </div>
-        </div>
-
-
-
-
-        <h2>Employment Experience</h2>
-
-        <div id="VisibleEmploymentExperience" class="content-section">
-            <div class="about-project">
-                <h3>May 2023 - Dec 2023</h3>
-                <h3><b>Operations Manager</b> --- Saint James Hostel, London</h3>
-                <ul>
-                    <li>Led a team of 15 +</li>
-                    <li>Project managed a software transition</li>
-                    <li>Built a chatbot app to aid staff training</li>
-                    <li>Conducted data analysis on 4,000 + check-ins</li>
-                    <li>Built a rota generator in Python</li>
-                    <li>Created a variable price algorithm</li>
-                </ul>
-
-                <h4 style="color: #454545; margin-top: 2.5vw;">Reference - Stephen Sie, Owner</h4>
-                <p><i>“Jack always displayed a proactive can-do attitude and a warmth and humanity that guests and staff respected. In addition to his regular duties of managing day to day operations, he also took on additional project-based work that included creating a Task Manager system, setting up a Chatbot, migrating our Property Management System (PMS) to Little Hotelier, building an automatic bed checking system, making an Excel-based price algorithm, designing a rota generator and conducting data analyses on cancellations, no-shows and check-ins.</i></p>
-                
-                <p><i>I highly and unreservedly recommend Jack."</i></p>
-
-            </div>
-            <div class="section-break">
-                <span class="toggleButton" onclick="toggleVisibility('VisibleEmploymentExperience', 'HiddenEmploymentExperience')"><u>More employment experience >></u></span>
-            </div>
-        </div>
-
-        <div id="HiddenEmploymentExperience" class="hidden-section">
-            <div class="about-project">
-                <h3>May 2023 - Dec 2023</h3>
-                <h3><b>Operations Manager</b> --- Saint James Hostel, London</h3>
-                <ul>
-                    <li>Led a team of 15 +</li>
-                    <li>Project managed a software transition</li>
-                    <li>Built a chatbot app to aid staff training</li>
-                    <li>Conducted data analysis on 4,000 + check-ins</li>
-                    <li>Built a rota generator in Python</li>
-                    <li>Created a variable price algorithm</li>
-                </ul>
-
-                <h4 style="color: #454545; margin-top: 2.5vw;">Reference - Stephen Sie, Owner</h4>
-                <p><i>“Jack always displayed a proactive can-do attitude and a warmth and humanity that guests and staff respected. In addition to his regular duties of managing day to day operations, he also took on additional project-based work that included creating a Task Manager system, setting up a Chatbot, migrating our Property Management System (PMS) to Little Hotelier, building an automatic bed checking system, making an Excel-based price algorithm, designing a rota generator and conducting data analyses on cancellations, no-shows and check-ins.</i></p>
-                
-                <p><i>I highly and unreservedly recommend Jack."</i></p>
-                
-            </div>
-
-            <div class="about-project">
-                <h3>Sep – Dec 2022</h3>
-                <h3><b>Data Analyst</b> --- TIAFI, Izmir</h3>
-                <ul>
-                    <li>Created several support package distribution algorithms</li>
-                    <li>Built 2 Retool database apps to help manage interactions with 9,000+ members</li>
-                    <li>Conducted monthly data analysis to provide specific figures for outside donors</li>
-                    <li>Made a tool to read-in and translate scores data from Arabic Word documents</li>
-                </ul>
-            </div>
-
-            <div class="about-project">
-                <h3>Jan – July 2022</h3>
-                <h3><b>English Teacher</b> --- BrightKids International Preschool, Istanbul</h3>
-                <ul>
-                    <li>Taught English to international preschool children</li>
-                </ul>
-            </div>
-
-            <div class="about-project">
-                <h3>Jan 2019 – Jan 2020</h3>
-                <h3><b>English Teacher</b> --- Aihua English Academy, Beijing</h3>
-                <ul>
-                    <li>Taught English to children between the ages of 3 and 15</li>
-                </ul>
-            </div>
-            <div class="section-break">
-                <span class="toggleButton" onclick="toggleVisibility('VisibleEmploymentExperience', 'HiddenEmploymentExperience')"><u>Less employment experience ^^</u></span>
-            </div>
-        </div>
-
-
-
-        
-
-        <h2>Volunteer Experience</h2>
-
-        <div id="VisibleVolunteerExperience" class="content-section">
-            <div class="about-project">
-                <h3>Feb – April 2023</h3>
-                <h3><b>Guest Foreign Speaker</b> --- BLA, Casablanca</h3>
-                <ul>
-                    <li>Engaged in conversations with learners</li>
-                    <li>Talked about cultural themes such as Ramadan</li>
-                </ul>
-            </div>
-            <div class="section-break">
-                <span class="toggleButton" onclick="toggleVisibility('VisibleVolunteerExperience', 'HiddenVolunteerExperience')"><u>More volunteer experience >></u></span>
-            </div>
-        </div>
-
-        <div id="HiddenVolunteerExperience" class="hidden-section">
-            <div class="about-project">
-                <h3>Feb – April 2023</h3>
-                <h3><b>Guest Foreign Speaker</b> --- BLA, Casablanca</h3>
-                <ul>
-                    <li>Engaged in conversations with learners</li>
-                    <li>Talked about cultural themes such as Ramadan</li>
-                </ul>
-            </div>
-
-            <div class="about-project">
-                <h3>July – Sep 2020</h3>
-                <h3><b>Visiting Research Fellow</b> --- CICP, Phnom Penh</h3>
-                <ul>
-                    <li>Proofed a book on the political fallout of Covid-19 in Southeast Asia</li>
-                    <li>Peer reviewed international relations articles for CICP's Op-Ed series'</li>
-                    <li>Attended various meetings and talks on international relations topics</li>
-                </ul>
-            </div>
-
-            <div class="about-project">
-                <h3>May – July 2020</h3>
-                <h3><b>Project Manager Assistant</b> --- COCD, Phnom Penh</h3>
-                <ul>
-                    <li>Helped to secure a $60,000 grant for a water related project</li>
-                    <li>Aided managers with project proposal and evaluation writing</li>
-                    <li>Updated website with relevant research concerning current issues in Cambodia</li>
-                </ul>
-            </div>
-
-            <div class="about-project">
-                <h3>Sep 2019 – May 2020</h3>
-                <h3><b>Digital Mapper</b> --- HOT, Online</h3>
-                <ul>
-                    <li>Used satellite imagery and OpenStreetMap to digitally map disaster areas</li>
-                    <li>Learnt how to map a variety of infrastructure types such as roads and buildings</li>
-                </ul>
-            </div>
-            <div class="section-break">
-                <span class="toggleButton" onclick="toggleVisibility('VisibleVolunteerExperience', 'HiddenVolunteerExperience')"><u>Less volunteer experience ^^</u></span>
-            </div>
-        </div>
-
-
-
-
-        <h2>Education</h2>
-
-        <div id="VisibleEducation" class="content-section">
-            <div class="about-project">
-                <h3>Sep 2017 – Sep 2018</h3>
-                <h3><b>MSc Political Economy of Emerging Markets</b> --- King's College London</h3>
-                <ul>
-                    <li>My dissertation focused on the spatial determinants of innovation in China and recieved a high distinction.</li>
-                </ul>
-            </div>
-            <div class="section-break">
-                <span class="toggleButton" onclick="toggleVisibility('VisibleEducation', 'HiddenEducation')"><u>More education >></u></span>
-            </div>
-        </div>
-
-        <div id="HiddenEducation" class="hidden-section">
-            <div class="about-project">
-                <h3>Sep 2017 – Sep 2018</h3>
-                <h3><b>MSc Political Economy of Emerging Markets</b> --- King's College London</h3>
-                <ul>
-                    <li>My dissertation focused on the spatial determinants of innovation in China and recieved a high distinction.</li>
-                </ul>
-            </div>
-
-            <div class="about-project">
-                <h3>Sep 2013 – July 2017</h3>
-                <h3><b>BSc International Business Management</b> --- Cardiff Metropolitan</h3>
-                <ul>
-                    <li>I received the 2017 Student of the Year Award for achieving the highest overall grade.</li>
-                </ul>
-            </div>
-
-            <div class="about-project">
-                <h3>Sep 2015 – July 2016</h3>
-                <h3><b>Gestión de Negocios</b> --- Université Grenoble Alpes</h3>
-                <ul>
-                    <li>I excelled in various business classes as part of a yearlong study abroad program</li>
-                </ul>
-            </div>
-
-            <div class="about-project">
-                <h3>April – May 2015</h3>
-                <h3><b>International Finance and Economics</b> --- Renmin University of China</h3>
-                <ul>
-                    <li>I learnt about the US-China financial relationship as part of a short exchange program</li>
-                </ul>
-            </div>
-            <div class="section-break">
-                <span class="toggleButton" onclick="toggleVisibility('VisibleEducation', 'HiddenEducation')"><u>Less education ^^</u></span>
-            </div>
-        </div>
-
-
-
-
-    </br>
-    </div>
-    <hr>
-
-
-    <div class="footer-container-mobile">
-
-        <footer>
-
-            <div class="row">
-                <div class="column">
-                    <h3></h3>
-                    <p><a href="" class='footer_a'>&copy; 2023</a></p>
-                </div>
-                <div class="column">
-                    <h3></h3>
-                    <p><a href="https://github.com/jcarterlab" class='footer_a'>Github</a></p>
-                </div>
-                <div class="column">
-                    <h3></h3>
-                    <p><a href="https://public.tableau.com/app/profile/jack.carter7699/vizzes" class='footer_a'>Tableau</a></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <h3></h3>
-                    <p><a href="https://www.linkedin.com/in/jack-carter-74b608148/" class='footer_a'>LinkedIn</a></p>
-                    
-                </div>
-                <div class="column">
-                    <h3></h3>
-                    <p><a href="https://huggingface.co/Jcarterlab" class='footer_a'>Hugging Face</a></p>
-                </div>
-                <div class="column">
-                    <h3></h3>
-                    <p><a href="https://www.kaggle.com/jcarterlab" class='footer_a'>Kaggle</a></p>
-                </div>
-            </div>
-
-        </footer>
 
     </div>
 
 
-    <div class="footer-container-desktop">
+    </main>
 
-        <footer>
 
-            <nav>
-                <ul>
-                    <li>&copy; 2023 Jack Carter</li>
-                    <li><a href="https://www.linkedin.com/in/jack-carter-74b608148/">LinkedIn</a></li>
-                    <li><a href="https://github.com/jcarterlab">Github</a></li>
-                    <li><a href="https://public.tableau.com/app/profile/jack.carter7699/vizzes">Tableau</a></li>
-                    <li><a href="https://huggingface.co/Jcarterlab">Hugging Face</a></li>
-                    <li class='final_footer_link'><a href="https://www.kaggle.com/jcarterlab">Kaggle</a></li>
-                </ul>
-            </nav>
-            
-        </footer>
+    <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+    <!-- FOOTER -->
+    <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+    <footer>
+        <p>&copy; 2026 Jack P. Carter · AI Application Engineer</p>
+    </footer>
 
-    </div>
-
+    <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+    <!-- JAVASCRIPT -->
+    <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+    <script src="script.js" defer></script>
 </body>
+
 </html>

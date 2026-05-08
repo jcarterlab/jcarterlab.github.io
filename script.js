@@ -1,179 +1,128 @@
-// JavaScript source code
+/* ---------------------------------------- */
+/* GOOGLE FONTS 
+/* ---------------------------------------- */
 
-    /* see more/see less sections */  
-    function toggleVisibility(VisibleId, HiddenId) {
-        var visibleSection = document.getElementById(VisibleId);
-        var hiddenSection = document.getElementById(HiddenId);
+/* waits for google fonts to load before rendering certain html elements */
 
-            if (visibleSection.style.display === "none") {
-                visibleSection.style.display = "block";
-                hiddenSection.style.display = "none";
-            } else {
-                visibleSection.style.display = "none";
-                hiddenSection.style.display = "block";
-            }
-        }
-
-
-    /* photography */
-    var SoutheastAsia = [
-        "Images/Photography/Southeast Asia/Singapore_1.JPG", 
-        "Images/Photography/Southeast Asia/Cambodia_1.JPG",
-        "Images/Photography/Southeast Asia/Cambodia_2.JPG"
-        ];
-    var SoutheastAsiaImageIndex = 0;
-
-    var SouthernEurope = [  
-        "Images/Photography/Southern Europe/Greece_1.jpg",
-        "Images/Photography/Southern Europe/Spain_1.JPG",
-        "Images/Photography/Southern Europe/Portugal_1.JPG"
-        ];
-    var SouthernEuropeImageIndex = 0;
-
-    var NorthAfrica = [
-        "Images/Photography/North Africa/Egypt_1.JPG",
-        "Images/Photography/North Africa/Morocco_1.JPG",
-        "Images/Photography/North Africa/Morocco_2.JPG"
-        ];
-    var NorthAfricaImageIndex = 0;
-
-    var MiddleEast = [
-        "Images/Photography/Middle East/Turkey_1.JPG",
-        "Images/Photography/Middle East/Turkey_2.JPG",
-        "Images/Photography/Middle East/Jordan_1.JPG"
-    ]
-    var MiddleEastImageIndex = 0;
-
-    var CentralEurope = [  
-        "Images/Photography/Central Europe/Austria_1.JPG",
-        "Images/Photography/Central Europe/Hungary_1.JPG",
-        "Images/Photography/Central Europe/Slovakia_1.JPG"
-        ];
-    var CentralEuropeImageIndex = 0;
-
-    var TheCaucasus = [
-        "Images/Photography/The Caucasus/Turkey_1.JPG",
-        "Images/Photography/The Caucasus/Georgia_1.JPG",
-        "Images/Photography/The Caucasus/Georgia_2.JPG"
-        ];
-    var TheCaucasusImageIndex = 0;
-
-    var NorthernEurope = [
-        "Images/Photography/Northern Europe/Iceland_1.JPG",
-        "Images/Photography/Northern Europe/Finland_1.JPG",
-        "Images/Photography/Northern Europe/The_UK_1.JPG"
-        ];
-    var NorthernEuropeImageIndex = 0;
+  document.fonts.ready.then(() => {
+      document.getElementById('logo').classList.add('font-loaded');
+      document.getElementById('burger').classList.add('font-loaded');
+      document.getElementById('first-hero-text-primary').classList.add('font-loaded');
+      document.getElementById('first-hero-text-secondary').classList.add('font-loaded');
+  });
 
 
 
-    /* photo elements on page load */
-    window.onload = function () {
-        homeElement = document.getElementById('home-icon-id');
-        aboutIconElement = document.getElementById('about-icon-id');
-        dataIconElement = document.getElementById('data-icon-id');
-        editingIconElement = document.getElementById('editing-icon-id');
-        photographyIconElement = document.getElementById('photography-icon-id');
+/* ---------------------------------------- */
+/* BURGER
+/* ---------------------------------------- */
 
-        SouthernEuropeElement = document.getElementById('SouthernEurope-img-id');
-        NorthAfricaElement = document.getElementById('NorthAfrica-img-id');
-        MiddleEastElement = document.getElementById('MiddleEast-img-id');
-        CentralEuropeElement = document.getElementById('CentralEurope-img-id');
-        SoutheastAsiaElement = document.getElementById('SoutheastAsia-img-id');
-        TheCaucasusElement = document.getElementById('TheCaucasus-img-id');
-        NorthernEuropeElement = document.getElementById('NorthernEurope-img-id');
+/* toggles menu options when clicked on */
+
+document.addEventListener('DOMContentLoaded', () => {
+  const burger = document.getElementById('burger');
+  const menu = document.getElementById('menu');
+
+  burger.addEventListener('click', (event) => {
+    event.stopPropagation();
+    menu.classList.toggle('active');
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!menu.contains(event.target) && !burger.contains(event.target)) {
+      menu.classList.remove('active');
+    }
+  });
+
+  const menuLinks = menu.querySelectorAll('a');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('active');
+    });
+  });
+});
+
+
+/* ---------------------------------------- */
+/* EXPANDABLE HTML 
+/* ---------------------------------------- */
+
+/* shows more/less of a section when clicked on */
+
+document.addEventListener("click", (e) => {
+  const trigger = e.target.closest(".toggle-trigger");
+  if (!trigger) return;
+
+  const selector = trigger.dataset.toggleTarget;
+  if (!selector) return;
+
+  const target = document.querySelector(selector);
+  if (!target) return;
+
+  // Toggle state classes
+  trigger.classList.toggle("is-expanded");
+  target.classList.toggle("is-expanded");
+});
+
+
+
+/* ---------------------------------------- */
+/* TABS
+/* ---------------------------------------- */
+
+/* allows the user to switch between tabs to view different content */
+
+document.addEventListener('DOMContentLoaded', function () {
+  const tabSections = document.querySelectorAll('.tabs-section');
+
+  tabSections.forEach(section => {
+    const tabs = section.querySelectorAll('.tabs-menu .tab');
+    const contents = section.querySelectorAll('.tabs-content-container');
+
+    function showTab(targetName) {
+      contents.forEach(content => {
+        const shouldShow = content.dataset.tab === targetName;
+        content.style.display = shouldShow ? '' : 'none';
+      });
     }
 
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        showTab(tab.dataset.target);
+      });
+    });
 
-
-    /* next image function */ 
-    function nextImage(id) {
-        switch (id) {
-          case 'SouthernEurope-img-id':
-            SouthernEuropeImageIndex = (SouthernEuropeImageIndex + 1) % SouthernEurope.length;
-            SouthernEuropeElement.src = SouthernEurope[SouthernEuropeImageIndex];
-            break;
-          case 'NorthAfrica-img-id':
-            NorthAfricaImageIndex = (NorthAfricaImageIndex + 1) % NorthAfrica.length;
-            NorthAfricaElement.src = NorthAfrica[NorthAfricaImageIndex];
-            break;
-          case 'MiddleEast-img-id':
-            MiddleEastImageIndex = (MiddleEastImageIndex + 1) % MiddleEast.length;
-            MiddleEastElement.src = MiddleEast[MiddleEastImageIndex];
-            break;
-          case 'CentralEurope-img-id':
-            CentralEuropeImageIndex = (CentralEuropeImageIndex + 1) % CentralEurope.length;
-            CentralEuropeElement.src = CentralEurope[CentralEuropeImageIndex];
-            break;
-          case 'TheCaucasus-img-id':
-            TheCaucasusImageIndex = (TheCaucasusImageIndex + 1) % TheCaucasus.length;
-            TheCaucasusElement.src = TheCaucasus[TheCaucasusImageIndex];
-            break;
-          case 'NorthernEurope-img-id':
-            NorthernEuropeImageIndex = (NorthernEuropeImageIndex + 1) % NorthernEurope.length;
-            NorthernEuropeElement.src = NorthernEurope[NorthernEuropeImageIndex];
-            break;
-          case 'SoutheastAsia-img-id':
-            SoutheastAsiaImageIndex = (SoutheastAsiaImageIndex + 1) % SoutheastAsia.length;
-            SoutheastAsiaElement.src = SoutheastAsia[SoutheastAsiaImageIndex];
-            break;
-          default:
-            console.warn("Invalid image ID provided:", id); // Handle invalid ID gracefully (optional)
-        }
-      }
-      
-
-    
-    /* next image function */ 
-    function previousImage(id) {
-        switch (id) {
-          case 'SouthernEurope-img-id':
-            SouthernEuropeImageIndex = (SouthernEuropeImageIndex - 1 + SouthernEurope.length) % SouthernEurope.length;
-            SouthernEuropeElement.src = SouthernEurope[SouthernEuropeImageIndex];
-            break;
-          case 'NorthAfrica-img-id':
-            NorthAfricaImageIndex = (NorthAfricaImageIndex - 1 + NorthAfrica.length) % NorthAfrica.length;
-            NorthAfricaElement.src = NorthAfrica[NorthAfricaImageIndex];
-            break;
-          case 'MiddleEast-img-id':
-            MiddleEastImageIndex = (MiddleEastImageIndex - 1 + MiddleEast.length) % MiddleEast.length;
-            MiddleEastElement.src = MiddleEast[MiddleEastImageIndex];
-            break;
-          case 'CentralEurope-img-id':
-            CentralEuropeImageIndex = (CentralEuropeImageIndex - 1 + CentralEurope.length) % CentralEurope.length;
-            CentralEuropeElement.src = CentralEurope[CentralEuropeImageIndex];
-            break;
-          case 'TheCaucasus-img-id':
-            TheCaucasusImageIndex = (TheCaucasusImageIndex - 1 + TheCaucasus.length) % TheCaucasus.length;
-            TheCaucasusElement.src = TheCaucasus[TheCaucasusImageIndex];
-            break;
-          case 'NorthernEurope-img-id':
-            NorthernEuropeImageIndex = (NorthernEuropeImageIndex - 1 + NorthernEurope.length) % NorthernEurope.length;
-            NorthernEuropeElement.src = NorthernEurope[NorthernEuropeImageIndex];
-            break;
-          case 'SoutheastAsia-img-id':
-            SoutheastAsiaImageIndex = (SoutheastAsiaImageIndex - 1 + SoutheastAsia.length) % SoutheastAsia.length;
-            SoutheastAsiaElement.src = SoutheastAsia[SoutheastAsiaImageIndex];
-            break;
-          default:
-            console.warn("Invalid image ID provided:", id); // Handle invalid ID gracefully (optional)
-        }
-      }
-      
-
-
-    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-        x.className += " responsive";
-        } else {
-        x.className = "topnav";
-        }
+    // Show the default tab for this section
+    const activeTab = section.querySelector('.tabs-menu .tab.active');
+    if (activeTab) {
+      showTab(activeTab.dataset.target);
     }
-  
-  
-  
-  
-      
-      
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+/* Expandable HTML */ 
+
+function toggleVisibility(VisibleId, HiddenId) {
+  var visibleSection = document.getElementById(VisibleId);
+  var hiddenSection = document.getElementById(HiddenId);
+
+      if (visibleSection.style.display === "none") {
+          visibleSection.style.display = "block";
+          hiddenSection.style.display = "none";
+      } else {
+          visibleSection.style.display = "none";
+          hiddenSection.style.display = "block";
+      }
+  }
