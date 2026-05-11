@@ -213,7 +213,7 @@ a {
 .logo-container { /* container for logo image */ 
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     padding-left: var(--header-padding);
 } 
 
@@ -229,14 +229,14 @@ a {
     font-weight: 400;
     color:#f6f7f9;
     font-size: 28px;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.05em;
     line-height: 1;  
     white-space: nowrap; 
     text-transform: uppercase;
     text-align: Left;
     display: inline-flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
 }
 
 .logo-icon {/* logo icon */
@@ -329,6 +329,32 @@ a {
 }
 
 
+.header-container { /* space for the logo and menu navigation at the top of the page */ 
+    top: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    min-height: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.header-content { /* content within top strip */ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+    height: 95px;
+    box-sizing: border-box;
+}
+
+
+
 /* ---  Screen adjustments 🖥️📱 --- */
 
 @media (max-width: 768px) { /* small screens */
@@ -337,9 +363,13 @@ a {
     }
     .header-container {
         justify-content: flex-start;
+        min-height: 75px;
+    }
+    .header-content {
+        height: 75px;
     }
     .logo-container {
-        gap: 10.25px;
+        gap: 8px;
     } 
     .logo-avatar {
         width: 42.47px;
@@ -347,11 +377,11 @@ a {
     }
     .logo-text {
         font-size: 22px;
-        gap: 10.25px;
+        gap: 8px;
     }
     .logo-icon {
-        width: 14.25px;
-        height: 14.25px;
+        width: 14px;
+        height: 14px;
     }
     .burger-container { 
         padding-right: 25px;
@@ -1140,4 +1170,13 @@ footer p {
     font-size: clamp(0.85rem, 1.331vw, 1.351rem);
     margin: 0;
     padding: 0;
+}
+
+
+/* ---  Screen adjustments 🖥️📱 --- */
+
+@media (max-width: 768px) { /* small screens */
+    footer {
+        min-height: 95px;
+    }
 }
