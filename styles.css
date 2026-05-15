@@ -218,8 +218,8 @@ a {
 } 
 
 .logo-avatar { /* profile pic */
-    width: 56px;
-    height: 56px;
+    width: 56.15px;
+    height: 56.15px;
     border-radius: 50%;
     object-fit: cover;
 }
