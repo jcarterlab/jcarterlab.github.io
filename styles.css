@@ -218,8 +218,8 @@ a {
 } 
 
 .logo-avatar { /* profile pic */
-    width: 54px;
-    height: 54px;
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -228,7 +228,7 @@ a {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
     color:#f6f7f9;
-    font-size: 25.5px;
+    font-size: 25.75px;
     letter-spacing: 0.025em;
     line-height: 1;  
     white-space: nowrap; 
