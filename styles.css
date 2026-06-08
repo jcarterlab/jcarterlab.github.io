@@ -325,7 +325,7 @@ a {
 
 .nav-link:hover { /* nav links buttons a tags when hovered on */
     text-decoration: underline; 
-    text-decoration-thickness: 2px; 
+    text-decoration-thickness: 1.5px; 
 }
 
 
@@ -456,7 +456,7 @@ a {
 
 .hero-links p:hover { /* links when hovered on */
     text-decoration: underline; 
-    text-decoration-thickness: 1.5px;
+    text-decoration-thickness: 0.25px;
     text-underline-offset: 2px; 
 }
 
@@ -570,7 +570,7 @@ a {
 
 .hoverable-link:hover { /* link becomes underlined when hovered on */
     text-decoration: underline;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 1.5px;
     text-underline-offset: 6px; 
     color: var(--color-primary);
 }
