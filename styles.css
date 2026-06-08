@@ -558,80 +558,6 @@ a {
 
 
 /* **************************************** */
-/* CONTACT CARDS
-/* **************************************** */
-
-.contact-section { /* contact section */
-    text-align: center;
-}
-
-.contact-container { /* container for contact details */
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.contact-section h2 { /* contact section title */
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.contact-subtext { /* contact section explanatory text */
-    margin-bottom: 50px;
-}
-
-.contact-grid { /* contact grid */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-
-.contact-card { /* contact card */
-    background: var(--color-primary);
-    padding: 25px;
-    border-radius: 12px;
-    color: inherit;
-    transition: all 0.2s ease;
-    border: 1px solid #eee;
-}
-
-.contact-card:hover { /* contact card when hovered on */
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-}
-
-.contact-label { /* contact card label */
-    font-weight: 800;
-    display: block;
-    font-size: 16px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #f4f4f4;
-    margin-bottom: 8px;
-}
-
-.contact-value { /* contact card value */
-    font-weight: 400;
-    font-size: 14px;
-    color: #f4f4f4;
-    text-decoration: none;
-    user-select: text;
-    word-break: break-word;
-    display: inline-block;
-}
-
-.contact-value:hover { /* contact card value when hovered on */
-    text-decoration: underline;
-}
-
-.contact-value:focus {
-    outline: 2px solid #003087;
-    outline-offset: 4px;
-    border-radius: 6px;
-}
-
-
-
-/* **************************************** */
 /* LINKS
 /* **************************************** */
 
@@ -647,19 +573,6 @@ a {
     text-decoration-thickness: 2px;
     text-underline-offset: 6px; 
     color: var(--color-primary);
-}
-
-
-
-/* **************************************** */
-/* SEPARATOR
-/* **************************************** */
-
-.section-separator {
-    border: none; 
-    height: 1px; 
-    background: var(--color-primary);
-    margin-bottom: 50px;
 }
 
 
@@ -774,60 +687,6 @@ a {
     padding: 16px;              
     justify-content: center;   
     align-items: center;  
-}
-
-
-
-/* **************************************** */
-/* TRELLO
-/* **************************************** */
-
-.trello-tasklist-container { /* container for Trello task list images */
-    flex: 1 1 calc(48%); 
-    position: relative; 
-    text-align: left;
-}
-
-
-
-/* **************************************** */
-/* QUICK EXPLAINERS
-/* **************************************** */
-
-.quick-explainers-icon {
-    max-height: clamp(12px, 1.75vw, 32px);
-    width: auto;
-} 
-
-.quick-explainers-p {
-    font-size: var(--content-font-size);
-    margin-left: var(--header-padding);
-}
-
-
-
-
-/* **************************************** */
-/* VIDEO
-/* **************************************** */
-
-.video-container {
-  width: 100%;
-  max-width: 100%;
-  aspect-ratio: 16 / 9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1.5rem auto;
-  max-height: 70vh;
-}
-
-.video-container video,
-.video-container iframe {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 12px;
 }
 
 
