@@ -44,6 +44,66 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 /* ---------------------------------------- */
+/* PHOTO CAROUSEL 
+/* ---------------------------------------- */
+
+const images = [
+    "assets/travel/photo1.jpg",
+    "assets/travel/photo2.jpg",
+    "assets/travel/photo3.jpg",
+    "assets/travel/photo4.jpg",
+    "assets/travel/photo5.jpg",
+    "assets/travel/photo6.jpg",
+    "assets/travel/photo7.jpg",
+    "assets/travel/photo8.jpg",
+];
+
+let index = 0;
+let intervalId = null;
+let userInteracted = false;
+
+const imgElement = document.getElementById("carouselImage");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+// Function to update image
+function showImage(i) {
+    index = (i + images.length) % images.length;
+    imgElement.src = images[index];
+}
+
+// Auto-rotation every 3 seconds
+function startAutoRotate() {
+    intervalId = setInterval(() => {
+        if (!userInteracted) {
+            showImage(index + 1);
+        }
+    }, 3000);
+}
+
+// Stop autoplay permanently
+function stopAutoRotate() {
+    userInteracted = true;
+    clearInterval(intervalId);
+}
+
+// Button controls
+prevBtn.addEventListener("click", () => {
+    stopAutoRotate();
+    showImage(index - 1);
+});
+
+nextBtn.addEventListener("click", () => {
+    stopAutoRotate();
+    showImage(index + 1);
+});
+
+// init
+startAutoRotate();
+
+
+
+/* ---------------------------------------- */
 /* EXPANDABLE HTML 
 /* ---------------------------------------- */
 

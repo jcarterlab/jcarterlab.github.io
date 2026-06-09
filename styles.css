@@ -99,6 +99,12 @@ p {
     margin-bottom: 1.25vw; 
 }
 
+li {
+    font-size: clamp(17px, 1.45vw, 28px);
+    line-height: 1.85;    
+    margin-bottom: 0.5vw; 
+}
+
 a {
     text-decoration: none;
 }
@@ -299,7 +305,7 @@ a {
     gap: 0.5rem;
     padding-bottom: 0;
     visibility: hidden;
-    font-size: clamp(22px, 1.75vw, 28px);
+    font-size: clamp(22px, 1.65vw, 28px);
     font-family: var(--body-font);
     color: white;
 }
@@ -629,6 +635,82 @@ a {
 
 .toggle-trigger.is-expanded::after { /* indicator's new position if toggled */
   content: "▾";
+}
+
+
+
+/* **************************************** */
+/* COLUMNS
+/* **************************************** */
+
+.two-col { /* container for two column structure */
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col { /* container for column content */
+    flex: 1;
+}
+
+.col ul { /* column unordered list */
+    padding-left: 20px;
+}
+
+/* ---  Screen adjustments 🖥️📱 --- */
+@media (max-width: 768px) {
+    .two-col {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+
+/* **************************************** */
+/* PHOTO CAROUSEL
+/* **************************************** */
+
+.travel-carousel {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.carousel-frame {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.carousel-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.4s ease;
+}
+
+.carousel-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+    transition: 0.2s;
+}
+
+.carousel-btn:hover {
+    transform: scale(1.2);
 }
 
 
