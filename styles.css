@@ -655,7 +655,7 @@ a {
 }
 
 .col ul { /* column unordered list */
-    padding-left: 20px;
+    padding-left: 24px;
 }
 
 /* ---  Screen adjustments 🖥️📱 --- */
@@ -711,6 +711,14 @@ a {
 
 .carousel-btn:hover {
     transform: scale(1.2);
+}
+
+.carousel-description { /* carousel image description */
+    font-size: var(--meta-data-font-size);
+    color: var(--meta-data-text-color);
+    margin-top: -1.25vw;
+    margin-bottom: 2.25vw;
+    text-align: center;
 }
 
 
