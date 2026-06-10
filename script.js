@@ -48,13 +48,13 @@ document.addEventListener('DOMContentLoaded', () => {
 /* ---------------------------------------- */
 
 const images = [
-    "assets/travel/photo1.jpg",
-    "assets/travel/photo2.jpg",
-    "assets/travel/photo3.jpg",
-    "assets/travel/photo4.jpg",
-    "assets/travel/photo5.jpg",
-    "assets/travel/photo6.jpg",
-    "assets/travel/photo7.jpg",
+    "assets/travel/photo1.JPG",
+    "assets/travel/photo2.JPG",
+    "assets/travel/photo3.JPG",
+    "assets/travel/photo4.JPG",
+    "assets/travel/photo5.JPG",
+    "assets/travel/photo6.JPG",
+    "assets/travel/photo7.JPG",
 ];
 
 let index = 0;
