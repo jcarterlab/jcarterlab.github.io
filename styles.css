@@ -910,6 +910,26 @@ a {
 }
 
 
+/* --- Content grid tags --- */
+
+.content-grid-tag-project {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #C8102E;
+}
+
+.content-grid-tag-line-project {
+    width: 20px;
+    height: 2px;
+    background-color: #C8102E;
+}
+
+
 /* --- Content grid images --- */
 
 .content-grid-image-container { /* container for content grid image */
