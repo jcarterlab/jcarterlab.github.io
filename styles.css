@@ -224,8 +224,8 @@ a {
 } 
 
 .logo-avatar { /* profile pic */
-    width: 50.5px;
-    height: 50.5px;
+    width: 51px;
+    height: 51px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -923,7 +923,7 @@ a {
     color: #C8102E;
 }
 
-.content-grid-tag-line-project {
+.content-grid-tag-icon-project {
     width: 18.5px;
     height: 18.5px;
 }
@@ -1014,9 +1014,67 @@ a {
 
 
 
+
+
 /* **************************************** */
 /* ARTICLES
 /* **************************************** */
+
+/* --- Article tags --- */
+
+.article-tag-project {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #C8102E;
+}
+
+.article-tag-icon-project {
+    width: 18.5px;
+    height: 18.5px;
+}
+
+.article-date {
+    font-size: var(--meta-data-font-size);  
+    color: var(--meta-data-text-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* --- Article metadata --- */
 

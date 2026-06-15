@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using LLMs to decide which news stories to summarise</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon-command-line-003087.svg">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Link to fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+    <!-- HEADER -->
+    <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+    <header class="header-container">
+
+        <!-- Logo -->
+        <div class="header-content">
+            <a href="../index.html">
+                <div class="logo-container" id="logo">
+                    <img src="../assets/profile_pic.png" alt="Jack P. Carter" class="logo-avatar">
+                    <h3 class="logo-text">
+                        Jack P. Carter
+                        <img src="../assets/favicon-command-line-003087.svg" alt="Command line icon" class="logo-icon">
+                    </h3>
+                </div>
+            </a>
+
+            <!-- Nav menu -->
+            <div class="burger-container">
+                <button class="burger" id="burger" aria-label="Open menu" aria-controls="menu" aria-expanded="false">
+                    <img src="../assets/icons/burger.svg" alt="Menu Icon" class="icon" />
+                </button>
+            </div>
+
+        </div>
+        <div class="nav-links-container">
+            <nav class="nav-links" id="menu" aria-label="Primary">
+                <a href="../about.html" class="nav-link">About</a>
+                <a href="../blog.html" class="nav-link" style="padding-bottom: 1.5em">Blog</a>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main id="main">
+
+
+        <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+        <!-- MAIN HERO -->
+        <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+        <section class="hero-container">
+            <div class="hero-text">
+                <h1 id="first-hero-text-primary">Using LLMs to decide which news stories to summarise</h1>
+            </div>
+            <div class="hero-image-container">
+                <img src="../assets/hero_images/articles/newspapers.jpg" alt="Hero image" fetchpriority="high" />
+            </div>
+        </section>
+
+        <br><br><br><br>
+
+
+        <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+        <!-- MAIN CONTENT -->
+        <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+
+        <div class="main-content-container">
+
+            <div class="article-tag-project">
+                <img src="../assets/icons/rocket.svg" class="article-tag-icon-project" alt="">
+                <span>Project</span>
+            </div>
+
+            <p class="article-date">June 15th, 2026</p>
+
+            <p>---</p>
+
+            <p>
+                <a class="hoverable-link" href="https://github.com/jcarterlab/NewsMonitor">
+                    NewsMonitor
+                </a> is a lightweight news monitoring project designed to analyse large volumes of news at a relatively low cost.
+                This is made possible with a batch identification process whereby an LLM is given many different scraped 
+                headlines from various news sources and asked to choose which stories should be scraped and summarised 
+                based on a certain monitoring objective (e.g. growing political risk in Colombia or emergent tech trends in London etc.).
+            </p>
+
+            <p>
+                The process is made more efficient by saving the already processed headlines so that they can be discarded 
+                rather than be processed again by the LLM on new runs. This allows the user to do more frequent runs (daily or even hourly) 
+                without having to worry about the extra costs associated with processing the same news stories twice. 
+            </p>
+
+            <p>
+                Once all the news story texts are collected, tens of thousands (or more) of words
+                are split into batches and summarised by a weaker LLM (gemini-2.5-flash). A stronger LLM (gemini-2.5-pro)
+                is then used to create the final summary. This ensures that the summarised content more closely fits the monitoring and
+                formatting specifications in a cost optimised way. 
+            </p>
+
+
+        <br>
+
+
+
+        <br><br><br>
+        <br><br><br>
+
+
+        </div>
+
+
+    </main>
+
+
+    <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+    <!-- FOOTER -->
+    <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+    <footer>
+        <p>&copy; 2026 Jack P. Carter · AI Application Engineer</p>
+    </footer>
+
+    <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+    <!-- JAVASCRIPT -->
+    <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+    <script src="../script.js" defer></script>
+</body>
+
+</html>
