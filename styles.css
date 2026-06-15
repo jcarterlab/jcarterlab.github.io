@@ -957,14 +957,14 @@ a {
 
 .content-grid-text-container p.content-grid-date {  /* content grid date */ 
     font-size: var(--meta-data-font-size);  
-    margin-bottom: clamp(14px, 1.15vw, 24px);
     color: var(--meta-data-text-color);
 }
 
 .content-grid-text-container h3 {  /* content grid h3 */ 
     font-size: clamp(18px, 1.6vw, 36px); 
-    line-height: 1.5;
-    margin-bottom: clamp(14px, 1.15vw, 24px);
+    line-height: 1.6;
+    margin-top: clamp(10px, 0.7vw, 15px);
+    margin-bottom: clamp(10px, 0.7vw, 15px);
 }
 
 .content-grid-text-container h3:hover {  /* content grid h3 is underlined on hover */ 
@@ -976,7 +976,7 @@ a {
     margin: 0 0 15px;
     color: var(--content-text-color);
     line-height: 1.75;
-    margin-bottom: 1.25vw; 
+    margin-bottom: 1vw; 
 }
 
 .content-grid-text-container a { /* content grid link */ 
