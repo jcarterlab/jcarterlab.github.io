@@ -915,7 +915,7 @@ a {
 .content-grid-tag-project {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
     margin-bottom: 12px;
     font-size: 0.85rem;
     font-weight: 600;
@@ -924,9 +924,8 @@ a {
 }
 
 .content-grid-tag-line-project {
-    width: 20px;
-    height: 2px;
-    background-color: #C8102E;
+    width: 18.5px;
+    height: 18.5px;
 }
 
 
