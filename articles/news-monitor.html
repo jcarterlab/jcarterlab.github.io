@@ -64,7 +64,7 @@
         <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
         <section class="hero-container">
             <div class="hero-text">
-                <h1 id="first-hero-text-primary">Using LLMs to decide which news stories to summarise</h1>
+                <h1 id="first-hero-text-primary">Getting LLMs to decide which news stories they summarise</h1>
             </div>
             <div class="hero-image-container">
                 <img src="../assets/hero_images/articles/newspapers.jpg" alt="Hero image" fetchpriority="high" />
@@ -92,28 +92,34 @@
             <p>
                 <a class="hoverable-link" href="https://github.com/jcarterlab/NewsMonitor">
                     NewsMonitor
-                </a> is a lightweight news monitoring project designed to analyse large volumes of news at a relatively low cost.
-                This is made possible with a batch identification process whereby an LLM is given many different scraped 
-                headlines from various news sources and asked to choose which stories should be scraped and summarised 
-                based on a certain monitoring objective (e.g. growing political risk in Colombia or emergent tech trends in London etc.).
+                </a> is a news monitoring tool designed to analyse large volumes of news at a relatively low cost using
+                the Google Gemini API. This is made possible by giving the LLM scraped headlines from various news sources 
+                and asking it to choose which stories should be scraped and summarised based on a certain monitoring 
+                objective (e.g. political risk in Colombia or tech investment oppourtunities in London).
             </p>
 
             <p>
-                The process is made more efficient by saving the already processed headlines so that they can be discarded 
-                rather than be processed again by the LLM on new runs. This allows the user to do more frequent runs (daily or even hourly) 
-                without having to worry about the extra costs associated with processing the same news stories twice. 
+                The process is made more efficient by using a database of previously processed headlines to immediately 
+                discard old stories. This allows the user to do more frequent runs (daily or even hourly) without having 
+                to worry about the extra LLM costs associated with processing the same stories twice. 
             </p>
 
             <p>
-                Once all the news story texts are collected, tens of thousands (or more) of words
-                are split into batches and summarised by a weaker LLM (gemini-2.5-flash). A stronger LLM (gemini-2.5-pro)
-                is then used to create the final summary. This ensures that the summarised content more closely fits the monitoring and
-                formatting specifications in a cost optimised way. 
+                Once all the story texts are collected, thousands (or even hundreds of thousands) of words are split 
+                and summarised in batches by a weaker LLM (gemini-2.5-flash). A stronger LLM (gemini-2.5-pro) is then used 
+                to create a final summary from these batched summaries. This ensures that the final content more 
+                closely aligns with the monitoring and formatting objectives in a cost optimised way. 
+            </p>
+
+            <p>
+                The final summary is then stored in a database and optionally emailed to a recipient or a list of recipients. 
+                This allows runs to be scheduled either locally via a something like a cron job or in the cloud through 
+                a cloud scheduling system. The user is left with a fully automated pipeline that allows them to monitor
+                performance via logging, add/remove sources and adjust their monitoring objectives over time.
             </p>
 
 
         <br>
-
 
 
         <br><br><br>
