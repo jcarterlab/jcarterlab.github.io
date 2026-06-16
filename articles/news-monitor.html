@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Using LLMs to decide which news stories to summarise</title>
+    <title>Using LLMs to Decide Which News Stories to Summarise</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="../assets/favicon-command-line-003087.svg">
@@ -64,7 +64,7 @@
         <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
         <section class="hero-container">
             <div class="hero-text">
-                <h1 id="first-hero-text-primary">Getting LLMs to decide which news stories they summarise</h1>
+                <h1 id="first-hero-text-primary">Using LLMs to Decide Which News Stories to Summarise</h1>
             </div>
             <div class="hero-image-container">
                 <img src="../assets/hero_images/articles/newspapers.jpg" alt="Hero image" fetchpriority="high" />
@@ -90,32 +90,40 @@
             <p>---</p>
 
             <p>
+                Monitoring multiple news sources becomes expensive when every article is processed by an LLM.
                 <a class="hoverable-link" href="https://github.com/jcarterlab/NewsMonitor">
                     NewsMonitor
-                </a> is a news monitoring tool designed to analyse large volumes of news at a relatively low cost using
-                the Google Gemini API. This is made possible by giving the LLM scraped headlines from various news sources 
-                and asking it to choose which stories should be scraped and summarised based on a certain monitoring 
-                objective (e.g. political risk in Colombia or tech investment opportunities in London).
+                </a> tackles this problem by using an LLM to decide which stories are worth analysing before 
+                any expensive downstream processing takes place, reducing costs by roughly 80-90%. 
             </p>
 
             <p>
-                The process is made more efficient by using a database of previously processed headlines to immediately 
-                discard old stories. This allows the user to do more frequent runs (daily or even hourly) without having 
-                to worry about the extra LLM costs associated with processing the same stories twice. 
+                News listing pages often contain a lot of irrelevant content that can be filtered out by 
+                comparing headlines with a certain monitoring objective (e.g. political risk in Colombia or 
+                investment opportunities in London). What's more, this filtering can be done in batches by giving 
+                an LLM many numbered headlines in return for a list of indices indicating which stories should 
+                have their full texts scraped. 
             </p>
 
             <p>
-                Once all the story texts are collected, thousands (or even hundreds of thousands) of words are split 
+                Duplicate stories can also be dropped in a timely manner by comparing incoming headlines against 
+                a database of previously processed headlines. This allows the user to do more frequent runs (daily 
+                or even hourly) without having to worry about extra LLM costs associated with processing the same 
+                stories twice. 
+            </p>
+
+            <p>
+                Once all the relevant story texts are collected, thousands (or even hundreds of thousands) of words are split 
                 and summarised in batches by a weaker LLM (gemini-2.5-flash). A stronger LLM (gemini-2.5-pro) is then used 
-                to create a final summary from these batched summaries. This ensures that the final content more 
-                closely aligns with the monitoring and formatting objectives in a cost optimised way. 
+                to create a final summary from the batched summaries. This ensures the final content more closely aligns 
+                with the monitoring and formatting objectives in a cost optimised way. 
             </p>
 
             <p>
-                The final summary is then stored in a database and optionally emailed to a recipient or a list of recipients. 
-                This allows runs to be scheduled either locally via a something like a cron job or in the cloud through 
-                a cloud scheduling system. The user is left with a fully automated pipeline that lets them track
-                performance via logging, add/remove sources and adjust their monitoring objectives over time.
+                The final summary is stored in a database and optionally emailed to a recipient or a list of recipients. 
+                Scheduling can take place either locally via a cron job or in the cloud through a cloud scheduling 
+                system. This leaves the user with a fully automated pipeline that lets them track performance via logging, 
+                add/remove sources and adjust their monitoring objectives as they see fit.
             </p>
 
 
