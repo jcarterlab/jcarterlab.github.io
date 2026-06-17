@@ -912,7 +912,7 @@ a {
 
 /* --- Content grid tags --- */
 
-.content-grid-tag-project {
+.content-grid-tag {
     display: flex;
     align-items: center;
     gap: 4px;
@@ -920,10 +920,21 @@ a {
     font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 0.05em;
-    color: #C8102E;
 }
 
-.content-grid-tag-icon-project {
+.content-grid-tag.project {
+    color: #D62728;
+}
+
+.content-grid-tag.experiment {
+    color: #2CA02C;
+}
+
+.content-grid-tag.opinion {
+    color: #FF7F0E;
+}
+
+.content-grid-tag-icon {
     width: 18.5px;
     height: 18.5px;
 }
@@ -1022,7 +1033,7 @@ a {
 
 /* --- Article tags --- */
 
-.article-tag-project {
+.article-tag {
     display: flex;
     align-items: center;
     gap: 4px;
@@ -1030,10 +1041,21 @@ a {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 0.05em;
+}
+
+.article-tag.project {
     color: #C8102E;
 }
 
-.article-tag-icon-project {
+.article-tag.experiment {
+    color: #2CA02C;
+}
+
+.article-tag.opinion {
+    color: #FF7F0E;
+}
+
+.article-tag-icon {
     width: 20px;
     height: 20px;
 }
