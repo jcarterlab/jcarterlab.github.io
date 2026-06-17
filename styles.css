@@ -224,8 +224,8 @@ a {
 } 
 
 .logo-avatar { /* profile pic */
-    width: 51px;
-    height: 51px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     object-fit: cover;
 }
