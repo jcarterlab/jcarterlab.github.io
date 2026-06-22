@@ -93,9 +93,8 @@
 
             <p>
                 Monitoring multiple news sources becomes expensive when every article is processed by an LLM.
-                <a class="hoverable-link" href="https://github.com/jcarterlab/NewsMonitor">
-                    NewsMonitor
-                </a> tackles this problem by using an LLM to decide which stories are worth analysing before 
+                <a class="hoverable-link" href="https://github.com/jcarterlab/NewsMonitor">NewsMonitor</a> 
+                tackles this problem by using an LLM to decide which stories are worth analysing before 
                 any expensive downstream processing takes place, reducing costs by roughly 80-90%. 
             </p>
 
@@ -130,6 +129,47 @@
 
 
         <br>
+
+
+        <script type="module">
+        import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+        mermaid.initialize({ startOnLoad: true });
+        </script>
+
+
+        <div class="mermaid">
+        flowchart TD
+
+        A["links.csv"]:::data  --> B["scrape_headlines"]
+        B --> C["deduplicate_headlines"]
+        C --> D["identify_target_headlines"]
+        D --> E["scrape_stories"]
+        E --> F["summarise_stories"]
+        F --> G["store_data"]
+        G --> H["email_summary (optional)"]
+
+        %% Example outputs
+        B1["Scraped headlines"]:::example
+        C1["Unique, new headlines"]:::example
+        D1["Indices of relevant headlines"]:::example
+        E1["Full texts for relevant stories"]:::example
+        F1["An LLM summary in markdown"]:::example
+        G1["SQLite tables"]:::example
+        H1["A formatted email in HTML"]:::example
+
+        B --> B1
+        C --> C1
+        D --> D1
+        E --> E1
+        F --> F1
+        G --> G1
+        H --> H1
+
+        %% Styles
+        classDef data fill:#e8f5e9,stroke:#43a047,color:#1b5e20,stroke-width:2px;
+        classDef step fill:#e3f2fd,stroke:#1e88e5,color:#0d47a1;
+        classDef example fill:#fff3e0,stroke:#fb8c00,color:#e65100,stroke-dasharray: 5 5;
+        </div>
 
 
         <br><br><br>
