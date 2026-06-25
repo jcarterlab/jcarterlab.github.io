@@ -20,7 +20,7 @@
     --content-card-padding: clamp(20px, 1.45vw, 30px);
 
     /* font-size */
-    --primary-title-font-size: clamp(1.8em, 2.823vw, 3.283em);
+    --primary-title-font-size: clamp(1.91em, 2.991vw, 3.481em);
     --secondary-title-font-size: clamp(18px, 1.6vw, 35px);
     --meta-data-font-size: clamp(14px, 1.1vw, 23px);
     --content-font-size: clamp(15px, 1.15vw, 24px);
