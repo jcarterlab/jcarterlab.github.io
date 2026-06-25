@@ -441,7 +441,7 @@ a {
 
 /* --- Hero text --- */
 
-.hero-text { /* contains <h1> */
+.hero-text { 
     color: var(--color-primary);
     display: flex;
     flex-direction: column;
@@ -455,15 +455,14 @@ a {
     min-height: 0;
 }
 
-.hero-links { /* links to other pages */ 
-    text-decoration: none !important;
-    text-decoration-color: none !important;
+.hero-text h1 { /* main hero text */
+    color: var(--color-primary);
 }
 
-.hero-links p:hover { /* links when hovered on */
-    text-decoration: underline; 
-    text-decoration-thickness: 0.25px;
-    text-underline-offset: 2px; 
+.hero-text-link-h1:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 6px; 
 }
 
 .hero-text p { /* secondary text under the hero title */
@@ -471,6 +470,12 @@ a {
     font-size: clamp(0.900rem, 1.749vw, 1.300rem);
     margin-top: -0.1vh;
     line-height: 2;
+}
+
+.hero-text-link-p:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px; 
 }
 
 
@@ -578,7 +583,19 @@ a {
     text-decoration: underline;
     text-decoration-thickness: 1.5px;
     text-underline-offset: 6px; 
-    color: var(--color-primary);
+    color: var(--content-text-color);
+
+}
+
+.hoverable-link.no-underline {
+    text-decoration: none;
+}
+
+.hoverable-link.no-underline:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 6px; 
+    color: var(--content-text-color);
 }
 
 
