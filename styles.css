@@ -1232,7 +1232,7 @@ footer {
 }
 
 footer p {
-    font-size: clamp(0.85rem, 1.331vw, 1.351rem);
+    font-size: clamp(0.765rem, 1.198vw, 1.216rem);
     margin: 0;
     padding: 0;
 }
