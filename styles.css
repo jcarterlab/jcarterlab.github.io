@@ -235,7 +235,7 @@ a {
     font-weight: 400;
     color:#f6f7f9;
     font-size: 24.15px;
-    letter-spacing: 0.025em;
+    letter-spacing: 0.0175em;
     line-height: 1;  
     white-space: nowrap; 
     text-transform: uppercase;
@@ -703,7 +703,7 @@ a {
 
 .carousel-frame {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     aspect-ratio: 3 / 2;
     overflow: hidden;
     border-radius: 12px;

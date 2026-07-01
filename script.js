@@ -53,8 +53,6 @@ const images = [
     "assets/travel/photo3.JPG",
     "assets/travel/photo4.JPG",
     "assets/travel/photo5.JPG",
-    "assets/travel/photo6.JPG",
-    "assets/travel/photo7.JPG",
 ];
 
 let index = 0;
