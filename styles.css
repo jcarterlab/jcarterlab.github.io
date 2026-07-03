@@ -730,12 +730,21 @@ a {
     transform: scale(1.2);
 }
 
+.carousel-kicker {
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--meta-data-text-color);
+    margin-bottom: 1.15rem;
+    text-align: center;
+}
+
 .carousel-description { /* carousel image description */
     font-size: var(--meta-data-font-size);
     color: var(--meta-data-text-color);
-    margin-top: -1.25vw;
-    margin-bottom: 2.25vw;
+    margin-top: 0;
     text-align: center;
+    margin-top: 1.15rem;
 }
 
 

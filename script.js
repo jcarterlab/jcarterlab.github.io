@@ -48,11 +48,26 @@ document.addEventListener('DOMContentLoaded', () => {
 /* ---------------------------------------- */
 
 const images = [
-    "assets/travel/photo1.JPG",
-    "assets/travel/photo2.JPG",
-    "assets/travel/photo3.JPG",
-    "assets/travel/photo4.JPG",
-    "assets/travel/photo5.JPG",
+    {
+        src: "assets/travel/photo1.JPG",
+        desc: "Sunset fading over the Nile"
+    },
+    {
+        src: "assets/travel/photo2.JPG",
+        desc: "Icy silence in Kars"
+    },
+    {
+        src: "assets/travel/photo3.JPG",
+        desc: "Night time glow over the Bosphorus"
+    },
+    {
+        src: "assets/travel/photo4.JPG",
+        desc: "Moments of calm on the Mediterranean"
+    },
+    {
+        src: "assets/travel/photo5.JPG",
+        desc: "Surreal landscapes of Cappadocia"
+    }
 ];
 
 let index = 0;
@@ -60,22 +75,30 @@ let intervalId = null;
 let userInteracted = false;
 
 const imgElement = document.getElementById("carouselImage");
+const descElement = document.querySelector(".carousel-description");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
 // Function to update image
 function showImage(i) {
     index = (i + images.length) % images.length;
-    imgElement.src = images[index];
+
+    imgElement.style.opacity = 0;
+
+    setTimeout(() => {
+        imgElement.src = images[index].src;
+        descElement.textContent = images[index].desc;
+        imgElement.style.opacity = 1;
+    }, 200);
 }
 
-// Auto-rotation every 3 seconds
+// Auto-rotation every 4 seconds
 function startAutoRotate() {
     intervalId = setInterval(() => {
         if (!userInteracted) {
             showImage(index + 1);
         }
-    }, 3000);
+    }, 4000);
 }
 
 // Stop autoplay permanently
