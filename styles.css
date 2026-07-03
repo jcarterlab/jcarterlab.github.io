@@ -219,7 +219,7 @@ a {
 .logo-container { /* container for logo image */ 
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 9px;
     padding-left: var(--header-padding);
 } 
 
@@ -242,7 +242,7 @@ a {
     text-align: Left;
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 9px;
 }
 
 .logo-icon {/* logo icon */
