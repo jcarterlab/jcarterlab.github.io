@@ -64,7 +64,9 @@
         <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
         <section class="hero-container">
             <div class="hero-text">
-                <h1 id="first-hero-text-primary">Do "Expert" Personas Really Enhance LLM Performance?</h1>
+                <h1 id="first-hero-text-primary">
+                    Do "Expert" Personas Really Enhance LLM Performance?
+                </h1>
             </div>
             <div class="hero-image-container">
                 <img src="../assets/hero_images/articles/expert.jpg" alt="Hero image" fetchpriority="high" />
@@ -83,22 +85,98 @@
             <div class="article-tag experiment">
 
                 <img src="../assets/icons/experiment.svg" class="article-tag-icon experiment" alt="">
-                <span>Experiment</span>
+                <span>
+                    Experiment
+                </span>
 
             </div>
 
-            <p class="article-date">July 1st, 2026</p>
-
-            <p>---</p>
+            <p class="article-published-date">
+                Published: July 15th, 2026
+            </p>
+            <p class="article-last-updated-date">
+                Last updated: July 15th, 2026
+            </p>
 
             <p>
-                The problem with the claim that "expert" personas improve LLM performance is
-                that giving them any persona tends to produce longer answers. There is a natural tendency (among
-                humans and LLM judges alike) to assume that longer equals better, even if it doesn't.
-                <a class="hoverable-link" href="https://github.com/jcarterlab/llm-expert-persona-eval">llm-expert-persona-eval</a>
-                overcomes this bias by testing short-response extraction and classification tasks across a 
-                variety of domains.
+                ---
             </p>
+
+            <p>
+                It has been argued that giving an LLM an expert persona helps the model to tap into its already large knowledge base 
+                from pre-training to produce better answers.<a href="#ref-1"><sup>1</sup></a> It has also been noted that 
+                using an expert persona produces more detailed, longer answers.<a href="#ref-2"><sup>2</sup></a> But while expert 
+                personas may improve human alignment, do they actually improve the accuracy of answers? 
+            </p>
+
+            <p>
+                To test this, I conducted an experiment using gemini-2.5-flash-lite (with temperature set to zero to reduce randomness) 
+                on 500 randomly selected questions from the MMLU-pro dataset. The LLM answered the same questions under a control 
+                condition with no persona and an experimental condition with an expert persona. The results were then analysed via 
+                bootstrapping and the Exact McNemar's test. 
+            </p>
+
+            <p>
+                Despite observing a 1 percentage point increase in accuracy for the expert persona condition, the inferential statistical 
+                methods used here suggest that this is likely due to chance. This is supported by more recent research indicating that 
+                while expert personas may improve formatting and style, they do not improve (and sometimes even hurt) factual recall 
+                and reasoning.<a href="#ref-3"><sup>3</sup></a> 
+            </p>
+            
+            <br>
+
+            <h3>
+                🔍 Dig deeper
+            </h3>
+
+            <ul>
+                <li><b>GitHub repo:</b>
+                    <a 
+                    href="https://github.com/jcarterlab/llm-expert-persona-eval" 
+                    class="hoverable-link" 
+                    target="_blank"> 
+                        llm-expert-persona-eval
+                    </a>
+                </li>
+                <li><b>Jupyter Notebook:</b>
+                    <a 
+                    href="https://github.com/jcarterlab/llm-expert-persona-eval/blob/main/eval_analysis.ipynb" 
+                    class="hoverable-link" 
+                    target="_blank"> 
+                        Expert persona eval analysis
+                    </a>
+                </li>
+            </ul>
+
+            <br>
+
+            <h3>
+                📚 Sources
+            </h3>
+
+            <ol>
+                <li id="ref-1">
+                    Reynolds, L., &amp; McDonell, K. (2021).
+                    <em>Prompt Programming for Large Language Models: Beyond the Few-Shot Paradigm.</em>
+                    <a class="hoverable-link" href="https://doi.org/10.48550/arXiv.2102.07350">
+                        arXiv
+                    </a>
+                </li>
+                <li id="ref-2">
+                    Xu et al. (2023).
+                    <em>ExpertPrompting: Instructing Large Language Models to be Distinguished Experts.</em>
+                    <a class="hoverable-link" href="https://arxiv.org/abs/2305.14688">
+                        arXiv
+                    </a>
+                </li>
+                <li id="ref-3">
+                    Hu, Z., Rostami, M., & Thomason, J. (2026).
+                    <em>Expert Personas Improve LLM Alignment but Damage Accuracy: Bootstrapping Intent-Based Persona Routing with PRISM.</em>
+                    <a class="hoverable-link" href="https://arxiv.org/abs/2603.18507">
+                        arXiv
+                    </a>
+                </li>
+            </ol>
 
 
         <br>
