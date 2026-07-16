@@ -422,7 +422,7 @@ a {
 
 .hero-container { /* container for navigation links */
     display: flex;
-    height: 100vh;
+    height: 100dvh;
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -430,13 +430,13 @@ a {
 .hero-container-reverse { /*  */
     flex-direction: row;
     display: flex;
-    height: 100vh;
+    height: 100dvh;
     overflow: hidden;
     box-sizing: border-box;
 }
 
 .hero-container:first-of-type { /* first hero a little smaller to account for header */ 
-  height: calc(100vh - 100px);
+  height: calc(100dvh - 100px);
 }
 
 
