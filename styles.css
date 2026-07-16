@@ -20,8 +20,8 @@
     --content-card-padding: clamp(20px, 1.45vw, 30px);
 
     /* font-size */
-    --primary-title-font-size: clamp(1.91em, 2.991vw, 3.481em);
-    --secondary-title-font-size: clamp(18px, 1.6vw, 35px);
+    --primary-title-font-size: clamp(36px, 2.991vw, 55.7px);
+    --secondary-title-font-size: clamp(26px, 1.6vw, 35px);
     --meta-data-font-size: clamp(14px, 1.1vw, 23px);
     --content-font-size: clamp(15px, 1.15vw, 24px);
 
@@ -468,7 +468,7 @@ a {
 
 .hero-text p { /* secondary text under the hero title */
     color: var(--content-text-color);
-    font-size: clamp(0.900rem, 1.749vw, 1.300rem);
+    font-size: clamp(17px, 1.25vw, 24px);
     margin-top: -0.1vh;
     line-height: 2;
 }
@@ -513,7 +513,7 @@ a {
         flex-direction: column-reverse;
     }
     .hero-text {
-        font-size: 1.5;
+        font-size: 10.65;
         flex: none;
         width: 100%;
         height: 50%;
@@ -1251,7 +1251,7 @@ footer {
 }
 
 footer p {
-    font-size: clamp(0.765rem, 1.198vw, 1.216rem);
+    font-size: clamp(16px, 1.198vw, 26px);
     margin: 0;
     padding: 0;
 }
