@@ -54,11 +54,11 @@ const images = [
     },
     {
         src: "assets/travel/photo2.JPG",
-        desc: "Icy silence in Kars"
+        desc: "An icy silence in Kars"
     },
     {
         src: "assets/travel/photo3.JPG",
-        desc: "Night time glow over the Bosphorus"
+        desc: "A night time glow on the Bosphorus"
     },
     {
         src: "assets/travel/photo4.JPG",
@@ -66,7 +66,7 @@ const images = [
     },
     {
         src: "assets/travel/photo5.JPG",
-        desc: "Surreal landscapes of Cappadocia"
+        desc: "The surreal landscape of Cappadocia"
     }
 ];
 
