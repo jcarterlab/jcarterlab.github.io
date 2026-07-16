@@ -105,24 +105,121 @@
             <p>
                 It has been argued that giving an LLM an expert persona helps the model to tap into its already large knowledge base 
                 from pre-training to produce better answers.<a href="#ref-1"><sup>1</sup></a> It has also been noted that 
-                using an expert persona produces more detailed, longer answers.<a href="#ref-2"><sup>2</sup></a> But while expert 
-                personas may improve human alignment, do they actually improve the accuracy of answers? 
+                using an expert persona produces more detailed, longer answers.<a href="#ref-2"><sup>2</sup></a> But do they actually 
+                improve factual recall and reasoning? 
             </p>
 
             <p>
                 To test this, I conducted an experiment using gemini-2.5-flash-lite (with temperature set to zero to reduce randomness) 
-                on 500 randomly selected questions from the MMLU-pro dataset. The LLM answered the same questions under a control 
-                condition with no persona and an experimental condition with an expert persona. The results were then analysed via 
-                bootstrapping and the Exact McNemar's test. 
+                on 500 questions from the <a class="hoverable-link" href="https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro"> 
+                MMLU-pro dataset</a>. 
+                The LLM answered the same questions under a control 
+                condition, with no persona, and an experimental condition, with an expert persona.
             </p>
 
             <p>
-                Despite observing a 1 percentage point increase in accuracy for the expert persona condition, the inferential statistical 
-                methods used here suggest that this is likely due to chance. This is supported by more recent research indicating that 
-                while expert personas may improve formatting and style, they do not improve (and sometimes even hurt) factual recall 
-                and reasoning.<a href="#ref-3"><sup>3</sup></a> 
+                Despite observing a 1 percentage point increase in accuracy for the expert persona, the inferential statistical 
+                methods used here suggest that this was likely due to chance. This is supported by more recent findings indicating that 
+                expert personas do not improve reliably improve factual recall and reasoning.<a href="#ref-3"><sup>3</sup></a> 
+                Instead, they appear to be most useful for advisory tasks where answers require structured caution and risk 
+                assessment.<a href="#ref-4"><sup>4</sup></a>
             </p>
             
+            <br>
+
+            <h3>
+                👨‍💻 What I did
+            </h3>
+
+            <p>
+                The evaluation uses the <a class="hoverable-link" href="https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro"> 
+                MMLU-pro dataset</a> loaded from <a class="hoverable-link" href="https://huggingface.co/"> Hugging Face</a>, 
+                with questions selected through random sampling. A filtering mechanism excludes questions that have already 
+                been answered under the same prompt version and experimental condition, allowing additional samples to be 
+                processed across multiple runs using the same random seed.
+            </p>
+
+            <p>
+                Each selected question is formatted into a standardised prompt, with the expert condition including an initial instruction 
+                identifying the model as an expert in the relevant subject (this line is omitted in the control condition).
+                The model is instructed to return only the letter corresponding to the correct answer enclosed in brackets (e.g., (C)), 
+                a format chosen to simplify reliable response parsing and reduce errors caused by additional generated text. 
+            </p>
+
+            <p>
+                Responses are parsed using strict rules: if only the correct bracketed letter is detected, the response is marked as a pass; 
+                if only an incorrect letter is detected, it is marked as a fail; otherwise, it is classified as a parse failure and 
+                retried in subsequent runs.
+                After each successfully processed question, the result—including passes, failures, and parse failures—is immediately written 
+                as a JSON object to a JSONL file before the next question is processed, ensuring progress is preserved.
+            </p>
+            
+            <br>
+
+            <h3>
+                💡 What I found
+            </h3>
+
+            <p>
+                The expert persona achieved a slightly higher pass rate than the control condition, improving overall accuracy by around 1 
+                percentage point across the 500 randomly sampled questions. While this initially suggests that assigning an expert persona 
+                may provide a small benefit, the observed difference varies by category and was seen as likely too small overall to conclude 
+                that the effect is genuine.
+            </p>
+
+            <br>
+
+            <img 
+                src="https://raw.githubusercontent.com/jcarterlab/llm-expert-persona-eval/main/assets/pass_rate_by_category.png" 
+                alt="Pass rates by category comparison"
+                style="display: block; width: 100%; max-width: 990px; height: auto; margin: 0 auto;"
+            >
+
+            <br>
+
+            <p>
+                To confirm this, inferential statistical techniques were applied. Bootstrapping with 10,000 iterations produced a 
+                95% confidence interval for the difference in pass rates that included zero. Bootstraping is when the results are 
+                resampled (with replacement) and recomputed to see how much the result can vary. A confidence interval is a range within 
+                which we think the "true result" would most likely fall if rerun with new data. The inclusion of 0 indicates that the 
+                true effect could plausibly be no improvement at all. 
+            </p>
+
+            <br>
+
+            <img 
+                src="https://github.com/jcarterlab/llm-expert-persona-eval/blob/main/assets/bootstrap_histogram.png?raw=true" 
+                alt="Bootstrap distribution"
+                style="display: block; width: 100%; max-width: 990px; height: auto; margin: 0 auto;"
+            >
+
+            <br>
+                
+            <p>
+                An Exact McNemar's test, which compares paired outcomes from the same set of questions, produced a p-value of 0.55, 
+                well above the conventional threshold of 0.05 for statistical significance. The exact McNemar's test evaluates whether 
+                the observed disagreement counts (where a question was passed under one conditon but not another) are likely to have 
+                occurred by chance by chance alone. If the expert persona has no real effect, improvements and declines would be 
+                expected to occur at similar rates.
+            </p>
+
+            <br>
+
+            <img 
+                src="https://github.com/jcarterlab/llm-expert-persona-eval/blob/main/assets/mcnemar_table.png?raw=true" 
+                alt="Bootstrap distribution"
+                style="display: block; width: 100%; max-width: 400px; height: auto; margin: 0 auto;"
+            >
+
+            <br>
+
+            <p>
+                These results suggest that, under the conditions tested, the apparent improvement is most likely explained by chance rather 
+                than a genuine effect. However, the findings should be interpreted in the context of the experiment's limitations. They include 
+                the use of a well-known benchmark that my have caused data contamination (when a model remembers answers from it's 
+                training data), only 500 unique questions, a single run per question, a relatively simple expert persona and a single model.
+            </p>
+
             <br>
 
             <h3>
@@ -157,22 +254,29 @@
             <ol>
                 <li id="ref-1">
                     Reynolds, L., &amp; McDonell, K. (2021).
-                    <em>Prompt Programming for Large Language Models: Beyond the Few-Shot Paradigm.</em>
+                    <em>Prompt Programming for Large Language Models: Beyond the Few-Shot Paradigm</em>.
                     <a class="hoverable-link" href="https://doi.org/10.48550/arXiv.2102.07350">
                         arXiv
                     </a>
                 </li>
                 <li id="ref-2">
                     Xu et al. (2023).
-                    <em>ExpertPrompting: Instructing Large Language Models to be Distinguished Experts.</em>
+                    <em>ExpertPrompting: Instructing Large Language Models to be Distinguished Experts</em>.
                     <a class="hoverable-link" href="https://arxiv.org/abs/2305.14688">
                         arXiv
                     </a>
                 </li>
                 <li id="ref-3">
                     Hu, Z., Rostami, M., & Thomason, J. (2026).
-                    <em>Expert Personas Improve LLM Alignment but Damage Accuracy: Bootstrapping Intent-Based Persona Routing with PRISM.</em>
+                    <em>Expert Personas Improve LLM Alignment but Damage Accuracy: Bootstrapping Intent-Based Persona Routing with PRISM</em>.
                     <a class="hoverable-link" href="https://arxiv.org/abs/2603.18507">
+                        arXiv
+                    </a>
+                </li>
+                <li id="ref-4">
+                    Xiao et al. (2026).
+                    <em>When Does Persona Prompting Actually Help? A Retrieval and Metric Analysis of Expert Role Injection in LLMs</em>.
+                    <a class="hoverable-link" href="https://arxiv.org/abs/2605.29420">
                         arXiv
                     </a>
                 </li>
