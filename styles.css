@@ -531,21 +531,6 @@ a {
   }
 }
 
-@media (min-width: 3000px) { /* very large screens */
-    .hero-container {
-        height: auto;
-    }
-    .hero-container:first-of-type {
-        height: auto;
-    }
-    .hero-image-container {
-        flex: 0 0 50vw;
-    }
-    .hero-image-container img {
-        width: 100%;
-    }
-}
-
 
 
 /* **************************************** */

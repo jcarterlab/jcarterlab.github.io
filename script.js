@@ -54,7 +54,7 @@ const images = [
     },
     {
         src: "assets/travel/photo2.JPG",
-        desc: "An icy silence in Kars"
+        desc: "The icy silence of Kars"
     },
     {
         src: "assets/travel/photo3.JPG",
