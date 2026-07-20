@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 /* ---------------------------------------- */
-/* PHOTO CAROUSEL 
+/* PHOTO CAROUSEL */
 /* ---------------------------------------- */
 
 const images = [
@@ -66,7 +66,7 @@ const images = [
     },
     {
         src: "assets/travel/photo5.JPG",
-        desc: "The surreal landscape of Cappadocia"
+        desc: "The surreal landscapes of Cappadocia"
     }
 ];
 
@@ -79,7 +79,10 @@ const descElement = document.querySelector(".carousel-description");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
-// Function to update image
+// ----------------------------------------
+// Update image
+// ----------------------------------------
+
 function showImage(i) {
     index = (i + images.length) % images.length;
 
@@ -92,7 +95,10 @@ function showImage(i) {
     }, 200);
 }
 
-// Auto-rotation every 4 seconds
+// ----------------------------------------
+// Auto rotate
+// ----------------------------------------
+
 function startAutoRotate() {
     intervalId = setInterval(() => {
         if (!userInteracted) {
@@ -101,13 +107,15 @@ function startAutoRotate() {
     }, 4000);
 }
 
-// Stop autoplay permanently
 function stopAutoRotate() {
     userInteracted = true;
     clearInterval(intervalId);
 }
 
-// Button controls
+// ----------------------------------------
+// Buttons
+// ----------------------------------------
+
 prevBtn.addEventListener("click", () => {
     stopAutoRotate();
     showImage(index - 1);
@@ -118,7 +126,66 @@ nextBtn.addEventListener("click", () => {
     showImage(index + 1);
 });
 
-// init
+// ----------------------------------------
+// Swipe / Drag
+// ----------------------------------------
+
+let startX = 0;
+let currentX = 0;
+let dragging = false;
+
+const swipeThreshold = 60;
+
+imgElement.addEventListener("pointerdown", (e) => {
+    dragging = true;
+    startX = e.clientX;
+    currentX = startX;
+
+    imgElement.style.transition = "none";
+
+    // Prevent selecting the image while dragging
+    imgElement.setPointerCapture(e.pointerId);
+});
+
+imgElement.addEventListener("pointermove", (e) => {
+    if (!dragging) return;
+
+    currentX = e.clientX;
+    const deltaX = currentX - startX;
+
+    imgElement.style.transform = `translateX(${deltaX}px)`;
+});
+
+function endDrag() {
+    if (!dragging) return;
+
+    dragging = false;
+
+    const deltaX = currentX - startX;
+
+    imgElement.style.transition = "transform 0.3s ease, opacity 0.2s ease";
+
+    if (deltaX > swipeThreshold) {
+        stopAutoRotate();
+        showImage(index - 1);
+    }
+    else if (deltaX < -swipeThreshold) {
+        stopAutoRotate();
+        showImage(index + 1);
+    }
+
+    imgElement.style.transform = "translateX(0)";
+}
+
+imgElement.addEventListener("pointerup", endDrag);
+imgElement.addEventListener("pointercancel", endDrag);
+imgElement.addEventListener("lostpointercapture", endDrag);
+
+// ----------------------------------------
+// Init
+// ----------------------------------------
+
+showImage(0);
 startAutoRotate();
 
 

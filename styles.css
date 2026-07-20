@@ -707,7 +707,18 @@ a {
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: opacity 0.4s ease;
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.3s ease;
+
+    user-select: none;
+    touch-action: pan-y;
+    cursor: grab;
+}
+
+.carousel-frame img:active {
+    cursor: grabbing;
 }
 
 .carousel-btn {
