@@ -43,6 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
+
 /* ---------------------------------------- */
 /* PHOTO CAROUSEL */
 /* ---------------------------------------- */
@@ -75,12 +77,15 @@ let intervalId = null;
 let userInteracted = false;
 
 const imgElement = document.getElementById("carouselImage");
+const frameElement = document.querySelector(".carousel-frame");
 const descElement = document.querySelector(".carousel-description");
+
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
+
 // ----------------------------------------
-// Update image
+// Show image
 // ----------------------------------------
 
 function showImage(i) {
@@ -94,6 +99,7 @@ function showImage(i) {
         imgElement.style.opacity = 1;
     }, 200);
 }
+
 
 // ----------------------------------------
 // Auto rotate
@@ -112,6 +118,7 @@ function stopAutoRotate() {
     clearInterval(intervalId);
 }
 
+
 // ----------------------------------------
 // Buttons
 // ----------------------------------------
@@ -126,60 +133,73 @@ nextBtn.addEventListener("click", () => {
     showImage(index + 1);
 });
 
+
 // ----------------------------------------
-// Swipe / Drag
+// Mouse + Touch Drag
 // ----------------------------------------
 
 let startX = 0;
 let currentX = 0;
-let dragging = false;
+let isDragging = false;
 
 const swipeThreshold = 60;
 
-imgElement.addEventListener("pointerdown", (e) => {
-    dragging = true;
-    startX = e.clientX;
+
+// Start dragging
+frameElement.addEventListener("pointerdown", (event) => {
+    isDragging = true;
+
+    startX = event.clientX;
     currentX = startX;
 
-    imgElement.style.transition = "none";
+    frameElement.style.transition = "none";
 
-    // Prevent selecting the image while dragging
-    imgElement.setPointerCapture(e.pointerId);
+    frameElement.setPointerCapture(event.pointerId);
 });
 
-imgElement.addEventListener("pointermove", (e) => {
-    if (!dragging) return;
 
-    currentX = e.clientX;
-    const deltaX = currentX - startX;
+// While dragging
+window.addEventListener("pointermove", (event) => {
+    if (!isDragging) return;
 
-    imgElement.style.transform = `translateX(${deltaX}px)`;
+    currentX = event.clientX;
+
+    const distance = currentX - startX;
+
+    frameElement.style.transform = `translateX(${distance}px)`;
 });
 
-function endDrag() {
-    if (!dragging) return;
 
-    dragging = false;
+// End dragging
+window.addEventListener("pointerup", () => {
+    if (!isDragging) return;
 
-    const deltaX = currentX - startX;
+    isDragging = false;
 
-    imgElement.style.transition = "transform 0.3s ease, opacity 0.2s ease";
+    const distance = currentX - startX;
 
-    if (deltaX > swipeThreshold) {
+    frameElement.style.transition = "transform 0.3s ease";
+
+    if (distance > swipeThreshold) {
         stopAutoRotate();
         showImage(index - 1);
     }
-    else if (deltaX < -swipeThreshold) {
+
+    if (distance < -swipeThreshold) {
         stopAutoRotate();
         showImage(index + 1);
     }
 
-    imgElement.style.transform = "translateX(0)";
-}
+    // Return to normal position
+    frameElement.style.transform = "translateX(0)";
+});
 
-imgElement.addEventListener("pointerup", endDrag);
-imgElement.addEventListener("pointercancel", endDrag);
-imgElement.addEventListener("lostpointercapture", endDrag);
+
+window.addEventListener("pointercancel", () => {
+    isDragging = false;
+    frameElement.style.transform = "translateX(0)";
+});
+
 
 // ----------------------------------------
 // Init
@@ -187,6 +207,10 @@ imgElement.addEventListener("lostpointercapture", endDrag);
 
 showImage(0);
 startAutoRotate();
+
+
+
+
 
 
 

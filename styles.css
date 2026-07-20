@@ -676,9 +676,8 @@ a {
 }
 
 
-
 /* **************************************** */
-/* PHOTO CAROUSEL
+/* PHOTO CAROUSEL */
 /* **************************************** */
 
 .travel-carousel {
@@ -700,6 +699,18 @@ a {
     aspect-ratio: 3 / 2;
     overflow: hidden;
     border-radius: 12px;
+
+    /* Drag behaviour */
+    cursor: grab;
+    user-select: none;
+    touch-action: pan-y;
+
+    /* Smooth return after drag */
+    transition: transform 0.3s ease;
+}
+
+.carousel-frame:active {
+    cursor: grabbing;
 }
 
 .carousel-frame img {
@@ -708,18 +719,18 @@ a {
     object-fit: cover;
     display: block;
 
-    transition:
-        opacity 0.4s ease,
-        transform 0.3s ease;
+    /* Image fade when changing */
+    transition: opacity 0.4s ease;
 
+    /* Prevent image dragging/selecting */
     user-select: none;
-    touch-action: pan-y;
-    cursor: grab;
+    pointer-events: none;
 }
 
-.carousel-frame img:active {
-    cursor: grabbing;
-}
+
+/* ---------------------------------------- */
+/* Navigation buttons */
+/* ---------------------------------------- */
 
 .carousel-btn {
     background: none;
@@ -735,6 +746,11 @@ a {
     transform: scale(1.2);
 }
 
+
+/* ---------------------------------------- */
+/* Text */
+/* ---------------------------------------- */
+
 .carousel-kicker {
     font-size: 0.9rem;
     letter-spacing: 0.08em;
@@ -744,35 +760,48 @@ a {
     text-align: center;
 }
 
-.carousel-description { /* carousel image description */
+.carousel-description {
     font-size: var(--meta-data-font-size);
     color: var(--meta-data-text-color);
-    margin-top: 0;
-    text-align: center;
     margin-top: 5px;
+    text-align: center;
 }
 
-/* ---  Screen adjustments 🖥️📱 --- */
+
+/* ---------------------------------------- */
+/* Mobile adjustments */
+/* ---------------------------------------- */
+
 @media (max-width: 768px) {
+
     .carousel-container {
-        gap: 0; 
+        gap: 0;
     }
+
     .carousel-btn {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        background: rgba(255, 255, 255, 0.7); 
+
+        background: rgba(255, 255, 255, 0.7);
         opacity: 0.5;
+
         color: #000;
         border-radius: 50%;
+
         width: 45px;
         height: 45px;
+
         display: flex;
         align-items: center;
         justify-content: center;
+
         font-size: 1.5rem;
+
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
+
+
     .carousel-btn:first-of-type {
         left: 15px;
     }
@@ -780,6 +809,8 @@ a {
     .carousel-btn:last-of-type {
         right: 15px;
     }
+
+
     .carousel-btn:hover {
         transform: translateY(-50%) scale(1.05);
     }
