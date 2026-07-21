@@ -104,23 +104,23 @@
 
             <p>
                 It has been argued that giving an LLM an expert persona helps the model to tap into its already large knowledge base 
-                from pre-training to produce better answers.<a href="#ref-1"><sup>1</sup></a> It has also been noted that 
-                using an expert persona produces more detailed, longer answers.<a href="#ref-2"><sup>2</sup></a> But do they actually 
-                improve factual recall and reasoning? 
+                from pre-training to produce better answers.<a href="#ref-1"><sup>1</sup></a> It has also been noted that it produces 
+                more detailed, longer answers.<a href="#ref-2"><sup>2</sup></a> But do expert personas actually 
+                improve underlying performance when it comes to factual recall and reasoning? 
             </p>
 
             <p>
-                To test this, I conducted an experiment using gemini-2.5-flash-lite (with temperature set to zero to reduce randomness) 
-                on 500 questions from the <a class="hoverable-link" href="https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro"> 
+                To test this, I conducted an experiment using gemini-2.5-flash-lite (with temperature set to 0) 
+                on 500 randomly selected questions from the <a class="hoverable-link" href="https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro"> 
                 MMLU-pro dataset</a>. 
                 The LLM answered the same questions under a control 
-                condition, with no persona, and an experimental condition, with an expert persona.
+                condition with no persona and an experimental condition with an expert persona.
             </p>
 
             <p>
                 Despite observing a 1 percentage point increase in accuracy for the expert persona, the inferential statistical 
-                methods used here suggest that this was likely due to chance. This is supported by more recent findings indicating that 
-                expert personas do not improve reliably improve factual recall and reasoning.<a href="#ref-3"><sup>3</sup></a> 
+                methods used here suggest that this was likely due to chance. This is supported by more recent research indicating that 
+                expert personas do not reliably improve factual recall and reasoning in LLMs.<a href="#ref-3"><sup>3</sup></a> 
                 Instead, they appear to be most useful for advisory tasks where answers require structured caution and risk 
                 assessment.<a href="#ref-4"><sup>4</sup></a>
             </p>
