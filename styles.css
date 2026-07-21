@@ -869,7 +869,7 @@ a {
 }
 
 .content-grid-text-container p.content-grid-p { /* content grid paragraph text */ 
-    font-size: clamp(18px, 1.25vw, 24px);
+    font-size: clamp(18.5px, 1.25vw, 24px);
     margin: 0 0 15px;
     color: var(--content-text-color);
     line-height: 1.75;
