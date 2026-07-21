@@ -22,7 +22,7 @@
     /* font-size */
     --primary-title-font-size: clamp(36px, 2.991vw, 55.7px);
     --secondary-title-font-size: clamp(26px, 1.6vw, 35px);
-    --meta-data-font-size: clamp(14px, 1.1vw, 23px);
+    --meta-data-font-size: clamp(16px, 1.1vw, 23px);
     --content-font-size: clamp(15px, 1.15vw, 24px);
 
     /* content cards */ 
@@ -858,10 +858,10 @@ a {
 }
 
 .content-grid-text-container h3 {  /* content grid h3 */ 
-    font-size: clamp(18px, 1.6vw, 36px); 
+    font-size: clamp(23px, 1.6vw, 36px); 
     line-height: 1.6;
-    margin-top: clamp(10px, 0.7vw, 15px);
-    margin-bottom: clamp(10px, 0.7vw, 15px);
+    margin-top: clamp(12px, 0.7vw, 15px);
+    margin-bottom: clamp(11px, 0.7vw, 15px);
 }
 
 .content-grid-text-container h3:hover {  /* content grid h3 is underlined on hover */ 
@@ -869,7 +869,7 @@ a {
 }
 
 .content-grid-text-container p.content-grid-p { /* content grid paragraph text */ 
-    font-size: clamp(16px, 1.25vw, 24px);
+    font-size: clamp(18px, 1.25vw, 24px);
     margin: 0 0 15px;
     color: var(--content-text-color);
     line-height: 1.75;
