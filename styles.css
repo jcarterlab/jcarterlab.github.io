@@ -65,8 +65,7 @@ body {
 h1 { 
     font-size: var(--primary-title-font-size);   
     color: var(--color-primary);
-    padding-top: 0.7vw;
-    padding-bottom: 0.7vw;
+    padding: 0.7vw;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
     text-align: center;
@@ -1022,12 +1021,16 @@ a {
 
 /* --- Article images --- */
 
-.plot-image { /* images generated jupyter notebook */
+.plot-image-desktop { /* images generated jupyter notebook for desktop */
     display: block;
     width: 100%;
-    max-width: 780px;
+    max-width: 900px;
     height: auto;
     margin: 0 auto;
+}
+
+.plot-image-mobile { /* images generated jupyter notebook for mobile */
+    display: None;
 }
 
 
@@ -1040,8 +1043,15 @@ a {
     .article-figure { 
         width: var(--content-width); 
     }
-    .plot-container img {
-        aspect-ratio: 3 / 4;
+    .plot-image-desktop {
+        display: None;
+    }
+    .plot-image-mobile {
+        display: block;
+        width: 100%;
+        max-width: 900px;
+        height: auto;
+        margin: 0 auto;
     }
 }
 
