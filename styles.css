@@ -1020,6 +1020,16 @@ a {
     text-decoration-thickness: 1.5px;
 }
 
+/* --- Article images --- */
+
+.plot-image { /* images generated jupyter notebook */
+    display: block;
+    width: 100%;
+    max-width: 780px;
+    height: auto;
+    margin: 0 auto;
+}
+
 
 /* ---  Screen adjustments 🖥️📱 --- */
 
@@ -1029,6 +1039,9 @@ a {
     }
     .article-figure { 
         width: var(--content-width); 
+    }
+    .plot-container img {
+        aspect-ratio: 3 / 4;
     }
 }
 
