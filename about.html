@@ -1,20 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>About | Jack P. Carter</title>
 
+    <!-- Hero image -->
+    <link
+        rel="preload"
+        as="image"
+        href="assets/hero_images/about_hero.jpg">
+
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/favicon-command-line-003087.svg">
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="assets/favicon-command-line-003087.svg">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="styles.css">
 
-    <!-- Link to fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Preconnect to Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
 
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -68,7 +91,12 @@
                 <p id="first-hero-text-secondary">From emerging markets<br> to AI tools</p>
             </div>
             <div class="hero-image-container">
-                <img src="assets/hero_images/about_hero.jpg" alt="A photo symbolising personal success" fetchpriority="high" />
+                <img 
+                    src="assets/hero_images/about_hero.jpg" 
+                    alt="A triumphant individual on a mountain peak" 
+                    fetchpriority="high" 
+                    loading="eager"
+                >
             </div>
         </section>
 
