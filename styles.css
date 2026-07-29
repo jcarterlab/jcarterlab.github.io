@@ -808,7 +808,7 @@ a {
 }
 
 .content-grid-tag.project {
-    color: #E53935;
+    color: #D32F2F;
 }
 
 .content-grid-tag.experiment {
@@ -816,7 +816,7 @@ a {
 }
 
 .content-grid-tag.insight {
-    color: #8E24AA;
+    color: #F57C00;
 }
 
 .content-grid-tag-icon {
@@ -927,7 +927,7 @@ a {
 }
 
 .article-tag.project {
-    color: #E53935;
+    color: #C62828;
 }
 
 .article-tag.experiment {
@@ -935,7 +935,12 @@ a {
 }
 
 .article-tag.insight {
-    color: #8E24AA;
+    color: #F57C00;
+}
+
+.content-grid-tag-icon {
+    width: 18.5px;
+    height: 18.5px;
 }
 
 .article-tag-icon {
