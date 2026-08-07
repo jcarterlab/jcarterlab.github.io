@@ -56,18 +56,14 @@ const images = [
     },
     {
         src: "assets/travel/photo2.JPG",
-        desc: "The icy silence of Kars"
-    },
-    {
-        src: "assets/travel/photo3.JPG",
         desc: "A night time glow on the Bosphorus"
     },
     {
-        src: "assets/travel/photo4.JPG",
+        src: "assets/travel/photo3.JPG",
         desc: "Moments of calm on the Mediterranean"
     },
     {
-        src: "assets/travel/photo5.JPG",
+        src: "assets/travel/photo4.JPG",
         desc: "The surreal landscapes of Cappadocia"
     }
 ];
@@ -84,9 +80,7 @@ const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
 
-// ----------------------------------------
 // Show image
-// ----------------------------------------
 
 function showImage(i) {
     index = (i + images.length) % images.length;
@@ -101,9 +95,7 @@ function showImage(i) {
 }
 
 
-// ----------------------------------------
 // Auto rotate
-// ----------------------------------------
 
 function startAutoRotate() {
     intervalId = setInterval(() => {
@@ -119,9 +111,7 @@ function stopAutoRotate() {
 }
 
 
-// ----------------------------------------
 // Buttons
-// ----------------------------------------
 
 prevBtn.addEventListener("click", () => {
     stopAutoRotate();
@@ -134,9 +124,7 @@ nextBtn.addEventListener("click", () => {
 });
 
 
-// ----------------------------------------
 // Mouse + Touch Drag
-// ----------------------------------------
 
 let startX = 0;
 let currentX = 0;
@@ -200,13 +188,35 @@ window.addEventListener("pointercancel", () => {
     frameElement.style.transform = "translateX(0)";
 });
 
-
-// ----------------------------------------
-// Init
-// ----------------------------------------
-
+// init
 showImage(0);
 startAutoRotate();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -272,16 +282,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-
-
-
-
-
-
-
-
-
-
 
 /* Expandable HTML */ 
 
