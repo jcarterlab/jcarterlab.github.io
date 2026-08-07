@@ -52,20 +52,16 @@ document.addEventListener('DOMContentLoaded', () => {
 const images = [
     {
         src: "assets/travel/photo1.JPG",
-        desc: "Sunset fading over the Nile"
+        desc: "The golden rice fields of Guilin, China"
     },
     {
         src: "assets/travel/photo2.JPG",
-        desc: "A night time glow on the Bosphorus"
+        desc: "The unreal landscapes of Cappadocia , Turkey"
     },
     {
         src: "assets/travel/photo3.JPG",
-        desc: "Moments of calm on the Mediterranean"
+        desc: "The chilly heights of the Caucasus, Georgia"
     },
-    {
-        src: "assets/travel/photo4.JPG",
-        desc: "The surreal landscapes of Cappadocia"
-    }
 ];
 
 let index = 0;
