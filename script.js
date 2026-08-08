@@ -52,15 +52,63 @@ document.addEventListener('DOMContentLoaded', () => {
 const images = [
     {
         src: "assets/travel/photo1.JPG",
-        desc: "The golden rice fields of Guilin, China"
+        desc: "Stockholm, Sweden"
     },
     {
         src: "assets/travel/photo2.JPG",
-        desc: "The unreal landscapes of Cappadocia , Turkey"
+        desc: "Hitching through the Atlas Mountains, Morocco"
     },
     {
         src: "assets/travel/photo3.JPG",
-        desc: "The chilly heights of the Caucasus, Georgia"
+        desc: "Making new friends in the Amazon, Colombia"
+    },
+    {
+        src: "assets/travel/photo4.JPG",
+        desc: "Making new friends in the Amazon, Colombia"
+    },
+    {
+        src: "assets/travel/photo5.JPG",
+        desc: "Making new friends in the Amazon, Colombia"
+    },
+    {
+        src: "assets/travel/photo6.JPG",
+        desc: "Making new friends in the Amazon, Colombia"
+    },
+    {
+        src: "assets/travel/photo7.JPG",
+        desc: "Making new friends in the Amazon, Colombia"
+    },
+    {
+        src: "assets/travel/photo8.JPG",
+        desc: "Making new friends in the Amazon, Colombia"
+    },
+    {
+        src: "assets/travel/photo9.JPG",
+        desc: "Making new friends in the Amazon, Colombia"
+    },
+    {
+        src: "assets/travel/photo10.JPG",
+        desc: "Making new friends in the Amazon, Colombia"
+    },
+    {
+        src: "assets/travel/photo11.JPG",
+        desc: "Making new friends in the Amazon, Colombia"
+    },
+    {
+        src: "assets/travel/photo12.JPG",
+        desc: "Making new friends in the Amazon, Colombia"
+    },
+    {
+        src: "assets/travel/photo13.JPG",
+        desc: "Making new friends in the Amazon, Colombia"
+    },
+    {
+        src: "assets/travel/photo14.JPG",
+        desc: "Making new friends in the Amazon, Colombia"
+    },
+    {
+        src: "assets/travel/photo15.JPG",
+        desc: "Making new friends in the Amazon, Colombia"
     },
 ];
 

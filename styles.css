@@ -642,7 +642,7 @@ a {
 
 .carousel-frame {
     width: 100%;
-    max-width: 600px;
+    max-width: 525px;
     aspect-ratio: 3 / 2;
     overflow: hidden;
     border-radius: 12px;
