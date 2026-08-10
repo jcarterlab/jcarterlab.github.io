@@ -52,63 +52,51 @@ document.addEventListener('DOMContentLoaded', () => {
 const images = [
     {
         src: "assets/travel/photo1.JPG",
-        desc: "Stockholm, Sweden"
+        desc: "The golden rice fields of Guilin, China"
     },
     {
         src: "assets/travel/photo2.JPG",
-        desc: "Hitching through the Atlas Mountains, Morocco"
+        desc: "Sun rise from the Great Wall of China"
     },
     {
         src: "assets/travel/photo3.JPG",
-        desc: "Making new friends in the Amazon, Colombia"
+        desc: "Sailing around Siargao, the Philippines"
     },
     {
         src: "assets/travel/photo4.JPG",
-        desc: "Making new friends in the Amazon, Colombia"
+        desc: "Abseiling through the forests of Koh Rong, Cambodia"
     },
     {
         src: "assets/travel/photo5.JPG",
-        desc: "Making new friends in the Amazon, Colombia"
+        desc: "Hunting for bioluminescent plankton off the coast of Cambodia"
     },
     {
         src: "assets/travel/photo6.JPG",
-        desc: "Making new friends in the Amazon, Colombia"
+        desc: "Skiing in Bursa, Turkey"
     },
     {
         src: "assets/travel/photo7.JPG",
-        desc: "Making new friends in the Amazon, Colombia"
+        desc: "Taking in the beauty of Budapest, Hungary"
     },
     {
         src: "assets/travel/photo8.JPG",
-        desc: "Making new friends in the Amazon, Colombia"
+        desc: "Volunteering in Izmir, Turkey"
     },
     {
         src: "assets/travel/photo9.JPG",
-        desc: "Making new friends in the Amazon, Colombia"
+        desc: "Looking out over the Wadi Rum Desert, Jordan"
     },
     {
         src: "assets/travel/photo10.JPG",
-        desc: "Making new friends in the Amazon, Colombia"
+        desc: "A new beginning in London"
     },
     {
         src: "assets/travel/photo11.JPG",
-        desc: "Making new friends in the Amazon, Colombia"
+        desc: "Christmas with my future wife in Stockholm, Sweden"
     },
     {
         src: "assets/travel/photo12.JPG",
-        desc: "Making new friends in the Amazon, Colombia"
-    },
-    {
-        src: "assets/travel/photo13.JPG",
-        desc: "Making new friends in the Amazon, Colombia"
-    },
-    {
-        src: "assets/travel/photo14.JPG",
-        desc: "Making new friends in the Amazon, Colombia"
-    },
-    {
-        src: "assets/travel/photo15.JPG",
-        desc: "Making new friends in the Amazon, Colombia"
+        desc: "A new friend on our honeymoon in the Amazon"
     },
 ];
 
