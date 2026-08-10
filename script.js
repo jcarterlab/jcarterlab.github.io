@@ -79,15 +79,15 @@ const images = [
         desc: "Taking in the beauty of Budapest, Hungary"
     },
     {
-        src: "assets/travel/photo8.JPG",
+        src: "assets/travel/photo8.jpg",
         desc: "Volunteering in Izmir, Turkey"
     },
     {
-        src: "assets/travel/photo9.JPG",
+        src: "assets/travel/photo9.jpg",
         desc: "Looking out over the Wadi Rum Desert, Jordan"
     },
     {
-        src: "assets/travel/photo10.JPG",
+        src: "assets/travel/photo10.jpg",
         desc: "A new beginning in London"
     },
     {
