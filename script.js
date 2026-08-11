@@ -96,8 +96,8 @@ const images = [
     },
     {
         src: "assets/travel/photo12.JPG",
-        desc: "A new friend on our honeymoon in the Amazon"
-    },
+        desc: "A new friend on my honeymoon in the Amazon"
+    }
 ];
 
 let index = 0;
@@ -112,30 +112,56 @@ const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
 
+// ----------------------------------------
+// Preload images
+// ----------------------------------------
+
+images.forEach((image) => {
+    const preload = new Image();
+    preload.src = image.src;
+});
+
+
+// ----------------------------------------
 // Show image
+// ----------------------------------------
 
 function showImage(i) {
     index = (i + images.length) % images.length;
 
-    imgElement.style.opacity = 0;
+    const nextImage = images[index];
 
-    setTimeout(() => {
-        imgElement.src = images[index].src;
-        descElement.textContent = images[index].desc;
-        imgElement.style.opacity = 1;
-    }, 200);
+    imgElement.style.opacity = "0.2";
+
+    const preload = new Image();
+
+    preload.onload = () => {
+        imgElement.src = nextImage.src;
+        descElement.textContent = nextImage.desc;
+
+        requestAnimationFrame(() => {
+            imgElement.style.opacity = "1";
+        });
+    };
+
+    preload.src = nextImage.src;
 }
 
 
+// ----------------------------------------
 // Auto rotate
+// ----------------------------------------
 
 function startAutoRotate() {
+    clearInterval(intervalId);
+
     intervalId = setInterval(() => {
-        if (!userInteracted) {
+        if (!userInteracted && !isDragging) {
             showImage(index + 1);
         }
     }, 4000);
 }
+
 
 function stopAutoRotate() {
     userInteracted = true;
@@ -143,7 +169,9 @@ function stopAutoRotate() {
 }
 
 
+// ----------------------------------------
 // Buttons
+// ----------------------------------------
 
 prevBtn.addEventListener("click", () => {
     stopAutoRotate();
@@ -156,18 +184,24 @@ nextBtn.addEventListener("click", () => {
 });
 
 
+// ----------------------------------------
 // Mouse + Touch Drag
+// ----------------------------------------
 
 let startX = 0;
 let currentX = 0;
 let isDragging = false;
+let hasSwiped = false;
 
 const swipeThreshold = 60;
 
 
 // Start dragging
 frameElement.addEventListener("pointerdown", (event) => {
+    if (event.isPrimary === false) return;
+
     isDragging = true;
+    hasSwiped = false;
 
     startX = event.clientX;
     currentX = startX;
@@ -179,7 +213,7 @@ frameElement.addEventListener("pointerdown", (event) => {
 
 
 // While dragging
-window.addEventListener("pointermove", (event) => {
+frameElement.addEventListener("pointermove", (event) => {
     if (!isDragging) return;
 
     currentX = event.clientX;
@@ -191,37 +225,64 @@ window.addEventListener("pointermove", (event) => {
 
 
 // End dragging
-window.addEventListener("pointerup", () => {
+frameElement.addEventListener("pointerup", (event) => {
     if (!isDragging) return;
-
-    isDragging = false;
 
     const distance = currentX - startX;
 
-    frameElement.style.transition = "transform 0.3s ease";
-
-    if (distance > swipeThreshold) {
-        stopAutoRotate();
-        showImage(index - 1);
-    }
-
-    if (distance < -swipeThreshold) {
-        stopAutoRotate();
-        showImage(index + 1);
-    }
-
-    // Return to normal position
-    frameElement.style.transform = "translateX(0)";
-});
-
-
-window.addEventListener("pointercancel", () => {
     isDragging = false;
+
+    frameElement.style.transition = "transform 0.3s ease";
     frameElement.style.transform = "translateX(0)";
+
+    if (Math.abs(distance) > swipeThreshold) {
+        hasSwiped = true;
+
+        stopAutoRotate();
+
+        if (distance > 0) {
+            showImage(index - 1);
+        } else {
+            showImage(index + 1);
+        }
+    }
+
+    if (frameElement.hasPointerCapture(event.pointerId)) {
+        frameElement.releasePointerCapture(event.pointerId);
+    }
 });
 
-// init
-showImage(0);
+
+// Cancel dragging
+frameElement.addEventListener("pointercancel", (event) => {
+    isDragging = false;
+
+    frameElement.style.transition = "transform 0.3s ease";
+    frameElement.style.transform = "translateX(0)";
+
+    if (frameElement.hasPointerCapture(event.pointerId)) {
+        frameElement.releasePointerCapture(event.pointerId);
+    }
+});
+
+
+// Prevent accidental click after swipe
+frameElement.addEventListener("click", (event) => {
+    if (hasSwiped) {
+        event.preventDefault();
+        event.stopPropagation();
+        hasSwiped = false;
+    }
+});
+
+
+// ----------------------------------------
+// Initialise
+// ----------------------------------------
+
+imgElement.src = images[0].src;
+descElement.textContent = images[0].desc;
+
 startAutoRotate();
 
 

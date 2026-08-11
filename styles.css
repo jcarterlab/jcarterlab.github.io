@@ -622,7 +622,6 @@ a {
 
 
 
-
 /* **************************************** */
 /* PHOTO CAROUSEL */
 /* **************************************** */
@@ -650,6 +649,8 @@ a {
     /* Drag behaviour */
     cursor: grab;
     user-select: none;
+
+    /* Allow vertical scrolling while JS handles horizontal swipes */
     touch-action: pan-y;
 
     /* Smooth return after drag */
@@ -666,8 +667,9 @@ a {
     object-fit: cover;
     display: block;
 
-    /* Image fade when changing */
-    transition: opacity 0.4s ease;
+    /* Smooth image transition */
+    opacity: 1;
+    transition: opacity 0.25s ease;
 
     /* Prevent image dragging/selecting */
     user-select: none;
