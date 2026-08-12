@@ -94,10 +94,6 @@ const images = [
         src: "assets/travel/photo11.JPG",
         desc: "Christmas with my future wife in Stockholm, Sweden"
     },
-    {
-        src: "assets/travel/photo12.JPG",
-        desc: "A new friend on my honeymoon in the Amazon"
-    }
 ];
 
 let index = 0;
