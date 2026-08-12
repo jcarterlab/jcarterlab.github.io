@@ -460,7 +460,7 @@ a {
 }
 
 .hero-text-link-h1:hover {
-    text-decoration: underline;
+    text-decoration: none;
     text-decoration-thickness: 1px;
     text-underline-offset: 6px; 
 }
