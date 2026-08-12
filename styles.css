@@ -1013,6 +1013,26 @@ a {
 }
 
 
+/* --- Article images --- */
+
+.plot-image-desktop { /* images generated jupyter notebook for desktop */
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.plot-image-mobile { /* images generated jupyter notebook for mobile */
+    display: None;
+}
+
+
+/* --- Article sources --- */
+.source {
+    font-size: 22px;
+}
+
 /* --- Article sources --- */
 
 .article-sources-bullet-point { /* individual source text */
@@ -1032,20 +1052,6 @@ a {
 
 .article-sources-link:hover { /* link to the source when hovered on */
     text-decoration-thickness: 1.5px;
-}
-
-/* --- Article images --- */
-
-.plot-image-desktop { /* images generated jupyter notebook for desktop */
-    display: block;
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    margin: 0 auto;
-}
-
-.plot-image-mobile { /* images generated jupyter notebook for mobile */
-    display: None;
 }
 
 
