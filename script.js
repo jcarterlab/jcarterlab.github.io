@@ -87,7 +87,7 @@ const images = [
         desc: "A new beginning in London"
     },
     {
-        src: "assets/travel/photo10.JPG",
+        src: "assets/travel/photo10.jpg",
         desc: "Christmas with my future wife in Stockholm, Sweden"
     },
     {
