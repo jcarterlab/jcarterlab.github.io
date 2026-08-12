@@ -72,27 +72,27 @@ const images = [
     },
     {
         src: "assets/travel/photo6.JPG",
-        desc: "Skiing in Bursa, Turkey"
-    },
-    {
-        src: "assets/travel/photo7.JPG",
         desc: "Taking in the beauty of Budapest, Hungary"
     },
     {
-        src: "assets/travel/photo8.jpg",
+        src: "assets/travel/photo7.jpg",
         desc: "Volunteering in Izmir, Turkey"
     },
     {
-        src: "assets/travel/photo9.jpg",
+        src: "assets/travel/photo8.jpg",
         desc: "Looking out over the Wadi Rum Desert, Jordan"
     },
     {
-        src: "assets/travel/photo10.jpg",
+        src: "assets/travel/photo9.jpg",
         desc: "A new beginning in London"
     },
     {
-        src: "assets/travel/photo11.JPG",
+        src: "assets/travel/photo10.JPG",
         desc: "Christmas with my future wife in Stockholm, Sweden"
+    },
+    {
+        src: "assets/travel/photo11.JPG",
+        desc: "Making friends honeymooning in the Amazon"
     },
 ];
 
