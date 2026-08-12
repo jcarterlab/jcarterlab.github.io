@@ -83,7 +83,7 @@ const images = [
         desc: "Looking out over the Wadi Rum Desert, Jordan"
     },
     {
-        src: "assets/travel/photo9.JPG",
+        src: "assets/travel/photo9.jpg",
         desc: "A new beginning in London"
     },
     {
