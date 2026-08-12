@@ -999,8 +999,8 @@ a {
 .article-figure-description { /* image or visualization descriptions */
     font-size: var(--meta-data-font-size);
     color: var(--meta-data-text-color);
-    margin-top: 1vw;
-    margin-bottom: 1.5vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .article-large-quote { /* blown up quotes */
