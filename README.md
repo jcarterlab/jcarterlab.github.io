@@ -10,25 +10,14 @@ The site is designed to showcase not only finished projects, but also the thinki
 
 ## Features
 
-* 🏠 **Portfolio homepage** — A landing page with links to the about and blog pages.
-* 👤 **About** — Background, experience and technical interests.
-* ✍️ **Blog** — Articles documenting projects, experiments and insights.
-* 📱 **Responsive design** — Designed for both desktop and mobile. 
+* **Homepage** — A landing page with links to the about and blog pages.
+* **About** — Background, experience and technical interests.
+* **Blog** — Articles documenting projects, experiments and insights.
+* **Responsive design** — Designed for both desktop and mobile. 
 
 ## Tech Stack
 
 **Frontend:** HTML · CSS · JavaScript
-
-## Structure
-
-```text
-/
-├── index.html
-├── about.html
-└── blog/
-    ├── ...
-    └── ...
-```
 
 ## Purpose
 
