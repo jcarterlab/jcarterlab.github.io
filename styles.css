@@ -1033,27 +1033,6 @@ a {
     font-size: 22px;
 }
 
-/* --- Article sources --- */
-
-.article-sources-bullet-point { /* individual source text */
-    margin: 1;
-    padding: 1;
-    line-height: 1;
-}
-
-.article-sources-link { /* link to source */
-    font-size: clamp(15px, 1.1vw, 24px);
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 1px;
-    color: #36454F;
-    line-height: 1.5;
-}
-
-.article-sources-link:hover { /* link to the source when hovered on */
-    text-decoration-thickness: 1.5px;
-}
-
 
 /* ---  Screen adjustments 🖥️📱 --- */
 
